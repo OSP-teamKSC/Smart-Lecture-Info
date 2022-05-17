@@ -30,8 +30,13 @@ def ReadSchedule(path):
 
 
 if __name__ == '__main__':
-    # GetSchedule(name, requestStr, requestHeader, URL)
-    # ReadSchedule('./교양2.json')
-    # GetClassList.GetUnivList()
-    # GetClassList.getMajorClass('1O0204','global')
-    GetClassList.getAllMajorClasses()
+    GetClassList.getAllDepartments(2022, 1)
+    GetClassList.getAllMajorClasses(2022, 1)
+
+    # --JSON files save directory--
+    # ./UnivMajor/(Year)/(Season)
+    # ./Classes/Major/(Year)/(Season)/(Department)
+    # ./Classes/GE/(Year)/(Season)/(SubClass)
+
+    # Execution Order
+    # getUnivList() -> getAllDepartments() -> getAllMajorClasses()
