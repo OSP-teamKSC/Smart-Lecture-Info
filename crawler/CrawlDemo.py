@@ -30,13 +30,15 @@ def ReadSchedule(path):
 
 
 if __name__ == '__main__':
-    GetClassList.getAllDepartments(2022, 1)
-    GetClassList.getAllMajorClasses(2022, 1)
+    print('?')
 
-    # --JSON files save directory--
+    # --JSON 파일 저장 장소--
     # ./UnivMajor/(Year)/(Season)
     # ./Classes/Major/(Year)/(Season)/(Department)
     # ./Classes/GE/(Year)/(Season)/(SubClass)
 
-    # Execution Order
+    # 전공과목 조회시 함수 실행 순서
     # getUnivList() -> getAllDepartments() -> getAllMajorClasses()
+
+    # 교양과목 조회시 함수 실행 순서
+    # getGEList() -> getGEClasses()

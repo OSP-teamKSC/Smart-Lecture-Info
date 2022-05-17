@@ -5,11 +5,19 @@ from pathlib import Path
 
 crawlURL = 'https://knuin.knu.ac.kr/public/web/stddm/lsspr/syllabus/lectPlnInqr/selectItttnCdListLectPlnInqr'
 crawlLectureURL = 'https://knuin.knu.ac.kr/public/web/stddm/lsspr/syllabus/lectPlnInqr/selectListLectPlnInqr'
+crawlListURL = 'https://knuin.knu.ac.kr/public/cmmnn/cmmbs/code/selectListCode'
 
-seasons = ['CMBS001400001',  # 1
-           'CMBS001400004',  # summer
-           'CMBS001400002',  # 2
-           'CMBS001400003']  # winter
+seasons = ['CMBS001400001',  # 1학기
+           'CMBS001400004',  # 여름학기
+           'CMBS001400002',  # 2학기
+           'CMBS001400003']  # 겨울학기
+
+GEcodes = ['STCU001000005',  # 첨성인기초
+           'STCU001000006',  # 첨성인핵심
+           'STCU001000007',  # 첨성인일반
+           'STCU001000028',  # 첨성인소양
+           'STCU001100027',  # 첨성인핵심 / 인문.사회
+           'STCU001100028']  # 첨성인핵심 / 자연과학
 
 # 대학 목록 조회 페이로드
 getUnivListPayload = {
@@ -41,11 +49,11 @@ getDepartmentListPayload = {
 getGEClassPayload = {
     "search": {
         "estblYear": "2022",
-        "estblSmstrSctcd": "CMBS001400004",
+        "estblSmstrSctcd": "CMBS001400001",
         "sbjetCd": "",
         "sbjetNm": "",
         "crgePrfssNm": "",
-        "sbjetRelmCd": "01",
+        "sbjetRelmCd": "",
         "sbjetSctcd": "",
         "estblDprtnCd": "",
         "rmtCrseYn": "",
@@ -91,7 +99,113 @@ getMajorClassPayload = {
     }
 }
 
+# 교양 세부항목 조회 페이로드
+getGEListPayload = {
+    "search": {
+        # "reqId": "",
+        "key": "STCU0011",
+        "upperKey": "",  # 가변코드
+        "listCode": "false",
+        "attrs": [],
+        "searchParam": ""
+    }
+}
+
 requestHeader = {'Content-Type': 'application/json'}
+
+
+def getGEList():
+    # 첨성인 기초 세부항목 조회
+    Path('./UnivGE').mkdir(exist_ok=True)
+    getGEListPayload['search']['upperKey'] = GEcodes[0]
+    getGEListPayload['search']['key'] = 'STCU0011'
+    request = json.dumps(getGEListPayload)
+    response = requests.post(crawlListURL, request, headers=requestHeader)
+    if response.status_code >= 400:
+        print('failed to get file')
+        return
+    with open('./UnivGE/첨성인기초.json', 'w') as savefile:
+        json.dump(response.json(), savefile, indent=4)
+
+    # 첨성인 소양 세부항목 조회
+    getGEListPayload['search']['upperKey'] = GEcodes[3]
+    request = json.dumps(getGEListPayload)
+    response = requests.post(crawlListURL, request, headers=requestHeader)
+    if response.status_code >= 400:
+        print('failed to get file')
+        return
+    with open('./UnivGE/첨성인소양.json', 'w') as savefile:
+        json.dump(response.json(), savefile, indent=4)
+
+    # 첨성인 핵심 - 인문/사회 세부항목 조회
+    getGEListPayload['search']['upperKey'] = GEcodes[4]
+    getGEListPayload['search']['key'] = 'STCU0012'
+    request = json.dumps(getGEListPayload)
+    response = requests.post(crawlListURL, request, headers=requestHeader)
+    if response.status_code >= 400:
+        print('failed to get file')
+        return
+    with open('./UnivGE/첨성인핵심인문.json', 'w') as savefile:
+        json.dump(response.json(), savefile, indent=4)
+
+    # 첨성인 핵심 - 자연과학 세부항목 조회
+    getGEListPayload['search']['upperKey'] = GEcodes[5]
+    request = json.dumps(getGEListPayload)
+    response = requests.post(crawlListURL, request, headers=requestHeader)
+    if response.status_code >= 400:
+        print('failed to get file')
+        return
+    with open('./UnivGE/첨성인핵심자연.json', 'w') as savefile:
+        json.dump(response.json(), savefile, indent=4)
+
+
+def getAllGEClasses(year=2022, season=0):
+    print('')
+    Path('./Classes').mkdir(exist_ok=True)
+    Path('./Classes/GE').mkdir(exist_ok=True)
+    Path('./Classes/GE/{}'.format(str(year))).mkdir(exist_ok=True)
+    Path('./Classes/GE/{}/{}'.format(str(year), str(season))).mkdir(exist_ok=True)
+    Path('./Classes/GE/{}/{}/첨성인기초'.format(str(year), str(season))).mkdir(exist_ok=True)
+    Path('./Classes/GE/{}/{}/첨성인소양'.format(str(year), str(season))).mkdir(exist_ok=True)
+    Path('./Classes/GE/{}/{}/첨성인핵심'.format(str(year), str(season))).mkdir(exist_ok=True)
+    Path('./Classes/GE/{}/{}/첨성인핵심/인문_사회'.format(str(year), str(season))).mkdir(exist_ok=True)
+    Path('./Classes/GE/{}/{}/첨성인핵심/자연과학'.format(str(year), str(season))).mkdir(exist_ok=True)
+    with open('./UnivGE/첨성인기초.json', 'r') as readfile:
+        print('첨성인기초.json')
+        for sub in json.load(readfile)['data']['option']['codes']:
+            code = sub['codeId']
+            name = sub['codeNm']
+            getGEClass(code, Path('Classes/GE/{}/{}/첨성인기초/{}'.format(str(year), str(season), name)),
+                       year, season)
+        print('done!')
+    with open('./UnivGE/첨성인핵심인문.json', 'r') as readfile:
+        print('첨성인핵심인문.json')
+        for sub in json.load(readfile)['data']['option']['codes']:
+            code = sub['codeId']
+            name = sub['codeNm']
+            getGEClass(code, Path('Classes/GE/{}/{}/첨성인핵심/인문_사회/{}'.format(str(year), str(season), name)),
+                       year, season)
+        print('done!')
+    with open('./UnivGE/첨성인핵심자연.json', 'r') as readfile:
+        print('첨성인핵심자연.json')
+        for sub in json.load(readfile)['data']['option']['codes']:
+            code = sub['codeId']
+            name = sub['codeNm']
+            getGEClass(code, Path('Classes/GE/{}/{}/첨성인핵심/자연과학/{}'.format(str(year), str(season), name)),
+                       year, season)
+        print('done!')
+    with open('./UnivGE/첨성인소양.json', 'r') as readfile:
+        print('첨성인소양.json')
+        for sub in json.load(readfile)['data']['option']['codes']:
+            code = sub['codeId']
+            name = sub['codeNm']
+            getGEClass(code, Path('Classes/GE/{}/{}/첨성인소양/{}'.format(str(year), str(season), name)),
+                       year, season)
+        print('done!')
+
+    getGEClass('STCU001000007', Path('Classes/GE/{}/{}/첨성인일반'.format(str(year), str(season))),
+               year, season)
+    print('done!')
 
 
 # 대학 목록 조회
@@ -163,7 +277,29 @@ def getMajorClass(depart_code, file_name, year=2022, season=0):
     response = requests.post(crawlLectureURL, request, headers=requestHeader)
 
     if response.status_code >= 400:
-        print('failed to get file')
+        print('failed to get file : no response')
+        return
+    if len(response.json()['data']) == 0:
+        print('failed to get file : no data')
+        return
+    with open('./{0}.json'.format(file_name), 'w') as savefile:
+        json.dump(response.json(), savefile, indent=4)
+    print('.', end='')
+
+
+# 교양 과목 조회
+def getGEClass(ge_code, file_name, year=2022, season=0):
+    getGEClassPayload['search']['sbjetRelmCd'] = ge_code
+    getGEClassPayload['search']['estblYear'] = str(year)
+    getGEClassPayload['search']['estblSmstrSctcd'] = seasons[season]
+    request = json.dumps(getGEClassPayload)
+    response = requests.post(crawlLectureURL, request, headers=requestHeader)
+
+    if response.status_code >= 400:
+        print('failed to get file : no response')
+        return
+    if len(response.json()['data']) == 0:
+        print('failed to get file : no data')
         return
     with open('./{0}.json'.format(file_name), 'w') as savefile:
         json.dump(response.json(), savefile, indent=4)
@@ -184,7 +320,8 @@ def getMajorClassesInUniv(univ_file, univ_name, year=2022, season=0):
             Path('./Classes/Major/{}/{}'.format(str(year), str(season))).mkdir(exist_ok=True)
             Path('./Classes/Major/{0}/{1}/{2}'.format(str(year), str(season), univ_name)).mkdir(exist_ok=True)
             getMajorClass(departCode,
-                          Path('Classes/Major/{0}/{1}/{2}/{3}'.format(str(year), str(season), univ_name, departName)),year,season)
+                          Path('Classes/Major/{0}/{1}/{2}/{3}'.format(str(year), str(season), univ_name, departName)),
+                          year, season)
         print('done!')
 
 
@@ -196,11 +333,5 @@ def getAllMajorClasses(year=2022, season=0):
         print('Getting Lectures from "/UnivMajor/' + f + '"')
         Path('./Classes').mkdir(exist_ok=True)
         Path('./Classes/' + f.split('_')[1].split('.')[0]).mkdir(exist_ok=True)
-        getMajorClassesInUniv(Path('./UnivMajor/{}/{}/'.format(str(year), str(season)) + f), f.split('_')[1].split('.')[0], year, season)
-
-    # --JSON files save directory--
-    # ./UnivMajor/Year/Season
-    # ./Classes/Major/Year/Season
-    # ./Classes/GE/Year/Season
-
-    # getUnivList() -> getAllDepartments() -> getAllMajorClasses()
+        getMajorClassesInUniv(Path('./UnivMajor/{}/{}/'.format(str(year), str(season)) + f),
+                              f.split('_')[1].split('.')[0], year, season)
