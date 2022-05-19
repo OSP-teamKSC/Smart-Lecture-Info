@@ -1,6 +1,8 @@
 import json
 import requests
 import os
+import ClassJsonConverter
+import time
 from pathlib import Path
 
 crawlURL = 'https://knuin.knu.ac.kr/public/web/stddm/lsspr/syllabus/lectPlnInqr/selectItttnCdListLectPlnInqr'
@@ -114,6 +116,7 @@ getGEListPayload = {
 requestHeader = {'Content-Type': 'application/json'}
 
 
+
 def getGEList():
     # 첨성인 기초 세부항목 조회
     Path('./UnivGE').mkdir(exist_ok=True)
@@ -159,7 +162,7 @@ def getGEList():
         json.dump(response.json(), savefile, indent=4)
 
 
-def getAllGEClasses(year=2022, season=0):
+def getAllGEClasses(year=2022, season=0, withSyllabus = False, forTest = None):
     print('')
     Path('./Classes').mkdir(exist_ok=True)
     Path('./Classes/GE').mkdir(exist_ok=True)
@@ -170,41 +173,18 @@ def getAllGEClasses(year=2022, season=0):
     Path('./Classes/GE/{}/{}/첨성인핵심'.format(str(year), str(season))).mkdir(exist_ok=True)
     Path('./Classes/GE/{}/{}/첨성인핵심/인문_사회'.format(str(year), str(season))).mkdir(exist_ok=True)
     Path('./Classes/GE/{}/{}/첨성인핵심/자연과학'.format(str(year), str(season))).mkdir(exist_ok=True)
-    with open('./UnivGE/첨성인기초.json', 'r') as readfile:
-        print('첨성인기초.json')
-        for sub in json.load(readfile)['data']['option']['codes']:
-            code = sub['codeId']
-            name = sub['codeNm']
-            getGEClass(code, Path('Classes/GE/{}/{}/첨성인기초/{}'.format(str(year), str(season), name)),
-                       year, season)
-        print('done!')
-    with open('./UnivGE/첨성인핵심인문.json', 'r') as readfile:
-        print('첨성인핵심인문.json')
-        for sub in json.load(readfile)['data']['option']['codes']:
-            code = sub['codeId']
-            name = sub['codeNm']
-            getGEClass(code, Path('Classes/GE/{}/{}/첨성인핵심/인문_사회/{}'.format(str(year), str(season), name)),
-                       year, season)
-        print('done!')
-    with open('./UnivGE/첨성인핵심자연.json', 'r') as readfile:
-        print('첨성인핵심자연.json')
-        for sub in json.load(readfile)['data']['option']['codes']:
-            code = sub['codeId']
-            name = sub['codeNm']
-            getGEClass(code, Path('Classes/GE/{}/{}/첨성인핵심/자연과학/{}'.format(str(year), str(season), name)),
-                       year, season)
-        print('done!')
-    with open('./UnivGE/첨성인소양.json', 'r') as readfile:
-        print('첨성인소양.json')
-        for sub in json.load(readfile)['data']['option']['codes']:
-            code = sub['codeId']
-            name = sub['codeNm']
-            getGEClass(code, Path('Classes/GE/{}/{}/첨성인소양/{}'.format(str(year), str(season), name)),
-                       year, season)
-        print('done!')
+    print('첨성인기초.json')
+    getGEClass('./UnivGE/첨성인기초.json', 'Classes/GE/{}/{}/첨성인기초'.format(str(year), str(season)), 2022, 0,withSyllabus, forTest)
 
-    getGEClass('STCU001000007', Path('Classes/GE/{}/{}/첨성인일반'.format(str(year), str(season))),
-               year, season)
+    print('첨성인핵심인문.json')
+    getGEClass('./UnivGE/첨성인핵심인문.json', 'Classes/GE/{}/{}/첨성인핵심/인문_사회'.format(str(year), str(season)), 2022, 0,withSyllabus, forTest)
+
+    print('첨성인핵심자연.json')
+    getGEClass('./UnivGE/첨성인핵심자연.json', 'Classes/GE/{}/{}/첨성인핵심/자연과학'.format(str(year), str(season)), 2022, 0,withSyllabus, forTest)
+
+    print('첨성인소양.json')
+    getGEClass('./UnivGE/첨성인소양.json', 'Classes/GE/{}/{}/첨성인소양'.format(str(year), str(season)), 2022, 0,withSyllabus, forTest)
+
     print('done!')
 
 
@@ -269,45 +249,57 @@ def getGEClasses():
 
 
 # 전공 과목 조회
-def getMajorClass(depart_code, file_name, year=2022, season=0):
+def getMajorClass(depart_code, file_name, year=2022, season=0,withSyllabus = False,forTest = None):
     getMajorClassPayload['search']['estblDprtnCd'] = depart_code
     getMajorClassPayload['search']['estblYear'] = str(year)
     getMajorClassPayload['search']['estblSmstrSctcd'] = seasons[season]
     request = json.dumps(getMajorClassPayload)
     response = requests.post(crawlLectureURL, request, headers=requestHeader)
-
     if response.status_code >= 400:
         print('failed to get file : no response')
         return
     if len(response.json()['data']) == 0:
         print('failed to get file : no data')
         return
+    if(forTest):
+        forTest(len(response.content)/1024)
     with open('./{0}.json'.format(file_name), 'w') as savefile:
-        json.dump(response.json(), savefile, indent=4)
+        json.dump(ClassJsonConverter.ConvertJSON(response.json(),withSyllabus,forTest), savefile, indent=4)
     print('.', end='')
 
 
 # 교양 과목 조회
-def getGEClass(ge_code, file_name, year=2022, season=0):
-    getGEClassPayload['search']['sbjetRelmCd'] = ge_code
-    getGEClassPayload['search']['estblYear'] = str(year)
-    getGEClassPayload['search']['estblSmstrSctcd'] = seasons[season]
-    request = json.dumps(getGEClassPayload)
-    response = requests.post(crawlLectureURL, request, headers=requestHeader)
+def getGEClass(openfile, savepath, year=2022, season=0, withSyllable = False, forTest = None):
+    lastTime = time.time()
+    with open(openfile, 'r') as readfile:
+        for sub in json.load(readfile)['data']['option']['codes']:
+            code = sub['codeId']
+            name = sub['codeNm']
+            path = Path('{}/{}'.format(savepath,name))
+            getGEClassPayload['search']['sbjetRelmCd'] = code
+            getGEClassPayload['search']['estblYear'] = str(year)
+            getGEClassPayload['search']['estblSmstrSctcd'] = seasons[season]
+            request = json.dumps(getGEClassPayload)
+            response = requests.post(crawlLectureURL, request, headers=requestHeader)
 
-    if response.status_code >= 400:
-        print('failed to get file : no response')
-        return
-    if len(response.json()['data']) == 0:
-        print('failed to get file : no data')
-        return
-    with open('./{0}.json'.format(file_name), 'w') as savefile:
-        json.dump(response.json(), savefile, indent=4)
-    print('.', end='')
+            if response.status_code >= 400:
+                print('failed to get file : no response')
+                return
+            if len(response.json()['data']) == 0:
+                print('failed to get file : no data')
+                return
+            if forTest:
+                forTest(len(response.content)/1024)
+            with open('./{0}.json'.format(path), 'w') as savefile:
+                json.dump(ClassJsonConverter.ConvertJSON(response.json(), withSyllable, forTest), savefile, indent=4)
+            print('.', end='')
+        print('done!')
+        print('elapsed time : {}ms'.format(round((time.time()-lastTime)*1000)))
 
 
 # 대학 전공 과목 조회
-def getMajorClassesInUniv(univ_file, univ_name, year=2022, season=0):
+def getMajorClassesInUniv(univ_file, univ_name, year=2022, season=0,withSyllabus = False, forTest = None):
+    lastTime = time.time()
     with open('{0}'.format(univ_file), 'r') as openfile:
         json_data = json.load(openfile)
         for univ in json_data['data']:
@@ -321,17 +313,17 @@ def getMajorClassesInUniv(univ_file, univ_name, year=2022, season=0):
             Path('./Classes/Major/{0}/{1}/{2}'.format(str(year), str(season), univ_name)).mkdir(exist_ok=True)
             getMajorClass(departCode,
                           Path('Classes/Major/{0}/{1}/{2}/{3}'.format(str(year), str(season), univ_name, departName)),
-                          year, season)
+                          year, season,withSyllabus, forTest)
         print('done!')
+        print('elapsed time : {}ms'.format(round((time.time()-lastTime)*1000)))
 
 
 # 모든 전공 과목 조회
-def getAllMajorClasses(year=2022, season=0):
+def getAllMajorClasses(year=2022, season=0,withSyllabus= False,forTest=None):
     for f in os.listdir('./UnivMajor/{}/{}'.format(str(year), str(season))):
         if f[0] != 'u':
             continue
         print('Getting Lectures from "/UnivMajor/' + f + '"')
         Path('./Classes').mkdir(exist_ok=True)
-        Path('./Classes/' + f.split('_')[1].split('.')[0]).mkdir(exist_ok=True)
         getMajorClassesInUniv(Path('./UnivMajor/{}/{}/'.format(str(year), str(season)) + f),
-                              f.split('_')[1].split('.')[0], year, season)
+                              f.split('_')[1].split('.')[0], year, season,withSyllabus,forTest)

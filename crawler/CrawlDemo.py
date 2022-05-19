@@ -1,4 +1,5 @@
 import json
+
 import GetClassList
 
 
@@ -9,7 +10,7 @@ def ReadSchedule(path):
         json_data = json.load(openfile)
         for cls in json_data['data']:
             dic = {}
-            if cls['lssnsTimeInfo'] != None:
+            if cls['lssnsTimeInfo'] is not None:
                 t = (cls['lssnsTimeInfo']).split('<br/>')
                 sche = []
                 for i in t:
@@ -28,6 +29,13 @@ def ReadSchedule(path):
         if c['sche'] != '':
             print('시간표 : {0}'.format(c['sche']), end='\n\n')
 
+global temp
+temp = 0
+
+
+def t(arg):
+    global temp
+    temp += arg
 
 if __name__ == '__main__':
     print('?')
@@ -41,4 +49,8 @@ if __name__ == '__main__':
     # getUnivList() -> getAllDepartments() -> getAllMajorClasses()
 
     # 교양과목 조회시 함수 실행 순서
-    # getGEList() -> getGEClasses()
+    # getGEList() -> getAllGEClasses()
+
+    GetClassList.getAllMajorClasses(2022, 0, True, t)
+    #GetClassList.getAllGEClasses(2022,0,True,t)
+    print('Total transferred data : ' + str(round(temp)) + 'KB')
