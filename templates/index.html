@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강의계획서</title>
+
+</head>
+<body>
+    <h1>수업시간표 및 강의계획서 조회</h1>
+    <h3>개설연도</h3>
+    <input type="text" id="year">
+    <h3>개설학기</h3>
+    <select id="semester">
+        <option>1학기</option>
+        <option>계절학기(하계)</option>
+        <option>2학기</option>
+        <option>계절학기(동계)</option>
+    </select>
+    <select name="Univ" id="Subject" onchange="setCollage(this)">
+        <option>선택하시오</option>
+        <option value="UN">대학</option>
+        <option value="GE">교양</option>
+    </select>
+    <select name="Univ-collage"id="Collage" onchange="setMajor(this)">
+        <option>선택하시오</option>
+    </select>
+    <select name="Univ-major"id="Major">
+        <option>선택하시오</option>
+    </select>
+    <button type="submit" id="submit">조회</button>
+    <script src="{{ url_for('static', filename='JS/Schedule.js') }}"></script>
+
+</body>
+</html>

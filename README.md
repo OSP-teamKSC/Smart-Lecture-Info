@@ -1,1 +1,1 @@
-# SmartLectureInfo
+# flask server
