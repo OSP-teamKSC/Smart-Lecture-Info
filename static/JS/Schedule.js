@@ -1,3 +1,4 @@
+//대학 목록
 const UnivList = {
     "인문대학": [
         "고고인류학과",
@@ -230,9 +231,10 @@ const UnivList = {
 
 const GEList = {};
 const Subject = {"NULL": null,"UN": UnivList, "GE": GEList};
+//검색 버튼
 const sub_btn = document.querySelector("#submit");
 
-function setCollage(e)
+function setCollage(e)      //단과대학 select 생성
 {
     const target = document.getElementById("Collage");
 
@@ -243,7 +245,7 @@ function setCollage(e)
 
 }
 
-function setMajor(e)
+function setMajor(e)        //전공 select 생성
 {
     const target = document.getElementById("Major");
     const course = UnivList[e.value];
@@ -252,7 +254,7 @@ function setMajor(e)
 
 }
 
-function categoryChange(target, List)
+function categoryChange(target, List)   //select 생성
 {
     for(let x = 0; x < List.length; x++)
     {
@@ -263,7 +265,7 @@ function categoryChange(target, List)
     }
 }
 
-// 전송하기 버튼 클릭 시
+//검색하기 버튼 클릭 시
 sub_btn.addEventListener('click', ()=> {
         const year = document.getElementById("year").value;
         const semester = document.getElementById("semester").value;
@@ -286,7 +288,7 @@ sub_btn.addEventListener('click', ()=> {
         //요청 전송
         xhr.send(`data=${JSON.stringify(Json)}`);
 
-       /* Response Type을 Json으로 사전 정의 */
+       //Response Type을 Json으로 사전 정의
 	    xhr.responseType = "json";
 
         //Callback

@@ -4,14 +4,18 @@ import json
 app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
 
+# request
 @app.route('/request', methods=['GET', 'POST'])
 def test():
+    # 요청이 오면
     if request.form.to_dict():
         data = request.form.to_dict()
         print(data['data'])
     a = {"1": "2"}
+    # a를 json으로 return
     return a
 
+# main page
 @app.route('/', methods=['GET', 'POST'])
 def list():
     return render_template('index.html')
