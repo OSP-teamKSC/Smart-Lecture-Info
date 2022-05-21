@@ -22,19 +22,19 @@
     </select>
             <!--과목-->
     <select name="Univ" id="Subject" onchange="setCollage(this)">
-        <option>선택하시오</option>
+        <option value="NULL">선택</option>
         <option value="UN">대학</option>
         <option value="GE">교양</option>
     </select>
            <!--단과대학-->
     <select name="Univ-collage"id="Collage" onchange="setMajor(this)">
-        <option>선택하시오</option>
+        <option>선택</option>
     </select>
             <!--전공-->
     <select name="Univ-major"id="Major">
-        <option>선택하시오</option>
+        <option>선택</option>
     </select>
-        <!--전-->
+        <!--전송-->
     <button type="submit" id="submit">조회</button>
         <!--자바스크립트-->
     <script src="{{ url_for('static', filename='JS/Schedule.js') }}"></script>
