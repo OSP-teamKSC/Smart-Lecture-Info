@@ -25,8 +25,5 @@ etc int,
 권장후수과목 char(50),
 primary key(과목코드_분반포함),
 foreign key (개설학기)
-references seasons (학기),
-foreign key ()
-
-
+references seasons (학기)
 );
