@@ -174,19 +174,34 @@ def getAllGEClasses(year=2022, season=0, withSyllabus = False, forTest = None):
     Path('./Classes/GE/{}/{}/첨성인핵심/인문_사회'.format(str(year), str(season))).mkdir(exist_ok=True)
     Path('./Classes/GE/{}/{}/첨성인핵심/자연과학'.format(str(year), str(season))).mkdir(exist_ok=True)
     print('첨성인기초.json')
-    getGEClass('./UnivGE/첨성인기초.json', 'Classes/GE/{}/{}/첨성인기초'.format(str(year), str(season)), 2022, 0,withSyllabus, forTest)
+    getGEClass('./UnivGE/첨성인기초.json', 'Classes/GE/{}/{}/첨성인기초'.format(str(year), str(season)), 2022, 0,withSyllabus, forTest,'첨성인기초')
 
     print('첨성인핵심인문.json')
-    getGEClass('./UnivGE/첨성인핵심인문.json', 'Classes/GE/{}/{}/첨성인핵심/인문_사회'.format(str(year), str(season)), 2022, 0,withSyllabus, forTest)
+    getGEClass('./UnivGE/첨성인핵심인문.json', 'Classes/GE/{}/{}/첨성인핵심/인문_사회'.format(str(year), str(season)), 2022, 0,withSyllabus, forTest,'첨성인핵심_인문사회')
 
     print('첨성인핵심자연.json')
-    getGEClass('./UnivGE/첨성인핵심자연.json', 'Classes/GE/{}/{}/첨성인핵심/자연과학'.format(str(year), str(season)), 2022, 0,withSyllabus, forTest)
+    getGEClass('./UnivGE/첨성인핵심자연.json', 'Classes/GE/{}/{}/첨성인핵심/자연과학'.format(str(year), str(season)), 2022, 0,withSyllabus, forTest,'첨성인핵심_자연과학')
 
     print('첨성인소양.json')
-    getGEClass('./UnivGE/첨성인소양.json', 'Classes/GE/{}/{}/첨성인소양'.format(str(year), str(season)), 2022, 0,withSyllabus, forTest)
+    getGEClass('./UnivGE/첨성인소양.json', 'Classes/GE/{}/{}/첨성인소양'.format(str(year), str(season)), 2022, 0,withSyllabus, forTest,'첨성인소양')
 
     print('done!')
 
+def getAllGEClassesAlt(year=2022, season=0, withSyllabus = False, forTest = None):
+    index = 0
+    print('')
+    index += getGEClass2(index,'./UnivGE/첨성인기초.json', 2022, 0,withSyllabus, forTest,'첨성인기초')
+
+    print('첨성인핵심인문.json')
+    getGEClass2(index, './UnivGE/첨성인핵심인문.json', 2022, 0,withSyllabus, forTest,'첨성인핵심_인문사회')
+
+    print('첨성인핵심자연.json')
+    getGEClass2(index, './UnivGE/첨성인핵심자연.json', 2022, 0,withSyllabus, forTest,'첨성인핵심_자연과학')
+
+    print('첨성인소양.json')
+    getGEClass2(index, './UnivGE/첨성인소양.json', 2022, 0,withSyllabus, forTest,'첨성인소양')
+
+    print('done!')
 
 # 대학 목록 조회
 def getUnivList(year=2022, season=0):
@@ -268,8 +283,30 @@ def getMajorClass(depart_code, file_name, year=2022, season=0,withSyllabus = Fal
     print('.', end='')
 
 
+def getMajorClass2(depart_code, index, year=2022, season=0,withSyllabus = False,forTest = None):
+    t = 0
+    getMajorClassPayload['search']['estblDprtnCd'] = depart_code
+    getMajorClassPayload['search']['estblYear'] = str(year)
+    getMajorClassPayload['search']['estblSmstrSctcd'] = seasons[season]
+    request = json.dumps(getMajorClassPayload)
+    response = requests.post(crawlLectureURL, request, headers=requestHeader)
+    if response.status_code >= 400:
+        print('failed to get file : no response')
+        return
+    if len(response.json()['data']) == 0:
+        print('failed to get file : no data')
+        return
+    if(forTest):
+        forTest(len(response.content)/1024)
+    with open('./jsons/{0}.json'.format(index+t), 'w') as savefile:
+        json.dump(ClassJsonConverter.ConvertJSON(response.json(),withSyllabus,forTest), savefile, indent=4)
+    t+=1
+    print('.', end='')
+    return t
+
+
 # 교양 과목 조회
-def getGEClass(openfile, savepath, year=2022, season=0, withSyllable = False, forTest = None):
+def getGEClass(openfile, savepath, year=2022, season=0, withSyllable = False, forTest = None ,GubunName = ''):
     lastTime = time.time()
     with open(openfile, 'r') as readfile:
         for sub in json.load(readfile)['data']['option']['codes']:
@@ -291,39 +328,67 @@ def getGEClass(openfile, savepath, year=2022, season=0, withSyllable = False, fo
             if forTest:
                 forTest(len(response.content)/1024)
             with open('./{0}.json'.format(path), 'w') as savefile:
-                json.dump(ClassJsonConverter.ConvertJSON(response.json(), withSyllable, forTest), savefile, indent=4)
+                json.dump(ClassJsonConverter.ConvertJSON(response.json(), withSyllable, forTest,GubunName), savefile, indent=4)
             print('.', end='')
         print('done!')
         print('elapsed time : {}ms'.format(round((time.time()-lastTime)*1000)))
 
 
-# 대학 전공 과목 조회
-def getMajorClassesInUniv(univ_file, univ_name, year=2022, season=0,withSyllabus = False, forTest = None):
+def getGEClass2(index, openfile, year=2022, season=0, withSyllable=False, forTest=None, GubunName='', ):
+    t = 0
     lastTime = time.time()
+    with open(openfile, 'r') as readfile:
+        for sub in json.load(readfile)['data']['option']['codes']:
+            code = sub['codeId']
+
+            path = Path('/jsonsge/{}'.format(index+t))
+            t+=1
+            getGEClassPayload['search']['sbjetRelmCd'] = code
+            getGEClassPayload['search']['estblYear'] = str(year)
+            getGEClassPayload['search']['estblSmstrSctcd'] = seasons[season]
+            request = json.dumps(getGEClassPayload)
+            response = requests.post(crawlLectureURL, request, headers=requestHeader)
+
+            if response.status_code >= 400:
+                print('failed to get file : no response')
+                return
+            if len(response.json()['data']) == 0:
+                print('failed to get file : no data')
+                return
+            if forTest:
+                forTest(len(response.content) / 1024)
+            with open('./{0}.json'.format(path), 'w') as savefile:
+                json.dump(ClassJsonConverter.ConvertJSON(response.json(), withSyllable, forTest, GubunName), savefile,
+                          indent=4)
+            print('.', end='')
+        print('done!')
+        print('elapsed time : {}ms'.format(round((time.time() - lastTime) * 1000)))
+        return t
+
+
+# 대학 전공 과목 조회
+def getMajorClassesInUnivAlt(index, univ_file, univ_name, year=2022, season=0,withSyllabus = False, forTest = None):
+    lastTime = time.time()
+    t = 0
     with open('{0}'.format(univ_file), 'r') as openfile:
         json_data = json.load(openfile)
         for univ in json_data['data']:
             departCode = univ['code']
             departName = univ['name']
-            departName = departName.replace('\\', '_')  # '/' 가 포함된 전공명이 경로값와 충돌이 발생, '_' 로 교체
-            departName = departName.replace('/', '_')
-            Path('./Classes/Major'.format(univ_name)).mkdir(exist_ok=True)
-            Path('./Classes/Major/{}'.format(str(year))).mkdir(exist_ok=True)
-            Path('./Classes/Major/{}/{}'.format(str(year), str(season))).mkdir(exist_ok=True)
-            Path('./Classes/Major/{0}/{1}/{2}'.format(str(year), str(season), univ_name)).mkdir(exist_ok=True)
-            getMajorClass(departCode,
-                          Path('Classes/Major/{0}/{1}/{2}/{3}'.format(str(year), str(season), univ_name, departName)),
+            t+= getMajorClass2(departCode,
+                          index+t,
                           year, season,withSyllabus, forTest)
         print('done!')
         print('elapsed time : {}ms'.format(round((time.time()-lastTime)*1000)))
-
+    return t
 
 # 모든 전공 과목 조회
 def getAllMajorClasses(year=2022, season=0,withSyllabus= False,forTest=None):
+    t =104
     for f in os.listdir('./UnivMajor/{}/{}'.format(str(year), str(season))):
         if f[0] != 'u':
             continue
         print('Getting Lectures from "/UnivMajor/' + f + '"')
         Path('./Classes').mkdir(exist_ok=True)
-        getMajorClassesInUniv(Path('./UnivMajor/{}/{}/'.format(str(year), str(season)) + f),
+        t+=getMajorClassesInUnivAlt(t,Path('./UnivMajor/{}/{}/'.format(str(year), str(season)) + f),
                               f.split('_')[1].split('.')[0], year, season,withSyllabus,forTest)

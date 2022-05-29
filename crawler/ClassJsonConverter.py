@@ -12,6 +12,7 @@ def ConvertJSON(j):
     js = []
     for t in j['data']:
         js.append({
+            'Gubun' : '전공' if (str(t['sbjetSctnm']).count('전공')>=1) else '교양',
             'SubjectName': t['sbjetNm'],
             'SubjectCode': t['sbjetCd'],
             'ClassCode': t['crseNo'],
@@ -28,13 +29,14 @@ def ConvertJSON(j):
     return js
 
 
-def ConvertJSON(j, withSyllabus=False,forTest = None):
+def ConvertJSON(j, withSyllabus=False,forTest = None, GubunName = ''):
     if j['data'] is None:
         print('No Data.')
         return
     js = []
     for t in j['data']:
         js.append({
+            'Gubun' :('전공' if (str(t['sbjetSctnm']).count('전공')>=1) else '교양') if (GubunName=='') else GubunName,
             'SubjectName': t['sbjetNm'],  # 과목 명
             'SubjectCode': t['sbjetCd'],  # 과목 코드
             'ClassCode': t['crseNo'],  # 과목 코드 (분반 포함)
