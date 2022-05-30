@@ -12,7 +12,7 @@ const View = () => {
 
     return (
         <div>
-            <p>View...later</p>
+            <p>Fuck you</p>
         </div>
     );
 }
