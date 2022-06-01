@@ -1,6 +1,20 @@
-from flask import (Flask, render_template)
-
+from flask import (Flask, jsonify, render_template, request)
+import json
+from flask_cors import CORS
+import knuBus
 app = Flask("__main__")
+CORS(app)
+
+@app.route("/request", methods = ['GET', 'POST'])
+def react_to_flask():
+    if request.method == "POST":
+        parsed_request = request.form.get('data')
+        print(parsed_request)
+        result = knuBus.accessDataBase()
+
+
+    return result
+
 
 @app.route("/", methods = ['GET', 'POST'])
 def index():

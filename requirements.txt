@@ -14,6 +14,7 @@ distro==1.4.0
 distro-info===0.23ubuntu1
 entrypoints==0.3
 Flask==2.1.2
+Flask-Cors==3.0.10
 httplib2==0.14.0
 idna==2.8
 importlib-metadata==4.11.3
@@ -26,6 +27,7 @@ lazr.restfulclient==0.14.2
 lazr.uri==1.0.3
 louis==3.12.0
 MarkupSafe==2.1.1
+mysql-connector==2.2.9
 netifaces==0.10.4
 oauthlib==3.1.0
 pycairo==1.16.2
