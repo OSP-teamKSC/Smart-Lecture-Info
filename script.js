@@ -22,6 +22,7 @@ class Subject {
 
 }
 
+let isHidden = false;
 let subjects = []
 
 var selectedSubject = null;
@@ -38,6 +39,8 @@ const ScheduleTable = document.getElementById("schedule")
 const defColor = schedule.children[0].children[0].style.background;
 const Selects = document.getElementById('selects')
 const SearchButton = document.getElementById('search')
+const HideButton = document.getElementById('hide')
+const HeaderPanel = document.getElementById('header')
 
 function SchedulesToString(sches) {
     let _s = '';
@@ -189,6 +192,17 @@ function addSelect(s1, json) {
     }
     selects.appendChild(newselect)
 }
-
+HideButton.onclick = function(){
+    if(isHidden){
+        HideButton.innerHTML = '숨기기'
+        HeaderPanel.style.marginTop = '5px';
+        isHidden = false;
+    }
+    else{
+        HideButton.innerHTML = '보이기'
+        HeaderPanel.style.marginTop = '-125px';
+        isHidden = true;        
+    }
+}
 addSelect('-대학-', univs);
 addSelect('-대학-', ituniv);

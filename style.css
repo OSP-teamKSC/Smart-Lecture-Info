@@ -12,7 +12,7 @@ table, th,td {
     border-bottom: 0;
     vertical-align: text-top;
     text-align: center;
-    height: 30px;
+    height: 25px;
     width: 20px;
 }
 
@@ -21,7 +21,7 @@ table, th,td {
     border-top: 0;
     border-bottom: 0;
     background: #CCCCCC;
-    height: 30px;
+    height: 25px;
     width: 80px;
 }
 
@@ -59,6 +59,9 @@ body {
     border-radius: 30px;
     background: #BCCE98;
     height: 200px;
+    transition-property: margin-top;
+    margin-top:5px;
+    transition-duration: 0.5s;
 }
 
 #header h1 {
@@ -100,7 +103,7 @@ body {
 }
 
 .innertube {
-    margin: 15px;
+    margin: 10px;
     margin-top: 0;
 }
 
