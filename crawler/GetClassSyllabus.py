@@ -22,7 +22,17 @@ def LoadClassSyllabus(year,season,sbjetCd,sbjetDvnno,lctreLnggeSctcd,estblDprtnC
     }
 
     request = json.dumps(payload)
-    response = requests.post(requestURL, request, headers=requestHeader)
+    for i in range(0,5):
+        try:
+            response = requests.post(requestURL, request, headers=requestHeader)
+        except requests.exceptions.ConnectionError:
+            if i == 4:
+                print('Connection Failed')
+                return None
+            print('Connection Error, Retrying... {}/{}'.format(i + 1, 5))
+            continue
+        break
+
     if(forTest):
         forTest(len(response.content)/1024)
     if response.status_code >= 400:
