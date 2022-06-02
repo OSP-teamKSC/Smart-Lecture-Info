@@ -1,5 +1,6 @@
 [
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc9c0\uc5ed\uac1c\ubc1c\ub860",
         "SubjectCode": "GEOG0418",
@@ -7,6 +8,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\ud589\uc815\ud559\ubd80",
         "EstablishedDepartment": "\ud589\uc815\ud559\ubd80 \uacf5\uacf5\uc815\ucc45\uc804\uacf5",
+        "SearchUniversity": "\ud589\uc815\ud559\ubd80",
+        "SearchDepartment": "\uacf5\uacf5\uc815\ucc45\uc804\uacf5",
         "ProfessorNames": "\ubc15\uc885\ud654",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "38",
@@ -27,6 +30,7 @@
         "SubsequentSubject": "\uc0ac\ud68c\uc801 \uc790\ubcf8\ub860"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ud615\ubc95\ucd1d\ub860",
         "SubjectCode": "JURA0231",
@@ -34,6 +38,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\ud589\uc815\ud559\ubd80",
         "EstablishedDepartment": "\ud589\uc815\ud559\ubd80 \uacf5\uacf5\uc815\ucc45\uc804\uacf5",
+        "SearchUniversity": "\ud589\uc815\ud559\ubd80",
+        "SearchDepartment": "\uacf5\uacf5\uc815\ucc45\uc804\uacf5",
         "ProfessorNames": "\uc774\ubb38\ud638",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "110",
@@ -54,6 +60,7 @@
         "SubsequentSubject": "\ud615\ubc95\uac01\ub860, \ud615\uc0ac\uc808\ucc28\ubc95, \uacbd\ucc30\ud559"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ud589\uc815\ubc952",
         "SubjectCode": "JURA0352",
@@ -61,6 +68,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\ud589\uc815\ud559\ubd80",
         "EstablishedDepartment": "\ud589\uc815\ud559\ubd80 \uacf5\uacf5\uc815\ucc45\uc804\uacf5",
+        "SearchUniversity": "\ud589\uc815\ud559\ubd80",
+        "SearchDepartment": "\uacf5\uacf5\uc815\ucc45\uc804\uacf5",
         "ProfessorNames": "\uc804\ud6c8",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "87",
@@ -81,6 +90,7 @@
         "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc815\ucc45\ubd84\uc11d",
         "SubjectCode": "PUAD0352",
@@ -88,6 +98,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\ud589\uc815\ud559\ubd80",
         "EstablishedDepartment": "\ud589\uc815\ud559\ubd80 \uacf5\uacf5\uc815\ucc45\uc804\uacf5",
+        "SearchUniversity": "\ud589\uc815\ud559\ubd80",
+        "SearchDepartment": "\uacf5\uacf5\uc815\ucc45\uc804\uacf5",
         "ProfessorNames": "\uc624\uc815\uc77c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "9",
@@ -108,6 +120,7 @@
         "SubsequentSubject": "\uc815\ucc45\ud3c9\uac00"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ud615\uc0ac\uc808\ucc28\ubc95",
         "SubjectCode": "PUAD0411",
@@ -115,6 +128,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\ud589\uc815\ud559\ubd80",
         "EstablishedDepartment": "\ud589\uc815\ud559\ubd80 \uacf5\uacf5\uc815\ucc45\uc804\uacf5",
+        "SearchUniversity": "\ud589\uc815\ud559\ubd80",
+        "SearchDepartment": "\uacf5\uacf5\uc815\ucc45\uc804\uacf5",
         "ProfessorNames": "\uc774\ubb38\ud638",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "112",
@@ -135,6 +150,7 @@
         "SubsequentSubject": "\ud615\ubc95\ucd1d\ub860, \ud615\ubc95\uac01\ub860, \uacbd\ucc30\ud559"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uacf5\uacf5\uc120\ud0dd\ub860",
         "SubjectCode": "PUAD0414",
@@ -142,6 +158,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\ud589\uc815\ud559\ubd80",
         "EstablishedDepartment": "\ud589\uc815\ud559\ubd80 \uacf5\uacf5\uc815\ucc45\uc804\uacf5",
+        "SearchUniversity": "\ud589\uc815\ud559\ubd80",
+        "SearchDepartment": "\uacf5\uacf5\uc815\ucc45\uc804\uacf5",
         "ProfessorNames": "\uae40\uc131\uc900",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "106",

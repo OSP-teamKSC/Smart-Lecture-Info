@@ -1,5 +1,6 @@
 [
     {
+        "Grade": "1",
         "Gubun": "\uad50\uc591",
         "SubjectName": "\ud55c\uad6d\uc0ac",
         "SubjectCode": "CLTR0041",
@@ -7,6 +8,8 @@
         "ClassDivideNumber": "014",
         "EstablishedUniversity": "\ub18d\uc5c5\uc0dd\uba85\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc0b0\ub9bc\uacfc\ud559.\uc870\uacbd\ud559\ubd80",
+        "SearchUniversity": "\ub18d\uc5c5\uc0dd\uba85\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc0b0\ub9bc\uacfc\ud559.\uc870\uacbd\ud559\ubd80",
         "ProfessorNames": "\ubc15\uc9c4\uc601",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "59",
@@ -27,6 +30,7 @@
         "SubsequentSubject": "\ud55c\uad6d\uc0ac\uc5f0\uad6c\uc785\ubb38"
     },
     {
+        "Grade": "1",
         "Gubun": "\uad50\uc591",
         "SubjectName": "\ub17c\ub9ac\uc640 \ube44\ud310\uc801 \uc0ac\uace0",
         "SubjectCode": "CLTR0045",
@@ -34,6 +38,8 @@
         "ClassDivideNumber": "014",
         "EstablishedUniversity": "\ub18d\uc5c5\uc0dd\uba85\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc0b0\ub9bc\uacfc\ud559.\uc870\uacbd\ud559\ubd80",
+        "SearchUniversity": "\ub18d\uc5c5\uc0dd\uba85\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc0b0\ub9bc\uacfc\ud559.\uc870\uacbd\ud559\ubd80",
         "ProfessorNames": "\ud64d\uc6b0\ub78c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "71",
@@ -54,6 +60,7 @@
         "SubsequentSubject": "\ucca0\ud559\uc758 \uc774\ud574, \ub17c\ub9ac\ud559(\ucca0\ud559\uacfc \uc804\uacf5 \uc218\uc5c5)"
     },
     {
+        "Grade": "1",
         "Gubun": "\uad50\uc591",
         "SubjectName": "\ub300\ud559\uae00\uc4f0\uae30",
         "SubjectCode": "CLTR0205",
@@ -61,6 +68,8 @@
         "ClassDivideNumber": "017",
         "EstablishedUniversity": "\ub18d\uc5c5\uc0dd\uba85\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc0b0\ub9bc\uacfc\ud559.\uc870\uacbd\ud559\ubd80",
+        "SearchUniversity": "\ub18d\uc5c5\uc0dd\uba85\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc0b0\ub9bc\uacfc\ud559.\uc870\uacbd\ud559\ubd80",
         "ProfessorNames": "\uae40\ub3c4\uacbd",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "28",
@@ -81,6 +90,7 @@
         "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
+        "Grade": "1",
         "Gubun": "\uad50\uc591",
         "SubjectName": "\ub300\ud559\uae00\uc4f0\uae30",
         "SubjectCode": "CLTR0205",
@@ -88,6 +98,8 @@
         "ClassDivideNumber": "018",
         "EstablishedUniversity": "\ub18d\uc5c5\uc0dd\uba85\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc0b0\ub9bc\uacfc\ud559.\uc870\uacbd\ud559\ubd80",
+        "SearchUniversity": "\ub18d\uc5c5\uc0dd\uba85\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc0b0\ub9bc\uacfc\ud559.\uc870\uacbd\ud559\ubd80",
         "ProfessorNames": "\uae40\uc7ac\uc6c5",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "29",
@@ -108,6 +120,7 @@
         "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
+        "Grade": "1",
         "Gubun": "\uad50\uc591",
         "SubjectName": "\ub300\ud559\uae00\uc4f0\uae30",
         "SubjectCode": "CLTR0205",
@@ -115,6 +128,8 @@
         "ClassDivideNumber": "019",
         "EstablishedUniversity": "\ub18d\uc5c5\uc0dd\uba85\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc0b0\ub9bc\uacfc\ud559.\uc870\uacbd\ud559\ubd80",
+        "SearchUniversity": "\ub18d\uc5c5\uc0dd\uba85\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc0b0\ub9bc\uacfc\ud559.\uc870\uacbd\ud559\ubd80",
         "ProfessorNames": "\ud64d\ubbf8\uc8fc",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "29",
@@ -135,6 +150,7 @@
         "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
+        "Grade": "1",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc232\uacfc \ubb38\ud654",
         "SubjectCode": "FORE0213",
@@ -142,6 +158,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\ub18d\uc5c5\uc0dd\uba85\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc0b0\ub9bc\uacfc\ud559.\uc870\uacbd\ud559\ubd80",
+        "SearchUniversity": "\ub18d\uc5c5\uc0dd\uba85\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc0b0\ub9bc\uacfc\ud559.\uc870\uacbd\ud559\ubd80",
         "ProfessorNames": "\ud55c\uc0c1\uc5f4",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "82",
@@ -162,6 +180,7 @@
         "SubsequentSubject": "\uc232\uacfc \ubb38\ud654. \uc804\uc601\uc6b0. 2006. \ubd81\uc2a4\ud790."
     },
     {
+        "Grade": "1",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc778\uac04\uacfc \uc7ac\ub8cc",
         "SubjectCode": "FPST0202",
@@ -169,7 +188,9 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\ub18d\uc5c5\uc0dd\uba85\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc0b0\ub9bc\uacfc\ud559.\uc870\uacbd\ud559\ubd80",
-        "ProfessorNames": "\uae40\uac15\uc7ac<br/>\uc774\uc911\uba85",
+        "SearchUniversity": "\ub18d\uc5c5\uc0dd\uba85\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc0b0\ub9bc\uacfc\ud559.\uc870\uacbd\ud559\ubd80",
+        "ProfessorNames": "\uae40\uac15\uc7ac,\uc774\uc911\uba85",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "84",
         "ApplicantsCurrent": "80",
@@ -189,6 +210,7 @@
         "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
+        "Grade": "1",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc870\uacbd\ud559\uc6d0\ub860",
         "SubjectCode": "LARC0211",
@@ -196,6 +218,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\ub18d\uc5c5\uc0dd\uba85\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc0b0\ub9bc\uacfc\ud559.\uc870\uacbd\ud559\ubd80",
+        "SearchUniversity": "\ub18d\uc5c5\uc0dd\uba85\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc0b0\ub9bc\uacfc\ud559.\uc870\uacbd\ud559\ubd80",
         "ProfessorNames": "\uc5c4\uc815\ud76c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "84",

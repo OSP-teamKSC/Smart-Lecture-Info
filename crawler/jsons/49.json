@@ -1,5 +1,6 @@
 [
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc778\uc801\uc790\uc6d0\uad00\ub9ac\ub860",
         "SubjectCode": "MGMT0202",
@@ -7,6 +8,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\ud5c8\ubb38\uad6c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "58",
@@ -27,6 +30,7 @@
         "SubsequentSubject": "\uacbd\uc601\uc804\ub7b5\ub860, \uacbd\uc601\uc138\ubbf8\ub098"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc778\uc801\uc790\uc6d0\uad00\ub9ac\ub860",
         "SubjectCode": "MGMT0202",
@@ -34,6 +38,8 @@
         "ClassDivideNumber": "002",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\ud5c8\ubb38\uad6c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "51",
@@ -54,6 +60,7 @@
         "SubsequentSubject": "\uacbd\uc601\uc804\ub7b5\ub860, \uacbd\uc601\uc138\ubbf8\ub098"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc778\uc801\uc790\uc6d0\uad00\ub9ac\ub860",
         "SubjectCode": "MGMT0202",
@@ -61,6 +68,8 @@
         "ClassDivideNumber": "003",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc70c\ub9ac\uc554 \ub2e4\ub2c8\uc5d8 \ud6c8\uc138\ucee4",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "67",
@@ -81,6 +90,7 @@
         "SubsequentSubject": "None"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc778\uc801\uc790\uc6d0\uad00\ub9ac\ub860",
         "SubjectCode": "MGMT0202",
@@ -88,6 +98,8 @@
         "ClassDivideNumber": "004",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc774\ud658\uc6b0",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "66",
@@ -108,6 +120,7 @@
         "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc778\uc801\uc790\uc6d0\uad00\ub9ac\ub860",
         "SubjectCode": "MGMT0202",
@@ -115,6 +128,8 @@
         "ClassDivideNumber": "005",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc774\ud658\uc6b0",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "68",
@@ -135,13 +150,16 @@
         "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uc870\uc9c1\ud589\uc704\ub860",
         "SubjectCode": "MGMT0203",
         "ClassCode": "MGMT0203-001",
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\ubc31\uc724\uc815",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "59",
@@ -162,13 +180,16 @@
         "SubsequentSubject": "- \uacbd\uc601 \uc870\uc9c1\ub860, \uc778\uc801\uc790\uc6d0\uad00\ub9ac"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uc870\uc9c1\ud589\uc704\ub860",
         "SubjectCode": "MGMT0203",
         "ClassCode": "MGMT0203-002",
         "ClassDivideNumber": "002",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\ubc31\uc724\uc815",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "58",
@@ -189,13 +210,16 @@
         "SubsequentSubject": "- \uacbd\uc601 \uc870\uc9c1\ub860, \uc778\uc801\uc790\uc6d0\uad00\ub9ac"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uc870\uc9c1\ud589\uc704\ub860",
         "SubjectCode": "MGMT0203",
         "ClassCode": "MGMT0203-003",
         "ClassDivideNumber": "003",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uae40\uacbd\uc11d",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "60",
@@ -216,13 +240,16 @@
         "SubsequentSubject": "\uacbd\uc601\uc870\uc9c1\ub860, \uc778\uc801\uc790\uc6d0\uad00\ub9ac\ub860, \uacbd\uc601\uc804\ub7b5"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uc870\uc9c1\ud589\uc704\ub860",
         "SubjectCode": "MGMT0203",
         "ClassCode": "MGMT0203-004",
         "ClassDivideNumber": "004",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uae40\uacbd\uc11d",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "58",
@@ -243,13 +270,16 @@
         "SubsequentSubject": "\uacbd\uc601\uc870\uc9c1\ub860, \uc778\uc801\uc790\uc6d0\uad00\ub9ac\ub860, \uacbd\uc601\uc804\ub7b5"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uc870\uc9c1\ud589\uc704\ub860",
         "SubjectCode": "MGMT0203",
         "ClassCode": "MGMT0203-005",
         "ClassDivideNumber": "005",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc70c\ub9ac\uc554 \ub2e4\ub2c8\uc5d8 \ud6c8\uc138\ucee4",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "60",
@@ -270,13 +300,16 @@
         "SubsequentSubject": "None"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uc870\uc9c1\ud589\uc704\ub860",
         "SubjectCode": "MGMT0203",
         "ClassCode": "MGMT0203-006",
         "ClassDivideNumber": "006",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\ucc28\uc6b4\uc544",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "57",
@@ -297,13 +330,16 @@
         "SubsequentSubject": "/"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uc870\uc9c1\ud589\uc704\ub860",
         "SubjectCode": "MGMT0203",
         "ClassCode": "MGMT0203-007",
         "ClassDivideNumber": "007",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\ucc28\uc6b4\uc544",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "25",
@@ -324,13 +360,16 @@
         "SubsequentSubject": " "
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uc870\uc9c1\ud589\uc704\ub860",
         "SubjectCode": "MGMT0203",
         "ClassCode": "MGMT0203-008",
         "ClassDivideNumber": "008",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\ucc28\ud64d\ub82c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "59",
@@ -351,6 +390,7 @@
         "SubsequentSubject": "\uacbd\uc601\uc870\uc9c1\ub860, \uc778\uc801\uc790\uc6d0\uad00\ub9ac"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ubca4\ucc98\ucc3d\uc5c5\ub860",
         "SubjectCode": "MGMT0207",
@@ -358,6 +398,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\ucc28\ud64d\ub82c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "46",
@@ -378,6 +420,7 @@
         "SubsequentSubject": "\uacbd\uc601\uc804\ub7b5"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uae30\uc220\uacbd\uc601\ub860",
         "SubjectCode": "MGMT0208",
@@ -385,6 +428,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc11c\uc815\ud574",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "42",
@@ -405,6 +450,7 @@
         "SubsequentSubject": "\uae30\uc220\ud601\uc2e0\uc774\ub860, \uae30\uc220\uc0ac\uc5c5\ud654, \uc2e0\uc81c\ud488\uac1c\ubc1c"
     },
     {
+        "Grade": "1",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uacbd\uc601\uc218\ud559",
         "SubjectCode": "MGMT0209",
@@ -412,6 +458,8 @@
         "ClassDivideNumber": "004",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\ubb38\uc120\uc815",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "52",
@@ -432,6 +480,7 @@
         "SubsequentSubject": "\uacbd\uc601\ud1b5\uacc4, \uacbd\uc601\uacfc\ud559, \uc6b4\uc601\uad00\ub9ac"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ud22c\uc790\ub860",
         "SubjectCode": "MGMT0212",
@@ -439,6 +488,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uae40\uc0c1\ubc30",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "65",
@@ -459,6 +510,7 @@
         "SubsequentSubject": "\uae08\uc735\ud30c\uc0dd\uc0c1\ud488\ub860"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ud22c\uc790\ub860",
         "SubjectCode": "MGMT0212",
@@ -466,6 +518,8 @@
         "ClassDivideNumber": "002",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uae40\uc0c1\ubc30",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "64",
@@ -486,6 +540,7 @@
         "SubsequentSubject": "\uae08\uc735\ud30c\uc0dd\uc0c1\ud488\ub860"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ud22c\uc790\ub860",
         "SubjectCode": "MGMT0212",
@@ -493,6 +548,8 @@
         "ClassDivideNumber": "003",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc774\uc21c\ud76c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "55",
@@ -513,6 +570,7 @@
         "SubsequentSubject": "\uc790\uc0b0\uc6b4\uc6a9/\uae08\uc735\ud30c\uc0dd\ub860"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ud22c\uc790\ub860",
         "SubjectCode": "MGMT0212",
@@ -520,6 +578,8 @@
         "ClassDivideNumber": "004",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc774\uc21c\ud76c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "66",
@@ -540,6 +600,7 @@
         "SubsequentSubject": "\uc790\uc0b0\uc6b4\uc6a9/\uae08\uc735\ud30c\uc0dd\ub860"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uae08\uc735\uae30\uad00\uacbd\uc601\ub860",
         "SubjectCode": "MGMT0215",
@@ -547,6 +608,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc774\uc2dc\ud65c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "61",
@@ -567,6 +630,7 @@
         "SubsequentSubject": "\ud30c\uc0dd\uc0c1\ud488\ub860, \uc790\ubcf8\uc2dc\uc7a5\ub860"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uae08\uc735\uae30\uad00\uacbd\uc601\ub860",
         "SubjectCode": "MGMT0215",
@@ -574,6 +638,8 @@
         "ClassDivideNumber": "002",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc774\uc2dc\ud65c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "54",
@@ -594,6 +660,7 @@
         "SubsequentSubject": "\ud30c\uc0dd\uc0c1\ud488\ub860, \uc790\ubcf8\uc2dc\uc7a5\ub860"
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uae08\uc735\ud559\uc6d0\ub860",
         "SubjectCode": "MGMT0216",
@@ -601,6 +668,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\ubc15\ucc9c\uc2dd",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "67",
@@ -621,6 +690,7 @@
         "SubsequentSubject": "\uc7ac\ubb34\uad00\ub9ac"
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uae08\uc735\ud559\uc6d0\ub860",
         "SubjectCode": "MGMT0216",
@@ -628,6 +698,8 @@
         "ClassDivideNumber": "002",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\ubc15\ucc9c\uc2dd",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "69",
@@ -648,6 +720,7 @@
         "SubsequentSubject": "\uc7ac\ubb34\uad00\ub9ac"
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uae08\uc735\ud559\uc6d0\ub860",
         "SubjectCode": "MGMT0216",
@@ -655,6 +728,8 @@
         "ClassDivideNumber": "003",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uae40\uc131\ud658",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "27",
@@ -675,6 +750,7 @@
         "SubsequentSubject": " "
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uae08\uc735\ud559\uc6d0\ub860",
         "SubjectCode": "MGMT0216",
@@ -682,6 +758,8 @@
         "ClassDivideNumber": "005",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc124\uc724",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "62",
@@ -702,6 +780,7 @@
         "SubsequentSubject": "\uc7ac\ubb34\uad00\ub9ac \ud22c\uc790\ub860"
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uae08\uc735\ud559\uc6d0\ub860",
         "SubjectCode": "MGMT0216",
@@ -709,6 +788,8 @@
         "ClassDivideNumber": "006",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc124\uc724",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "66",
@@ -729,6 +810,7 @@
         "SubsequentSubject": "\uc7ac\ubb34\uad00\ub9ac \ud22c\uc790\ub860"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc7ac\ubb34\uc124\uacc4",
         "SubjectCode": "MGMT0218",
@@ -736,6 +818,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc774\uc2dc\ud65c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "38",
@@ -756,6 +840,7 @@
         "SubsequentSubject": "\uc790\uc0b0\uc6b4\uc6a9"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ube44\uc988\ub2c8\uc2a4\ucee4\ubba4\ub2c8\ucf00\uc774\uc158",
         "SubjectCode": "MGMT0219",
@@ -763,6 +848,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uae40\uc0c1\ud604",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "64",
@@ -783,13 +870,16 @@
         "SubsequentSubject": "\ub2e4\uc591\ud55c \ube44\uc988\ub2c8\uc2a4 \uc804\uacf5\uacfc\ubaa9"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\ub9c8\ucf00\ud305",
         "SubjectCode": "MGMT0221",
         "ClassCode": "MGMT0221-001",
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc1a1\uc885\ud638",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "57",
@@ -810,13 +900,16 @@
         "SubsequentSubject": "\uc18c\ube44\uc790\ud589\ub3d9\ub860"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\ub9c8\ucf00\ud305",
         "SubjectCode": "MGMT0221",
         "ClassCode": "MGMT0221-002",
         "ClassDivideNumber": "002",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc1a1\uc885\ud638",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "59",
@@ -837,13 +930,16 @@
         "SubsequentSubject": "\uc18c\ube44\uc790\ud589\ub3d9\ub860"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\ub9c8\ucf00\ud305",
         "SubjectCode": "MGMT0221",
         "ClassCode": "MGMT0221-003",
         "ClassDivideNumber": "003",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uac15\ubcf4\ud604",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "58",
@@ -864,13 +960,16 @@
         "SubsequentSubject": "\uae30\uc5c5\uc724\ub9ac"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\ub9c8\ucf00\ud305",
         "SubjectCode": "MGMT0221",
         "ClassCode": "MGMT0221-004",
         "ClassDivideNumber": "004",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uac15\ubcf4\ud604",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "59",
@@ -891,13 +990,16 @@
         "SubsequentSubject": "\uae30\uc5c5\uc724\ub9ac"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\ub9c8\ucf00\ud305",
         "SubjectCode": "MGMT0221",
         "ClassCode": "MGMT0221-005",
         "ClassDivideNumber": "005",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uae40\ud55c\uad6c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "59",
@@ -918,13 +1020,16 @@
         "SubsequentSubject": "\uc18c\ube44\uc790\ud589\ub3d9\ub860, \ub9c8\ucf00\ud305\uc870\uc0ac\ub860"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\ub9c8\ucf00\ud305",
         "SubjectCode": "MGMT0221",
         "ClassCode": "MGMT0221-006",
         "ClassDivideNumber": "006",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uae40\ud55c\uad6c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "59",
@@ -945,13 +1050,16 @@
         "SubsequentSubject": "\uc18c\ube44\uc790\ud589\ub3d9\ub860, \ub9c8\ucf00\ud305\uc870\uc0ac\ub860"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\ub9c8\ucf00\ud305",
         "SubjectCode": "MGMT0221",
         "ClassCode": "MGMT0221-007",
         "ClassDivideNumber": "007",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uae40\ud601\uc218",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "36",
@@ -972,13 +1080,16 @@
         "SubsequentSubject": "MGMT222, MGMT223, MGMT224"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\ub9c8\ucf00\ud305",
         "SubjectCode": "MGMT0221",
         "ClassCode": "MGMT0221-008",
         "ClassDivideNumber": "008",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc624\ud55c\ub098",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "56",
@@ -999,6 +1110,7 @@
         "SubsequentSubject": "Marketing Research, Consumer Behavior, Service Marketing"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uad11\uace0\ub860",
         "SubjectCode": "MGMT0222",
@@ -1006,6 +1118,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uae40\ud601\uc218",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "43",
@@ -1026,6 +1140,7 @@
         "SubsequentSubject": "Other marketing courses"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uad11\uace0\ub860",
         "SubjectCode": "MGMT0222",
@@ -1033,6 +1148,8 @@
         "ClassDivideNumber": "002",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uae40\ud601\uc218",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "35",
@@ -1053,6 +1170,7 @@
         "SubsequentSubject": "Other marketing courses"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ub9c8\ucf00\ud305\uc870\uc0ac\ub860",
         "SubjectCode": "MGMT0223",
@@ -1060,6 +1178,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc624\ud55c\ub098",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "43",
@@ -1080,6 +1200,7 @@
         "SubsequentSubject": "\uace0\uae09\uacbd\uc601\ud1b5\uacc4"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ub9c8\ucf00\ud305\uc870\uc0ac\ub860",
         "SubjectCode": "MGMT0223",
@@ -1087,6 +1208,8 @@
         "ClassDivideNumber": "002",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uace0\uadc0\ud55c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "22",
@@ -1107,6 +1230,7 @@
         "SubsequentSubject": "\uace0\uae09\uacbd\uc601\ud1b5\uacc4"
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc0c1\ubc95 1",
         "SubjectCode": "MGMT0228",
@@ -1114,6 +1238,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uae40\ubb38\uc7ac",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "70",
@@ -1134,13 +1260,16 @@
         "SubsequentSubject": "\ubbfc\uc0ac\uc18c\uc1a1\ubc95"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uacbd\uc601\ud1b5\uacc4",
         "SubjectCode": "MGMT0231",
         "ClassCode": "MGMT0231-001",
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uae40\ud310\uc218",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "44",
@@ -1161,13 +1290,16 @@
         "SubsequentSubject": "Operations Management"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uacbd\uc601\ud1b5\uacc4",
         "SubjectCode": "MGMT0231",
         "ClassCode": "MGMT0231-002",
         "ClassDivideNumber": "002",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uae40\ud310\uc218",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "46",
@@ -1188,13 +1320,16 @@
         "SubsequentSubject": "\uc6b4\uc601\uad00\ub9ac, \uacbd\uc601\uacfc\ud559"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uacbd\uc601\ud1b5\uacc4",
         "SubjectCode": "MGMT0231",
         "ClassCode": "MGMT0231-003",
         "ClassDivideNumber": "003",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uae40\ud310\uc218",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "43",
@@ -1215,13 +1350,16 @@
         "SubsequentSubject": "\uc6b4\uc601\uad00\ub9ac, \uacbd\uc601\uacfc\ud559"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uacbd\uc601\ud1b5\uacc4",
         "SubjectCode": "MGMT0231",
         "ClassCode": "MGMT0231-004",
         "ClassDivideNumber": "004",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc815\uc7ac\uc6b0",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "43",
@@ -1242,13 +1380,16 @@
         "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uacbd\uc601\ud1b5\uacc4",
         "SubjectCode": "MGMT0231",
         "ClassCode": "MGMT0231-005",
         "ClassDivideNumber": "005",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc774\ub3d9\ud604",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "45",
@@ -1269,13 +1410,16 @@
         "SubsequentSubject": "\uacbd\uc601\uacfc\ud559"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uacbd\uc601\ud1b5\uacc4",
         "SubjectCode": "MGMT0231",
         "ClassCode": "MGMT0231-006",
         "ClassDivideNumber": "006",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uad8c\ud61c\uc815",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "47",
@@ -1296,13 +1440,16 @@
         "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uacbd\uc601\ud1b5\uacc4",
         "SubjectCode": "MGMT0231",
         "ClassCode": "MGMT0231-007",
         "ClassDivideNumber": "007",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uad8c\ud61c\uc815",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "45",
@@ -1323,13 +1470,16 @@
         "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uacbd\uc601\ud1b5\uacc4",
         "SubjectCode": "MGMT0231",
         "ClassCode": "MGMT0231-008",
         "ClassDivideNumber": "008",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uad8c\ud61c\uc815",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "45",
@@ -1350,13 +1500,16 @@
         "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uacbd\uc601\ud1b5\uacc4",
         "SubjectCode": "MGMT0231",
         "ClassCode": "MGMT0231-009",
         "ClassDivideNumber": "009",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uad8c\ud61c\uc815",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "44",
@@ -1377,6 +1530,7 @@
         "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ubb3c\ub958\uad00\ub9ac",
         "SubjectCode": "MGMT0236",
@@ -1384,6 +1538,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uae40\ucc44\ubcf5",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "45",
@@ -1404,6 +1560,7 @@
         "SubsequentSubject": "\uacbd\uc601\uacfc\ud559"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ubb3c\ub958\uad00\ub9ac",
         "SubjectCode": "MGMT0236",
@@ -1411,6 +1568,8 @@
         "ClassDivideNumber": "002",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uae40\ucc44\ubcf5",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "40",
@@ -1431,6 +1590,7 @@
         "SubsequentSubject": "\uacbd\uc601\uacfc\ud559"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ubb3c\ub958\uad00\ub9ac",
         "SubjectCode": "MGMT0236",
@@ -1438,6 +1598,8 @@
         "ClassDivideNumber": "003",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc815\uc7ac\uc6b0",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "36",
@@ -1458,6 +1620,7 @@
         "SubsequentSubject": "Service management"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ubb3c\ub958\uad00\ub9ac",
         "SubjectCode": "MGMT0236",
@@ -1465,6 +1628,8 @@
         "ClassDivideNumber": "004",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\ubc15\uc8fc\ud64d",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "50",
@@ -1485,13 +1650,16 @@
         "SubsequentSubject": "\uacbd\uc601\uc804\ub7b5\ub860, \uae30\uc220\uacbd\uc601\ub860, \ubca4\ucc98\ucc3d\uc5c5\ub860, \uae00\ub85c\ubc8c\uacbd\uc601\ub860, \uacbd\uc601\uc138\ubbf8\ub098 \ub4f1"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uc7ac\ubb34\ud68c\uacc4\uc6d0\ub860",
         "SubjectCode": "MGMT0310",
         "ClassCode": "MGMT0310-001",
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uad8c\uc120\uad6d",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "56",
@@ -1512,13 +1680,16 @@
         "SubsequentSubject": "\uc911\uae09\ud68c\uacc4"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uc7ac\ubb34\ud68c\uacc4\uc6d0\ub860",
         "SubjectCode": "MGMT0310",
         "ClassCode": "MGMT0310-002",
         "ClassDivideNumber": "002",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\ubc15\uc120\uc601",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "59",
@@ -1539,13 +1710,16 @@
         "SubsequentSubject": "\uc911\uae09\ud68c\uacc4"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uc7ac\ubb34\ud68c\uacc4\uc6d0\ub860",
         "SubjectCode": "MGMT0310",
         "ClassCode": "MGMT0310-003",
         "ClassDivideNumber": "003",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uae40\uacbd\ud654",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "59",
@@ -1566,13 +1740,16 @@
         "SubsequentSubject": "\uc911\uae09\ud68c\uacc4"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uc7ac\ubb34\ud68c\uacc4\uc6d0\ub860",
         "SubjectCode": "MGMT0310",
         "ClassCode": "MGMT0310-004",
         "ClassDivideNumber": "004",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uae40\uacbd\ud654",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "60",
@@ -1593,13 +1770,16 @@
         "SubsequentSubject": "\uc911\uae09\ud68c\uacc4"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uc7ac\ubb34\ud68c\uacc4\uc6d0\ub860",
         "SubjectCode": "MGMT0310",
         "ClassCode": "MGMT0310-005",
         "ClassDivideNumber": "005",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc11c\uc815\ud654",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "59",
@@ -1620,13 +1800,16 @@
         "SubsequentSubject": "\uc911\uae09\ud68c\uacc4"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uc7ac\ubb34\ud68c\uacc4\uc6d0\ub860",
         "SubjectCode": "MGMT0310",
         "ClassCode": "MGMT0310-006",
         "ClassDivideNumber": "006",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc11c\uc815\ud654",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "59",
@@ -1647,13 +1830,16 @@
         "SubsequentSubject": "\uc911\uae09\ud68c\uacc4"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uc7ac\ubb34\ud68c\uacc4\uc6d0\ub860",
         "SubjectCode": "MGMT0310",
         "ClassCode": "MGMT0310-007",
         "ClassDivideNumber": "007",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc815\ub3d9\uc9c4",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "58",
@@ -1674,13 +1860,16 @@
         "SubsequentSubject": "\uc911\uae09\ud68c\uacc4"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "2",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uc7ac\ubb34\ud68c\uacc4\uc6d0\ub860",
         "SubjectCode": "MGMT0310",
         "ClassCode": "MGMT0310-008",
         "ClassDivideNumber": "008",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc774\uae30\uc138",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "31",
@@ -1701,6 +1890,7 @@
         "SubsequentSubject": "\uc911\uae09\ud68c\uacc4"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc7ac\ubb34\uc81c\ud45c\ubd84\uc11d",
         "SubjectCode": "MGMT0312",
@@ -1708,6 +1898,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uae40\uacbd\ud654",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "63",
@@ -1728,6 +1920,7 @@
         "SubsequentSubject": "\uc911\uae09\ud68c\uacc4 \ub4f1"
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc6d0\uac00\uad00\ub9ac\ud68c\uacc4\uc6d0\ub860",
         "SubjectCode": "MGMT0320",
@@ -1735,6 +1928,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uad6c\uad11\uc8fc",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "36",
@@ -1755,6 +1950,7 @@
         "SubsequentSubject": "Not applicable"
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc6d0\uac00\uad00\ub9ac\ud68c\uacc4\uc6d0\ub860",
         "SubjectCode": "MGMT0320",
@@ -1762,6 +1958,8 @@
         "ClassDivideNumber": "002",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uad6c\uad11\uc8fc",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "27",
@@ -1782,6 +1980,7 @@
         "SubsequentSubject": "Not applicable"
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc6d0\uac00\uad00\ub9ac\ud68c\uacc4\uc6d0\ub860",
         "SubjectCode": "MGMT0320",
@@ -1789,6 +1988,8 @@
         "ClassDivideNumber": "003",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uae40\uacbd\ud654",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "69",
@@ -1809,6 +2010,7 @@
         "SubsequentSubject": "\uc6d0\uac00\uad00\ub9ac\ud68c\uacc4 / \uc6d0\uac00\ud68c\uacc4\uc5f0\uc2b5"
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc6d0\uac00\uad00\ub9ac\ud68c\uacc4\uc6d0\ub860",
         "SubjectCode": "MGMT0320",
@@ -1816,6 +2018,8 @@
         "ClassDivideNumber": "004",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc815\ub3d9\uc9c4",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "70",
@@ -1836,6 +2040,7 @@
         "SubsequentSubject": "\uc6d0\uac00\uad00\ub9ac\ud68c\uacc4, \uc6d0\uac00\ud68c\uacc4\uc5f0\uc2b5"
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc6d0\uac00\uad00\ub9ac\ud68c\uacc4\uc6d0\ub860",
         "SubjectCode": "MGMT0320",
@@ -1843,6 +2048,8 @@
         "ClassDivideNumber": "005",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc815\ub3d9\uc9c4",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "69",
@@ -1863,6 +2070,7 @@
         "SubsequentSubject": "\uc6d0\uac00\uad00\ub9ac\ud68c\uacc4, \uc6d0\uac00\ud68c\uacc4\uc5f0\uc2b5"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uace0\uae09\uc7ac\ubb34\ud68c\uacc4",
         "SubjectCode": "MGMT0323",
@@ -1870,6 +2078,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc815\uacbd\ucca0",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "68",
@@ -1890,6 +2100,7 @@
         "SubsequentSubject": "\uace0\uae09\ud68c\uacc4"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uace0\uae09\uc7ac\ubb34\ud68c\uacc4",
         "SubjectCode": "MGMT0323",
@@ -1897,6 +2108,8 @@
         "ClassDivideNumber": "002",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc774\uae30\uc138",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "49",
@@ -1917,6 +2130,7 @@
         "SubsequentSubject": "\uace0\uae09\ud68c\uacc4"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc11c\ube44\uc2a4\uacbd\uc601",
         "SubjectCode": "MGMT0331",
@@ -1924,6 +2138,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc774\ub3d9\ud604",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "38",
@@ -1944,6 +2160,7 @@
         "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc11c\ube44\uc2a4\uacbd\uc601",
         "SubjectCode": "MGMT0331",
@@ -1951,6 +2168,8 @@
         "ClassDivideNumber": "002",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc774\ub3d9\ud604",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "23",
@@ -1971,6 +2190,7 @@
         "SubsequentSubject": "None"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ub370\uc774\ud130\ubca0\uc774\uc2a4\uc785\ubb38",
         "SubjectCode": "MGMT0401",
@@ -1978,6 +2198,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc11c\ucc3d\uad50",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "19",
@@ -1998,6 +2220,7 @@
         "SubsequentSubject": "BI \uc735\ud569\uc804\uacf5 \uac1c\uc124 \uacfc\ubaa9\ub4e4"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ub370\uc774\ud130\ubca0\uc774\uc2a4\uc785\ubb38",
         "SubjectCode": "MGMT0401",
@@ -2005,6 +2228,8 @@
         "ClassDivideNumber": "002",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc774\uc0c8\ub86c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "22",
@@ -2025,6 +2250,7 @@
         "SubsequentSubject": "Data analysis ,Visualization"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ub370\uc774\ud130\ubca0\uc774\uc2a4\uc785\ubb38",
         "SubjectCode": "MGMT0401",
@@ -2032,6 +2258,8 @@
         "ClassDivideNumber": "003",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc774\uc0c8\ub86c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "7",
@@ -2052,6 +2280,7 @@
         "SubsequentSubject": "Data analysis ,Visualization"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ub370\uc774\ud130\ubca0\uc774\uc2a4\uc785\ubb38",
         "SubjectCode": "MGMT0401",
@@ -2059,6 +2288,8 @@
         "ClassDivideNumber": "004",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\ubc15\ud604\uc120",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "43",
@@ -2079,6 +2310,7 @@
         "SubsequentSubject": "\uacbd\uc601\ub370\uc774\ud130\uc2dc\uac01\ud654, \ub370\uc774\ud130\ubd84\uc11d \ub4f1"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ub370\uc774\ud130\ubca0\uc774\uc2a4\uc785\ubb38",
         "SubjectCode": "MGMT0401",
@@ -2086,6 +2318,8 @@
         "ClassDivideNumber": "005",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\ubc15\ud604\uc120",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "42",
@@ -2106,6 +2340,7 @@
         "SubsequentSubject": "\uacbd\uc601\ub370\uc774\ud130\uc2dc\uac01\ud654, \ub370\uc774\ud130\ubd84\uc11d \ub4f1"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uace0\uae09\uad00\ub9ac\ud68c\uacc4",
         "SubjectCode": "MGMT0416",
@@ -2113,6 +2348,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc815\ub3d9\uc9c4",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "69",
@@ -2133,6 +2370,7 @@
         "SubsequentSubject": "\uc6d0\uac00\ud68c\uacc4\uc5f0\uc2b5"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc138\ubb34\ud68c\uacc4 1",
         "SubjectCode": "MGMT0417",
@@ -2140,6 +2378,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uad8c\uc21c\ucc3d",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "66",
@@ -2160,6 +2400,7 @@
         "SubsequentSubject": "\uc138\ubb34\ud68c\uacc42"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc138\ubb34\ud68c\uacc4\uc5f0\uc2b5",
         "SubjectCode": "MGMT0421",
@@ -2167,6 +2408,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uc11c\uc815\ud654",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "68",
@@ -2187,6 +2430,7 @@
         "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc815\ubd80 \ubc0f \ube44\uc601\ub9ac\ud68c\uacc4",
         "SubjectCode": "MGMT0422",
@@ -2194,6 +2438,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uad8c\uc120\uad6d",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "33",
@@ -2214,6 +2460,7 @@
         "SubsequentSubject": "."
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc804\uc790\uae08\uc735\uc758 \uc774\ud574",
         "SubjectCode": "MGMT0436",
@@ -2221,6 +2468,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uad8c\uc900\uc5fd",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "63",
@@ -2241,6 +2490,7 @@
         "SubsequentSubject": "n/a"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc804\uc790\uc0c1\uac70\ub798",
         "SubjectCode": "MGMT0440",
@@ -2248,6 +2498,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uae40\uc0c1\ud604",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "66",
@@ -2268,6 +2520,7 @@
         "SubsequentSubject": "\uacbd\uc601\uc815\ubcf4 \uad00\ub828 \uc138\ubbf8\ub098"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc804\uc790\uc0c1\uac70\ub798",
         "SubjectCode": "MGMT0440",
@@ -2275,6 +2528,8 @@
         "ClassDivideNumber": "002",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\uae40\uc0c1\ud604",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "34",
@@ -2295,6 +2550,7 @@
         "SubsequentSubject": "Database and Business Data Analysis"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc804\uc790\uc0c1\uac70\ub798",
         "SubjectCode": "MGMT0440",
@@ -2302,6 +2558,8 @@
         "ClassDivideNumber": "003",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\ubc15\ud604\uc120",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "66",
@@ -2322,6 +2580,7 @@
         "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc804\uc790\uc0c1\uac70\ub798",
         "SubjectCode": "MGMT0440",
@@ -2329,6 +2588,8 @@
         "ClassDivideNumber": "004",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc601\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc601\ud559\ubd80",
         "ProfessorNames": "\ubc15\ud604\uc120",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "68",

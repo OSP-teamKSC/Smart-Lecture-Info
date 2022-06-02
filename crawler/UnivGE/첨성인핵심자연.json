@@ -1,0 +1,69 @@
+{
+    "timestamp": "2022-05-18T00:50:05.511",
+    "success": true,
+    "code": null,
+    "msg": null,
+    "data": {
+        "option": {
+            "reqId": null,
+            "serviceId": null,
+            "key": "STCU0012",
+            "upperKey": "STCU001100028",
+            "searchParam": null,
+            "listCode": false,
+            "attrs": [],
+            "codes": [
+                {
+                    "codeId": "STCU001200006",
+                    "codeNm": "\uc218\ub9ac",
+                    "upperCodeId": "STCU001100028",
+                    "upperCodeNm": "\uc790\uc5f0\uacfc\ud559",
+                    "codeAbbnm": null,
+                    "upperCodeAbbnm": null,
+                    "useYn": "Y",
+                    "orderIndex": 16020100,
+                    "lvl": 0,
+                    "opt1": null,
+                    "opt2": null,
+                    "opt3": null,
+                    "opt4": null,
+                    "opt5": null
+                },
+                {
+                    "codeId": "STCU001200007",
+                    "codeNm": "\uae30\ucd08\uacfc\ud559",
+                    "upperCodeId": "STCU001100028",
+                    "upperCodeNm": "\uc790\uc5f0\uacfc\ud559",
+                    "codeAbbnm": null,
+                    "upperCodeAbbnm": null,
+                    "useYn": "Y",
+                    "orderIndex": 16020200,
+                    "lvl": 0,
+                    "opt1": null,
+                    "opt2": null,
+                    "opt3": null,
+                    "opt4": null,
+                    "opt5": null
+                },
+                {
+                    "codeId": "STCU001200008",
+                    "codeNm": "\uc790\uc5f0\uacfc\ud658\uacbd",
+                    "upperCodeId": "STCU001100028",
+                    "upperCodeNm": "\uc790\uc5f0\uacfc\ud559",
+                    "codeAbbnm": null,
+                    "upperCodeAbbnm": null,
+                    "useYn": "Y",
+                    "orderIndex": 16020300,
+                    "lvl": 0,
+                    "opt1": null,
+                    "opt2": null,
+                    "opt3": null,
+                    "opt4": null,
+                    "opt5": null
+                }
+            ]
+        },
+        "popup": null
+    },
+    "statusCode": 200
+}

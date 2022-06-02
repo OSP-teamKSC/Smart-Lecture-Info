@@ -1,5 +1,6 @@
 [
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc2dd\ud488\ubbf8\uc0dd\ubb3c\ud559 \ubc0f \uc2e4\ud5d8",
         "SubjectCode": "BIOF0303",
@@ -7,6 +8,8 @@
         "ClassDivideNumber": "002",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\ucd5c\ucc2c\uc775",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "20",
@@ -27,6 +30,7 @@
         "SubsequentSubject": " "
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc2dd\ud488\ubbf8\uc0dd\ubb3c\ud559 \ubc0f \uc2e4\ud5d8",
         "SubjectCode": "BIOF0303",
@@ -34,6 +38,8 @@
         "ClassDivideNumber": "003",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\ucd5c\ucc2c\uc775",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "20",
@@ -54,6 +60,7 @@
         "SubsequentSubject": " "
     },
     {
+        "Grade": -1,
         "Gubun": "\uad50\uc591",
         "SubjectName": "\ub3c5\uc77c\uc5b41",
         "SubjectCode": "CLTR0024",
@@ -61,6 +68,8 @@
         "ClassDivideNumber": "004",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\uae40\uc131\ud76c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "49",
@@ -81,6 +90,7 @@
         "SubsequentSubject": "\ub3c5\uc77c\uc5b42, \ub3c5\uc77c\uc5b4\ud68c\ud6541"
     },
     {
+        "Grade": -1,
         "Gubun": "\uad50\uc591",
         "SubjectName": "\uacbd\uc601\uc758\uc774\ud574",
         "SubjectCode": "CLTR0085",
@@ -88,6 +98,8 @@
         "ClassDivideNumber": "011",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\ub0a8\uc7a5\ud604",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "56",
@@ -108,6 +120,7 @@
         "SubsequentSubject": "\uacbd\uc601\uad00\ub828 \uad50\uacfc\ubaa9"
     },
     {
+        "Grade": "1",
         "Gubun": "\uad50\uc591",
         "SubjectName": "\ubb38\ud654\uc778\ub958\ud559\uc758\uc774\ud574",
         "SubjectCode": "CLTR0094",
@@ -115,6 +128,8 @@
         "ClassDivideNumber": "004",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\uc815\uc720\uc9c4",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "60",
@@ -135,6 +150,7 @@
         "SubsequentSubject": "\ubb38\ud654\uc758 \uc774\ud574"
     },
     {
+        "Grade": "1",
         "Gubun": "\uad50\uc591",
         "SubjectName": "\uc77c\ubc18\uc0dd\uba85\uacfc\ud559\u2160",
         "SubjectCode": "CLTR0246",
@@ -142,6 +158,8 @@
         "ClassDivideNumber": "021",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\ucd5c\ucc2c\uc775",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "53",
@@ -162,6 +180,7 @@
         "SubsequentSubject": "\uc2dd\ud488\ubbf8\uc0dd\ubb3c\ud559, \uc2dd\ud488\uc0dd\ubb3c\uacf5\ud559, \uc77c\ubc18\uc0dd\uba85\uacfc\ud559II"
     },
     {
+        "Grade": -1,
         "Gubun": "\uad50\uc591",
         "SubjectName": "\uc74c\uc2dd\ubb38\ud654\uc640 \uac74\uac15",
         "SubjectCode": "CLTR0622",
@@ -169,6 +188,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\ubc15\ubaa8\ub77c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "28",
@@ -189,6 +210,7 @@
         "SubsequentSubject": "\uc678\uc2dd\ubb38\ud654\ub860"
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc2dd\ud488\uac00\uacf5\ud559",
         "SubjectCode": "FOOD0328",
@@ -196,6 +218,8 @@
         "ClassDivideNumber": "002",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\uae40\uc885\uad6d",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "43",
@@ -216,6 +240,7 @@
         "SubsequentSubject": "\uac74\uac15\uae30\ub2a5\uc131\uc2dd\ud488\ud559"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc2dd\ud488\uc704\uc0dd\ud559",
         "SubjectCode": "FOOD0571",
@@ -223,6 +248,8 @@
         "ClassDivideNumber": "002",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\ucd5c\ucc2c\uc775",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "48",
@@ -243,6 +270,7 @@
         "SubsequentSubject": " "
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc2dd\ud488\uc0dd\ubb3c\uacf5\ud559",
         "SubjectCode": "FOOD0585",
@@ -250,6 +278,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\ucd5c\ucc2c\uc775",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "39",
@@ -270,6 +300,7 @@
         "SubsequentSubject": " "
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ud55c\uad6d\uc804\ud1b5\uc870\ub9ac \ubc0f \uc2e4\uc2b5",
         "SubjectCode": "FOSE0212",
@@ -277,6 +308,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\uae40\uacb0\ud638",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "24",
@@ -297,6 +330,7 @@
         "SubsequentSubject": "\uace0\uae09\ud55c\uad6d\uc694\ub9ac \ubc0f \uad81\uc911\uc694\ub9ac"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ub2e8\uccb4\uae09\uc2dd\uad00\ub9ac",
         "SubjectCode": "FOSE0216",
@@ -304,6 +338,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\ubc15\ubaa8\ub77c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "30",
@@ -324,6 +360,7 @@
         "SubsequentSubject": "\uc678\uc2dd\ubb38\ud654\ub860"
     },
     {
+        "Grade": "1",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc2dd\ud488\uae30\ucd08\ud654\ud559",
         "SubjectCode": "FOSE0220",
@@ -331,6 +368,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\uc815\ub450\uc5f0",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "64",
@@ -351,6 +390,7 @@
         "SubsequentSubject": "\uc2dd\ud488\ud654\ud559"
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc2dd\ud488\uae30\ucd08\ud654\ud559",
         "SubjectCode": "FOSE0220",
@@ -358,6 +398,8 @@
         "ClassDivideNumber": "002",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\uc815\ub450\uc5f0",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "28",
@@ -378,6 +420,7 @@
         "SubsequentSubject": "\uc2dd\ud488\ud654\ud559"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uac74\uac15\uae30\ub2a5\uc131\uc2dd\ud488\ud559",
         "SubjectCode": "FOSE0316",
@@ -385,6 +428,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\uae40\uc885\uad6d",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "36",
@@ -405,6 +450,7 @@
         "SubsequentSubject": "\uc2dd\ud488\ud488\uc9c8\uad00\ub9ac \ubc0f \uad00\ub2a5\ud3c9\uac00"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc2dd\ud488\ud488\uc9c8\uad00\ub9ac \ubc0f \uad00\ub2a5\ud3c9\uac00",
         "SubjectCode": "FOSE0317",
@@ -412,6 +458,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\uc774\uc218\uc6d0",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "19",
@@ -432,6 +480,7 @@
         "SubsequentSubject": "\uae30\ub2a5\uc131 \uc2dd\ud488\ud559"
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc2dd\uc74c\ub8cc\uad00\ub9ac \ubc0f \uc2e4\uc2b5",
         "SubjectCode": "FOSE0323",
@@ -439,6 +488,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\uc784\uc0c1\ud6a8",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "25",
@@ -459,6 +510,7 @@
         "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc2dd\uc74c\ub8cc\uad00\ub9ac \ubc0f \uc2e4\uc2b5",
         "SubjectCode": "FOSE0323",
@@ -466,6 +518,8 @@
         "ClassDivideNumber": "002",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\uc784\uc0c1\ud6a8",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "28",
@@ -486,6 +540,7 @@
         "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc678\uc2dd\uc0b0\uc5c5\ub9c8\ucf00\ud305",
         "SubjectCode": "FOSE0326",
@@ -493,6 +548,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\ub0a8\uc7a5\ud604",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "48",
@@ -513,6 +570,7 @@
         "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc678\uc2dd\uc18c\ube44\uc790 \ud589\ub3d9 \ubd84\uc11d \ubc0f \uc2e4\uc2b5",
         "SubjectCode": "FOSE0327",
@@ -520,6 +578,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\ub0a8\uc7a5\ud604",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "31",
@@ -540,6 +600,7 @@
         "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
+        "Grade": "1",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc2dd\uc0dd\ud65c\uacfc\ubb38\ud654",
         "SubjectCode": "FSCI0203",
@@ -547,6 +608,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\ubc15\ubaa8\ub77c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "61",
@@ -567,6 +630,7 @@
         "SubsequentSubject": "\uc678\uc2dd\ubb38\ud654\ub860"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ub3d9\uc591\uc870\ub9ac \ubc0f \uc2e4\uc2b5",
         "SubjectCode": "FSFN0305",
@@ -574,6 +638,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\uae40\uacb0\ud638",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "25",
@@ -594,6 +660,7 @@
         "SubsequentSubject": "\ucc3d\uc758\uc801\uc778 \uc870\ub9ac\ubc95\uacfc \uc870\ub9ac\uc758 \ub514\uc790\uc778 \uac1c\ubc1c"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc640\uc778\uc81c\uc870 \ubc0f \ud3c9\uac00",
         "SubjectCode": "FSFN0404",
@@ -601,6 +668,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\uc190\uc218\uc815",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "30",
@@ -621,6 +690,7 @@
         "SubsequentSubject": "\uc2dd\ud488\uac00\uacf5\ud559. \uc2dd\ud488\uc800\uc7a5\ud559"
     },
     {
+        "Grade": "1",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc870\ub9ac\uc6d0\ub9ac",
         "SubjectCode": "FSNU0428",
@@ -628,6 +698,8 @@
         "ClassDivideNumber": "002",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\uc774\uc9c0\uc740",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "66",
@@ -648,13 +720,16 @@
         "SubsequentSubject": "\uc870\ub9ac\uc2e4\uc2b5"
     },
     {
-        "Gubun": "\uad50\uc591",
+        "Grade": "3",
+        "Gubun": "\uad50\uc9c1",
         "SubjectName": "\uc870\ub9ac\uad50\uc721\ub860",
         "SubjectCode": "TCHR0447",
         "ClassCode": "TCHR0447-001",
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\uc774\uc9c0\uc740",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "5",
@@ -675,13 +750,16 @@
         "SubsequentSubject": "\uc870\ub9ac\uad50\uc7ac\uc5f0\uad6c \ubc0f \uc9c0\ub3c4\ubc95"
     },
     {
-        "Gubun": "\uad50\uc591",
+        "Grade": "4",
+        "Gubun": "\uad50\uc9c1",
         "SubjectName": "\uc870\ub9ac\ub17c\ub9ac\ubc0f\ub17c\uc220\uc9c0\ub3c4",
         "SubjectCode": "TCHR0449",
         "ClassCode": "TCHR0449-001",
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\uc2dd\ud488\uc678\uc2dd\uc0b0\uc5c5\ud559\uacfc",
         "ProfessorNames": "\uae40\uadc0\uc601",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "6",

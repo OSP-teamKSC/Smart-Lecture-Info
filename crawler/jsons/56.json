@@ -1,5 +1,6 @@
 [
     {
+        "Grade": "1",
         "Gubun": "\uad50\uc591",
         "SubjectName": "\uacfc\ud559\uc0ac\uc758\uc774\ud574",
         "SubjectCode": "CLTR0103",
@@ -7,6 +8,8 @@
         "ClassDivideNumber": "003",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc81c\ud1b5\uc0c1\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc81c\ud1b5\uc0c1\ud559\ubd80C",
         "ProfessorNames": "\uc624\ub3d9\uc6d0",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "69",
@@ -27,6 +30,7 @@
         "SubsequentSubject": "\uc790\uc5f0\uacfc\ud559 \uad00\ub828 \uad50\uc591\uacfc\ubaa9"
     },
     {
+        "Grade": "1",
         "Gubun": "\uad50\uc591",
         "SubjectName": "\uc778\ubb38\uc0ac\ud68c\uc218\ud559",
         "SubjectCode": "CLTR0242",
@@ -34,6 +38,8 @@
         "ClassDivideNumber": "003",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc81c\ud1b5\uc0c1\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc81c\ud1b5\uc0c1\ud559\ubd80C",
         "ProfessorNames": "\uae40\ud61c\uc9c4",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "69",
@@ -54,6 +60,7 @@
         "SubsequentSubject": "\uc120\ud615\ub300\uc218\ud559"
     },
     {
+        "Grade": "1",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uacbd\uc81c\uc6d0\ub860 1",
         "SubjectCode": "ECON0211",
@@ -61,6 +68,8 @@
         "ClassDivideNumber": "003",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc81c\ud1b5\uc0c1\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc81c\ud1b5\uc0c1\ud559\ubd80C",
         "ProfessorNames": "\ubc15\uc0c1\uc6b0",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "55",
@@ -81,6 +90,7 @@
         "SubsequentSubject": "\ubbf8\uc2dc\uacbd\uc81c\ud559 \uac70\uc2dc\uacbd\uc81c\ud559"
     },
     {
+        "Grade": "1",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uacbd\uc81c\ud1b5\uc0c1\uc138\ubbf8\ub0981",
         "SubjectCode": "ECON0491",
@@ -88,6 +98,8 @@
         "ClassDivideNumber": "003",
         "EstablishedUniversity": "\uacbd\uc0c1\ub300\ud559",
         "EstablishedDepartment": "\uacbd\uc81c\ud1b5\uc0c1\ud559\ubd80",
+        "SearchUniversity": "\uacbd\uc0c1\ub300\ud559",
+        "SearchDepartment": "\uacbd\uc81c\ud1b5\uc0c1\ud559\ubd80C",
         "ProfessorNames": "\ub098\uc6d0\uc900",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "27",

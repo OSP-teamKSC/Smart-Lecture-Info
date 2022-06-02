@@ -328,15 +328,15 @@ def getAllGEClasses(year=2022, season=0, withSyllabus = False, forTest = None):
     index = 0
     print('')
     Path('./jsonsge').mkdir(exist_ok=True)
-    index += getGEClass2(index,'./UnivGE/첨성인기초.json', 2022, 0,withSyllabus, forTest,'첨성인기초')
+    index += getGEClass2(index,'./UnivGE/첨성인기초.json', year, season,withSyllabus, forTest,'첨성인기초')
 
     print('첨성인핵심인문.json')
-    index += getGEClass2(index, './UnivGE/첨성인핵심인문.json', 2022, 0,withSyllabus, forTest,'첨성인핵심_인문사회')
+    index += getGEClass2(index, './UnivGE/첨성인핵심인문.json', year, season,withSyllabus, forTest,'첨성인핵심_인문사회')
 
     print('첨성인핵심자연.json')
-    index += getGEClass2(index, './UnivGE/첨성인핵심자연.json', 2022, 0,withSyllabus, forTest,'첨성인핵심_자연과학')
+    index += getGEClass2(index, './UnivGE/첨성인핵심자연.json', year, season,withSyllabus, forTest,'첨성인핵심_자연과학')
 
     print('첨성인소양.json')
-    index += getGEClass2(index, './UnivGE/첨성인소양.json', 2022, 0,withSyllabus, forTest,'첨성인소양')
+    index += getGEClass2(index, './UnivGE/첨성인소양.json', year, season,withSyllabus, forTest,'첨성인소양')
 
     print('done!')

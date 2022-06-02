@@ -1,5 +1,6 @@
 [
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "AI\uc735\ud569 \ucea1\uc2a4\ud1a4\ub514\uc790\uc778",
         "SubjectCode": "CAIB0219",
@@ -7,6 +8,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc735\ud569\ud559\ubd80",
         "EstablishedDepartment": "\uc735\ud569\ud559\ubd80 \uc778\uacf5\uc9c0\ub2a5\uc804\uacf5",
+        "SearchUniversity": "\uc735\ud569\ud559\ubd80",
+        "SearchDepartment": "\uc778\uacf5\uc9c0\ub2a5\uc804\uacf5",
         "ProfessorNames": "\uc815\ud638\uc601",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "11",
@@ -27,6 +30,7 @@
         "SubsequentSubject": "\ud574\ub2f9 \uc5c6\uc74c"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ud328\ud134\uc778\uc2dd\uae30\ucd08",
         "SubjectCode": "CAIB0221",
@@ -34,6 +38,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc735\ud569\ud559\ubd80",
         "EstablishedDepartment": "\uc735\ud569\ud559\ubd80 \uc778\uacf5\uc9c0\ub2a5\uc804\uacf5",
+        "SearchUniversity": "\uc735\ud569\ud559\ubd80",
+        "SearchDepartment": "\uc778\uacf5\uc9c0\ub2a5\uc804\uacf5",
         "ProfessorNames": "\uac15\uc7ac\ubaa8",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "9",
@@ -54,6 +60,7 @@
         "SubsequentSubject": "Deep learning, Computer vision"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ub370\uc774\ud130\ubd84\uc11d \uae30\ucd08",
         "SubjectCode": "CAIB0226",
@@ -61,6 +68,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc735\ud569\ud559\ubd80",
         "EstablishedDepartment": "\uc735\ud569\ud559\ubd80 \uc778\uacf5\uc9c0\ub2a5\uc804\uacf5",
+        "SearchUniversity": "\uc735\ud569\ud559\ubd80",
+        "SearchDepartment": "\uc778\uacf5\uc9c0\ub2a5\uc804\uacf5",
         "ProfessorNames": "\uc774\ub3d9\uaddc",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "14",
@@ -81,6 +90,7 @@
         "SubsequentSubject": "pattern recognition, machine learning, algorithms"
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc778\uacf5\uc9c0\ub2a5\uc218\ud5591",
         "SubjectCode": "CAIB0227",
@@ -88,6 +98,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc735\ud569\ud559\ubd80",
         "EstablishedDepartment": "\uc735\ud569\ud559\ubd80 \uc778\uacf5\uc9c0\ub2a5\uc804\uacf5",
+        "SearchUniversity": "\uc735\ud569\ud559\ubd80",
+        "SearchDepartment": "\uc778\uacf5\uc9c0\ub2a5\uc804\uacf5",
         "ProfessorNames": "\ub9d0\ub9ac\ud398\ub514\ub78c\ubaa8\ud55c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "15",
@@ -108,6 +120,7 @@
         "SubsequentSubject": " "
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc778\uacf5\uc9c0\ub2a5 \uae30\ucd08\uc640 \ud65c\uc6a9",
         "SubjectCode": "CAIB0228",
@@ -115,6 +128,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc735\ud569\ud559\ubd80",
         "EstablishedDepartment": "\uc735\ud569\ud559\ubd80 \uc778\uacf5\uc9c0\ub2a5\uc804\uacf5",
+        "SearchUniversity": "\uc735\ud569\ud559\ubd80",
+        "SearchDepartment": "\uc778\uacf5\uc9c0\ub2a5\uc804\uacf5",
         "ProfessorNames": "\uc774\ubbfc\ud638",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "24",
@@ -135,6 +150,7 @@
         "SubsequentSubject": "-"
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ud504\ub85c\uadf8\ub798\ubc0d \uae30\ucd08\uc640 \uc2e4\uc2b5",
         "SubjectCode": "CAIB0229",
@@ -142,6 +158,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc735\ud569\ud559\ubd80",
         "EstablishedDepartment": "\uc735\ud569\ud559\ubd80 \uc778\uacf5\uc9c0\ub2a5\uc804\uacf5",
+        "SearchUniversity": "\uc735\ud569\ud559\ubd80",
+        "SearchDepartment": "\uc778\uacf5\uc9c0\ub2a5\uc804\uacf5",
         "ProfessorNames": "\ub178\ubb34\ud0dd",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "9",
@@ -162,6 +180,7 @@
         "SubsequentSubject": "."
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc9c0\ub2a5HCI",
         "SubjectCode": "COMP0455",
@@ -169,6 +188,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc735\ud569\ud559\ubd80",
         "EstablishedDepartment": "\uc735\ud569\ud559\ubd80 \uc778\uacf5\uc9c0\ub2a5\uc804\uacf5",
+        "SearchUniversity": "\uc735\ud569\ud559\ubd80",
+        "SearchDepartment": "\uc778\uacf5\uc9c0\ub2a5\uc804\uacf5",
         "ProfessorNames": "\ubca8\ub8e8\ubcfc\ub8e8\uc2a4\uc640\ud2f0\uc2a4\ub9ac",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "7",
@@ -189,6 +210,7 @@
         "SubsequentSubject": " "
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ucef4\ud4e8\ud130\ube44\uc804",
         "SubjectCode": "ITEC0424",
@@ -196,6 +218,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc735\ud569\ud559\ubd80",
         "EstablishedDepartment": "\uc735\ud569\ud559\ubd80 \uc778\uacf5\uc9c0\ub2a5\uc804\uacf5",
+        "SearchUniversity": "\uc735\ud569\ud559\ubd80",
+        "SearchDepartment": "\uc778\uacf5\uc9c0\ub2a5\uc804\uacf5",
         "ProfessorNames": "\uc815\ud76c\ucca0",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "10",
@@ -216,6 +240,7 @@
         "SubsequentSubject": "Deep Learning, AI applications"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ub525\ub7ec\ub2dd",
         "SubjectCode": "MOBI0224",
@@ -223,6 +248,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc735\ud569\ud559\ubd80",
         "EstablishedDepartment": "\uc735\ud569\ud559\ubd80 \uc778\uacf5\uc9c0\ub2a5\uc804\uacf5",
+        "SearchUniversity": "\uc735\ud569\ud559\ubd80",
+        "SearchDepartment": "\uc778\uacf5\uc9c0\ub2a5\uc804\uacf5",
         "ProfessorNames": "\uae40\ud604\ucca0",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "28",

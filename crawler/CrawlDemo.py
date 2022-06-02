@@ -52,7 +52,6 @@ if __name__ == '__main__':
     # 교양과목 조회시 함수 실행 순서
     # getGEList() -> getAllGEClasses()
 
-    #GetClassList.getAllGEClassesAlt(2022, 0, True, t)
     GetClassList.getAllMajorClasses(2022, 0, True, t)
-    #GetClassList.getAllGEClasses(2022,0,True,t)
+    GetClassList.getAllGEClasses(2022, 0, True, t)
     print('Total transferred data : ' + str(round(temp)) + 'KB')

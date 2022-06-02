@@ -1,5 +1,6 @@
 [
     {
+        "Grade": -1,
         "Gubun": "\uad50\uc591",
         "SubjectName": "\uba85\uc800\uc77d\uae30\uc640 \ud1a0\ub860",
         "SubjectCode": "CLTR0210",
@@ -7,6 +8,8 @@
         "ClassDivideNumber": "028",
         "EstablishedUniversity": "\uc778\ubb38\ub300\ud559",
         "EstablishedDepartment": null,
+        "SearchUniversity": "\uc778\ubb38\ub300\ud559",
+        "SearchDepartment": "\uc778\ubb38\ub300\ud559",
         "ProfessorNames": "\uae40\uaddc\uc885",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "25",

@@ -1,5 +1,6 @@
 [
     {
+        "Grade": "1",
         "Gubun": "\uad50\uc591",
         "SubjectName": "\ub17c\ub9ac\uc640 \ube44\ud310\uc801 \uc0ac\uace0",
         "SubjectCode": "CLTR0045",
@@ -7,6 +8,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc9c0\ub9ac\ud559\uacfc",
+        "SearchUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc9c0\ub9ac\ud559\uacfc",
         "ProfessorNames": "\uc11d\uc601\uc9c4",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "74",
@@ -27,6 +30,7 @@
         "SubsequentSubject": "\ucca0\ud559\uc758 \uc774\ud574, \ub17c\ub9ac\ud559(\ucca0\ud559\uacfc \uc804\uacf5 \uc218\uc5c5)"
     },
     {
+        "Grade": "1",
         "Gubun": "\uad50\uc591",
         "SubjectName": "\ud604\ub300\uc0ac\ud68c\uc640 \uc724\ub9ac",
         "SubjectCode": "CLTR0073",
@@ -34,6 +38,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc9c0\ub9ac\ud559\uacfc",
+        "SearchUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc9c0\ub9ac\ud559\uacfc",
         "ProfessorNames": "\uae40\uacbd\uc218",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "78",
@@ -54,6 +60,7 @@
         "SubsequentSubject": "\ucca0\ud559\uc758 \uc774\ud574, \uacfc\ud559\uae30\uc220\uacfc \uc724\ub9ac"
     },
     {
+        "Grade": "1",
         "Gubun": "\uad50\uc591",
         "SubjectName": "\uc0dd\ud65c\uc18d\uc758\ud1b5\uacc4",
         "SubjectCode": "CLTR0112",
@@ -61,6 +68,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc9c0\ub9ac\ud559\uacfc",
+        "SearchUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc9c0\ub9ac\ud559\uacfc",
         "ProfessorNames": "\uc870\uad50\uc601",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "82",
@@ -81,6 +90,7 @@
         "SubsequentSubject": "\ud1b5\uacc4\ud559"
     },
     {
+        "Grade": "1",
         "Gubun": "\uad50\uc591",
         "SubjectName": "\uc778\uac04\uacfc\uc8fc\uac70\ubb38\ud654",
         "SubjectCode": "CLTR0185",
@@ -88,6 +98,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc9c0\ub9ac\ud559\uacfc",
+        "SearchUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc9c0\ub9ac\ud559\uacfc",
         "ProfessorNames": "\uc6d0\uc548\ub098",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "69",
@@ -108,6 +120,7 @@
         "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
+        "Grade": "1",
         "Gubun": "\uad50\uc591",
         "SubjectName": "\ub300\ud559\uae00\uc4f0\uae30",
         "SubjectCode": "CLTR0205",
@@ -115,6 +128,8 @@
         "ClassDivideNumber": "005",
         "EstablishedUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc9c0\ub9ac\ud559\uacfc",
+        "SearchUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc9c0\ub9ac\ud559\uacfc",
         "ProfessorNames": "\ub958\ub3d9\uc77c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "29",
@@ -135,6 +150,7 @@
         "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
+        "Grade": "1",
         "Gubun": "\uad50\uc591",
         "SubjectName": "\ud604\ub300\uc9c0\ub9ac\ud559\uc758 \uc774\ud574",
         "SubjectCode": "CLTR0531",
@@ -142,6 +158,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc9c0\ub9ac\ud559\uacfc",
+        "SearchUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc9c0\ub9ac\ud559\uacfc",
         "ProfessorNames": "\uc804\ubcd1\uc6b4",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "71",
@@ -162,6 +180,7 @@
         "SubsequentSubject": "."
     },
     {
+        "Grade": -1,
         "Gubun": "\uad50\uc591",
         "SubjectName": "\ud604\ub300\uc9c0\ub9ac\ud559\uc758 \uc774\ud574",
         "SubjectCode": "CLTR0531",
@@ -169,6 +188,8 @@
         "ClassDivideNumber": "002",
         "EstablishedUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc9c0\ub9ac\ud559\uacfc",
+        "SearchUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc9c0\ub9ac\ud559\uacfc",
         "ProfessorNames": "\uc774\ubcf4\uc601",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "51",
@@ -189,6 +210,7 @@
         "SubsequentSubject": "\uacbd\uc81c\uc9c0\ub9ac\ud559, \ubb38\ud654 \uc5ed\uc0ac \uc9c0\ub9ac\ud559, \uacbd\uc81c \ud65c\ub3d9\uc758 \uc785\uc9c0\ub860"
     },
     {
+        "Grade": -1,
         "Gubun": "\uad50\uc591",
         "SubjectName": "\uc7ac\ub09c\uacfc \uc5ed\uc0ac\ubc1c\uc804",
         "SubjectCode": "CLTR0688",
@@ -196,6 +218,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc9c0\ub9ac\ud559\uacfc",
+        "SearchUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc9c0\ub9ac\ud559\uacfc",
         "ProfessorNames": "\uae40\uc900\ud604",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "71",
@@ -216,6 +240,7 @@
         "SubsequentSubject": "\uc7ac\ub09c\uad6c\uc870\ub860"
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uacbd\uc81c\uc9c0\ub9ac\ud559",
         "SubjectCode": "GEOG0319",
@@ -223,6 +248,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc9c0\ub9ac\ud559\uacfc",
+        "SearchUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc9c0\ub9ac\ud559\uacfc",
         "ProfessorNames": "\uc774\ucca0\uc6b0",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "25",
@@ -243,6 +270,7 @@
         "SubsequentSubject": "."
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uae30\ud6c4\uc790\ub8cc\ucc98\ub9ac \ubc0f \ubd84\uc11d",
         "SubjectCode": "GEOG0321",
@@ -250,6 +278,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc9c0\ub9ac\ud559\uacfc",
+        "SearchUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc9c0\ub9ac\ud559\uacfc",
         "ProfessorNames": "\uac15\ub0a8\uc601",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "23",
@@ -270,6 +300,7 @@
         "SubsequentSubject": "o \uc5c6\uc74c"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uacc4\ub7c9\uc9c0\ub9ac\ud559 \ubc0f \uc2e4\uc2b5",
         "SubjectCode": "GEOG0324",
@@ -277,6 +308,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc9c0\ub9ac\ud559\uacfc",
+        "SearchUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc9c0\ub9ac\ud559\uacfc",
         "ProfessorNames": "\uc804\ubcd1\uc6b4",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "30",
@@ -297,6 +330,7 @@
         "SubsequentSubject": "."
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uae30\uc0c1\uc815\ubcf4\uc758 \uc774\ud574\uc640 \ud65c\uc6a9 ",
         "SubjectCode": "GEOG0340",
@@ -304,6 +338,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc9c0\ub9ac\ud559\uacfc",
+        "SearchUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc9c0\ub9ac\ud559\uacfc",
         "ProfessorNames": "\uac15\ub0a8\uc601",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "47",
@@ -324,6 +360,7 @@
         "SubsequentSubject": "o \uc5c6\uc74c"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc9c0\ub9ac\ud559\ubc1c\ub2ec\uc0ac",
         "SubjectCode": "GEOG0422",
@@ -331,6 +368,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc9c0\ub9ac\ud559\uacfc",
+        "SearchUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc9c0\ub9ac\ud559\uacfc",
         "ProfessorNames": "\uc870\ud604\ubbf8",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "44",
@@ -351,6 +390,7 @@
         "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ubb38\ud654\uc9c0\ub9ac\ud559",
         "SubjectCode": "GEOG0425",
@@ -358,6 +398,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc9c0\ub9ac\ud559\uacfc",
+        "SearchUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc9c0\ub9ac\ud559\uacfc",
         "ProfessorNames": "\uc774\ud0c4 \ub85c\ubc84\ud2b8 \uc694\ub974\uac00\uc2a8",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "41",
@@ -378,13 +420,16 @@
         "SubsequentSubject": " "
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "3",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\uad6d\ud1a0\uc9c0\ub9ac\uc870\uc0ac",
         "SubjectCode": "GEOG0427",
         "ClassCode": "GEOG0427-001",
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc9c0\ub9ac\ud559\uacfc",
+        "SearchUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc9c0\ub9ac\ud559\uacfc",
         "ProfessorNames": "\uc870\ud604\ubbf8",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "33",
@@ -405,6 +450,7 @@
         "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc9c0\ub9ac\uc815\ubcf4\uc2dc\uc2a4\ud15c\uac1c\ub860",
         "SubjectCode": "GEOG0435",
@@ -412,6 +458,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc9c0\ub9ac\ud559\uacfc",
+        "SearchUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc9c0\ub9ac\ud559\uacfc",
         "ProfessorNames": "\uc774\uc7ac\ud604",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "21",
@@ -432,6 +480,7 @@
         "SubsequentSubject": "\ud574\ub2f9\uc5c6\uc74c"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc138\uacc4\uc815\uce58\uc9c0\ub9ac",
         "SubjectCode": "GEOG0524",
@@ -439,6 +488,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc9c0\ub9ac\ud559\uacfc",
+        "SearchUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc9c0\ub9ac\ud559\uacfc",
         "ProfessorNames": "\uc774\ud0c4 \ub85c\ubc84\ud2b8 \uc694\ub974\uac00\uc2a8",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "15",
@@ -459,6 +510,7 @@
         "SubsequentSubject": " "
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc5ec\uac00\ubc0f\uad00\uad11\uc9c0\ub9ac\ud559",
         "SubjectCode": "GEOG0525",
@@ -466,6 +518,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc9c0\ub9ac\ud559\uacfc",
+        "SearchUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc9c0\ub9ac\ud559\uacfc",
         "ProfessorNames": "\uc774\ud0c4 \ub85c\ubc84\ud2b8 \uc694\ub974\uac00\uc2a8",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "32",
@@ -486,6 +540,7 @@
         "SubsequentSubject": " "
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ub3c4\uc2dc\uc9c0\ub9ac\uc815\ubcf4\uc2dc\uc2a4\ud15c\ubc0f\uc2e4\uc2b5",
         "SubjectCode": "GEOG0529",
@@ -493,6 +548,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
         "EstablishedDepartment": "\uc9c0\ub9ac\ud559\uacfc",
+        "SearchUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc9c0\ub9ac\ud559\uacfc",
         "ProfessorNames": "\uc804\ubcd1\uc6b4",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "29",

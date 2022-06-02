@@ -1,5 +1,6 @@
 [
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc6d0\uaca9\ud0d0\uc0ac\uac1c\ub860",
         "SubjectCode": "AERO0213",
@@ -7,6 +8,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc735\ubcf5\ud569\uc2dc\uc2a4\ud15c\uacf5\ud559\ubd80 \ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
         "ProfessorNames": "\uc1a1\uc544\ub78c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "24",
@@ -27,6 +30,7 @@
         "SubsequentSubject": "\uad00\ub828 \uc804\uacf5\uacfc\ubaa9"
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc9c0\uc801\uc815\ubcf4\ub860",
         "SubjectCode": "AERO0216",
@@ -34,6 +38,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc735\ubcf5\ud569\uc2dc\uc2a4\ud15c\uacf5\ud559\ubd80 \ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
         "ProfessorNames": "\ubc31\uc2b9\ub82c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "22",
@@ -54,6 +60,7 @@
         "SubsequentSubject": "\uacf5\uac04\ub370\uc774\ud130\ubca0\uc774\uc2a4\ub860"
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uce21\ub7c9\uc815\ubcf4\uacf5\ud559",
         "SubjectCode": "AERO0217",
@@ -61,6 +68,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc735\ubcf5\ud569\uc2dc\uc2a4\ud15c\uacf5\ud559\ubd80 \ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
         "ProfessorNames": "\uc7a5\ubbfc\uade0",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "21",
@@ -81,6 +90,7 @@
         "SubsequentSubject": "\uce21\ub7c9\uc870\uc815\uacc4\uc0b0\ub860, \ub514\uc9c0\ud138\uce21\ub7c9\uc2e4\uc2b5"
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ub514\uc9c0\ud138\uc9c0\ub3c4\ud559",
         "SubjectCode": "AERO0218",
@@ -88,6 +98,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc735\ubcf5\ud569\uc2dc\uc2a4\ud15c\uacf5\ud559\ubd80 \ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
         "ProfessorNames": "\uc7a5\ubbfc\uade0",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "27",
@@ -108,6 +120,7 @@
         "SubsequentSubject": "GIS\uacf5\uac04\ubd84\uc11d"
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uacf5\uac04\uc815\ubcf4\ud504\ub85c\uadf8\ub798\ubc0d1",
         "SubjectCode": "AERO0219",
@@ -115,6 +128,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc735\ubcf5\ud569\uc2dc\uc2a4\ud15c\uacf5\ud559\ubd80 \ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
         "ProfessorNames": "\uc774\ubcd1\uc9c1",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "23",
@@ -135,6 +150,7 @@
         "SubsequentSubject": "\uacf5\uac04\uc815\ubcf4\ud504\ub85c\uadf8\ub798\ubc0d2"
     },
     {
+        "Grade": "2",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc704\uc131\uce21\uc704\ud559",
         "SubjectCode": "AERO0225",
@@ -142,6 +158,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc735\ubcf5\ud569\uc2dc\uc2a4\ud15c\uacf5\ud559\ubd80 \ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
         "ProfessorNames": "\uc815\uc138\uc815",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "21",
@@ -162,6 +180,7 @@
         "SubsequentSubject": "\uce21\ub7c9\uc870\uc815\uacc4\uc0b0\ub860"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc704\uc131\uce21\uc704\ud559",
         "SubjectCode": "AERO0225",
@@ -169,6 +188,8 @@
         "ClassDivideNumber": "002",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc735\ubcf5\ud569\uc2dc\uc2a4\ud15c\uacf5\ud559\ubd80 \ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
         "ProfessorNames": "\uc815\uc138\uc815",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "9",
@@ -189,6 +210,7 @@
         "SubsequentSubject": "\uce21\ub7c9\uc870\uc815\uacc4\uc0b0\ub860"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "3\ucc28\uc6d0GIS \ubc0f \uc2e4\uc2b5",
         "SubjectCode": "AERO0226",
@@ -196,6 +218,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc735\ubcf5\ud569\uc2dc\uc2a4\ud15c\uacf5\ud559\ubd80 \ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
         "ProfessorNames": "\uc774\uc9c4\ub155",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "15",
@@ -216,6 +240,7 @@
         "SubsequentSubject": "\uc218\uce58\uc9c0\ud615\ubaa8\ub378\ub9c1"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ucca8\ub2e8\uc704\uc131\uc601\uc0c1\ubd84\uc11d",
         "SubjectCode": "AERO0227",
@@ -223,6 +248,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc735\ubcf5\ud569\uc2dc\uc2a4\ud15c\uacf5\ud559\ubd80 \ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
         "ProfessorNames": "\uc1a1\uc544\ub78c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "9",
@@ -243,6 +270,7 @@
         "SubsequentSubject": "-"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\ud56d\uacf5\uc218\uce58\uc0ac\uc9c4\uce21\ub7c9",
         "SubjectCode": "AERO0228",
@@ -250,6 +278,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc735\ubcf5\ud569\uc2dc\uc2a4\ud15c\uacf5\ud559\ubd80 \ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
         "ProfessorNames": "\uc774\uc6d0\ud76c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "16",
@@ -270,6 +300,7 @@
         "SubsequentSubject": "\ub7c9\uc870\uc815\uacc4\uc0b0\ub860, \ud56d\uacf5\ub808\uc774\uc800\uce21\ub7c9, \uc218\uce58\uc9c0\ud615\ubaa8\ub378\ub9c1, \uc704\uc131\uc815\ubcf4\uacf5\ud559\uacfc\uc81c1, \uc704\uc131\uc815\ubcf4\uacf5\ud559\uacfc\uc81c2"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "GIS\uacf5\uac04\ubd84\uc11d",
         "SubjectCode": "AERO0229",
@@ -277,6 +308,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc735\ubcf5\ud569\uc2dc\uc2a4\ud15c\uacf5\ud559\ubd80 \ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
         "ProfessorNames": "\uae40\ud61c\uc815",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "16",
@@ -297,6 +330,7 @@
         "SubsequentSubject": "\uc2dc\uc2a4\ud15c\ubd84\uc11d\uc124\uacc4"
     },
     {
+        "Grade": "3",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "WebGIS\ud504\ub85c\uadf8\ub798\ubc0d",
         "SubjectCode": "AERO0230",
@@ -304,6 +338,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc735\ubcf5\ud569\uc2dc\uc2a4\ud15c\uacf5\ud559\ubd80 \ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
         "ProfessorNames": "\uc774\ubcd1\uc9c1",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "16",
@@ -324,6 +360,7 @@
         "SubsequentSubject": "WebGIS\ud504\ub85c\uadf8\ub798\ubc0d2"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc218\uce58\uc9c0\ud615\ubaa8\ub378\ub9c1",
         "SubjectCode": "AERO0237",
@@ -331,6 +368,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc735\ubcf5\ud569\uc2dc\uc2a4\ud15c\uacf5\ud559\ubd80 \ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
         "ProfessorNames": "\ubc31\uc2b9\ub82c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "6",
@@ -351,6 +390,7 @@
         "SubsequentSubject": "\ud574\ub2f9\uc5c6\uc74c"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc9c0\ub2a5\ud615\uad50\ud1b5\uc815\ubcf4\uccb4\uacc4",
         "SubjectCode": "AERO0238",
@@ -358,6 +398,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc735\ubcf5\ud569\uc2dc\uc2a4\ud15c\uacf5\ud559\ubd80 \ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
         "ProfessorNames": "\uc774\uc9c4\ub155",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "5",
@@ -378,13 +420,16 @@
         "SubsequentSubject": "LBS \ubc0f \uc2a4\ub9c8\ud2b8\uc2dc\ud2f0"
     },
     {
-        "Gubun": "\uc804\uacf5",
+        "Grade": "4",
+        "Gubun": "\uc804\uacf5\ud544\uc218",
         "SubjectName": "\ucea1\uc2a4\ud1a4\ub514\uc790\uc778 1(\uc704\uc131\uc815\ubcf4\uacf5\ud559\uacfc\uc81c 1)",
         "SubjectCode": "AERO0248",
         "ClassCode": "AERO0248-001",
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc735\ubcf5\ud569\uc2dc\uc2a4\ud15c\uacf5\ud559\ubd80 \ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
         "ProfessorNames": "\uc774\uc6d0\ud76c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "19",
@@ -405,6 +450,7 @@
         "SubsequentSubject": "\uc704\uc131\uc815\ubcf4\uacf5\ud559\uacfc\uc81c 2"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uce21\ub7c9 \ubc0f \uc9c0\ud615\uacf5\uac04 \uc815\ubcf4\ubd84\uc11d \uc2e4\uc2b5",
         "SubjectCode": "AERO0251",
@@ -412,6 +458,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc735\ubcf5\ud569\uc2dc\uc2a4\ud15c\uacf5\ud559\ubd80 \ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
         "ProfessorNames": "\uc774\uc6d0\ud76c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "9",
@@ -432,6 +480,7 @@
         "SubsequentSubject": "\uc9c0\uc801\uc2e4\ubb34 2"
     },
     {
+        "Grade": "4",
         "Gubun": "\uc804\uacf5",
         "SubjectName": "\uc9c0\uc801\uc2e4\ubb341",
         "SubjectCode": "AERO0252",
@@ -439,6 +488,8 @@
         "ClassDivideNumber": "001",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc735\ubcf5\ud569\uc2dc\uc2a4\ud15c\uacf5\ud559\ubd80 \ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
         "ProfessorNames": "\uc774\uc6d0\ud76c",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "20",
@@ -459,6 +510,7 @@
         "SubsequentSubject": "\uc9c0\uc801\uc2e4\ubb34 2"
     },
     {
+        "Grade": "2",
         "Gubun": "\uad50\uc591",
         "SubjectName": "\uc778\uac04\uacfc\uc8fc\uac70\ubb38\ud654",
         "SubjectCode": "CLTR0185",
@@ -466,6 +518,8 @@
         "ClassDivideNumber": "005",
         "EstablishedUniversity": "\uacfc\ud559\uae30\uc220\ub300\ud559",
         "EstablishedDepartment": "\uc735\ubcf5\ud569\uc2dc\uc2a4\ud15c\uacf5\ud559\ubd80 \ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
+        "SearchUniversity": "[\uc0c1\uc8fc\ucea0\ud37c\uc2a4]\uacfc\ud559\uae30\uc220\ub300\ud559",
+        "SearchDepartment": "\ud56d\uacf5\uc704\uc131\uc2dc\uc2a4\ud15c\uc804\uacf5",
         "ProfessorNames": "\uc724\ud61c\uacbd",
         "Season": "1\ud559\uae30",
         "ApplicantsMax": "53",
