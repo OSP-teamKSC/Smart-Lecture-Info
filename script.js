@@ -14,8 +14,7 @@ class Subject {
         this.Schedule = scheduleFromString(dict['Schedule']);
         this.TotalStudent = dict['ApplicantsMax'];
         this.CurrentStudent = dict['ApplicantsCurrent'];
-        this.Box = "Y";
-        this.IsTact = dict['IsUntact'] == 'Y' ? "비대면" : "대면";
+        this.IsTact = (dict['IsUntact']=='Y')?"비대면":"대면";
         this.Color = colorlist[colorIndex]
         colorIndex = (colorIndex + 1) % colorlist.length;
     }
@@ -41,6 +40,8 @@ const Selects = document.getElementById('selects')
 const SearchButton = document.getElementById('search')
 const HideButton = document.getElementById('hide')
 const HeaderPanel = document.getElementById('header')
+const SearchOption = document.getElementById('searchOption')
+const OptionPanel = document.getElementById('optionPanel')
 
 function SchedulesToString(sches) {
     let _s = '';
@@ -135,6 +136,7 @@ function AddTableRow(subject) {
         selectedRow = newTr;
         SubjectDetail(subject);
     }
+    newTr.ondblclick = AddToSchedule
     TableBody.appendChild(newTr)
     AddTableD(newTr, subject.Grade)
     AddTableD(newTr, subject.Gubun)
@@ -145,9 +147,7 @@ function AddTableRow(subject) {
     AddTableD(newTr, subject.Credit)
     AddTableD(newTr, ProfessorsToString(subject.Professor))
     AddTableD(newTr, SchedulesToString(subject.Schedule))
-    AddTableD(newTr, subject.TotalStudent)
-    AddTableD(newTr, subject.CurrentStudent)
-    AddTableD(newTr, subject.Box)
+    AddTableD(newTr, subject.TotalStudent+'/'+subject.CurrentStudent)
     AddTableD(newTr, subject.IsTact)
 }
 
@@ -176,7 +176,13 @@ function ReloadTable() {
 
 SearchButton.onclick = ReloadTable;
 ReloadTable();
-
+SearchOption.onclick = function(){   
+    if(OptionPanel.style.display=='none')
+        OptionPanel.style.display='block'
+    else
+        OptionPanel.style.display='none'
+        
+}
 document.getElementById("addSchedule").onclick = AddToSchedule
 
 function addSelect(s1, json) {
@@ -206,3 +212,7 @@ HideButton.onclick = function(){
 }
 addSelect('-대학-', univs);
 addSelect('-대학-', ituniv);
+
+function hidAndShowOption(){
+    
+}

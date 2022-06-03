@@ -54,14 +54,26 @@ body {
     height: 100%;
 }
 
+#optionPanel {
+    display: none;
+    position: absolute;
+    height: 400px;
+    width: 800px;
+    background: white;
+    border-radius:20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 #header {
     margin: 10px;
     border-radius: 30px;
     background: #BCCE98;
-    height: 200px;
+    height: 400px;
     transition-property: margin-top;
-    margin-top:5px;
     transition-duration: 0.5s;
+    margin-top:5px;
 }
 
 #header h1 {
@@ -98,7 +110,6 @@ body {
 
 .lists {
     margin-top: 10px;
-    height: 15%;
     text-align: center;
 }
 
