@@ -27,5 +27,5 @@ create table 강의 (
 	Rate9 int,
 	PriorSubject varchar(800),
 	SubsequentSubject varchar(800),
-	primary key(과목코드_분반포함)
+	primary key(ClassCode)
 );
