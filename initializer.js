@@ -27,6 +27,31 @@ const SubsequentSubjLabel = document.getElementById('subSubj')
 const SubjNameLabel = document.getElementById('subjName')
 const ClassCodeLabel = document.getElementById('classCode')
 
+
+const Radio1 = document.getElementById('radio1');
+const Radio2 = document.getElementById('radio2');
+const RadioEnable = document.getElementById('onlyUntact');
+const NoOverwhelmed = document.getElementById('exceptOverwhelmed');
+const NoConflictWithSchedule = document.getElementById('noConflictWithSchedule');
+const SearchTextExcept = document.getElementById('exceptText');
+const SearchText = document.getElementById('searchText');
+
+
+
+RadioEnable.onchange= ()=>{
+    if(RadioEnable.checked){
+        Radio1.disabled=false;
+        Radio2.disabled=false;
+        Radio1.checked=true;
+    }
+    else{
+        Radio1.disabled=true;
+        Radio2.disabled=true;
+        Radio1.checked=false;
+        Radio2.checked=false;
+    }
+    Radio1.disabled= !RadioEnable.checked;Radio2.disabled= !RadioEnable.checked;
+}
 let isHidden = false;
 let subjects = []
 let selectedSubject = null;
@@ -63,7 +88,7 @@ RemoveSubjectButton.onclick = ()=>{
     DeselectSchedule();
 }
 
-SearchButton.onclick = ()=> ReloadTable(TestLoad());
+SearchButton.onclick = Search;
 
 document.getElementById('optionClose').onclick = ()=>{
     if (OptionPanel.style.display !== 'none')

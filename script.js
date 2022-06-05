@@ -180,28 +180,68 @@ function TestLoad(){
     let _result = []
     for (d of glsos) {
         let sb = new Subject(d,false)
-        let override = false;
-        for (t of sb.Schedule) {
-            if (t.checkOverrideWithSchedule(savedSchedules)) {
-                override = true;
-                break;
-            }
-        }
-        if (!override)
-            _result.push(sb)
+        _result.push(sb)
     }
     return _result
 }
 
 function ReloadTable(datas) {
+    SearchQuery = []
+
+    if(RadioEnable.checked){
+        if(Radio1.checked){
+            SearchQuery.push((sch)=>{return sch.IsTact==='대면';})
+        }
+        else{
+            SearchQuery.push((sch)=>{return sch.IsTact==='비대면';})
+        }
+    }
+    if(NoConflictWithSchedule.checked){
+        SearchQuery.push((sch)=>{
+            for (t of sch.Schedule) {
+                if (t.checkOverrideWithSchedule(savedSchedules)) {
+                    return false;
+                }
+            }
+            return true;
+        })
+    }
+    if(NoOverwhelmed.checked){
+        SearchQuery.push((sch)=>{
+            return(parseInt(sch.TotalStudent)<parseInt(sch.CurrentStudent));
+        })
+    }
+    if(SearchTextExcept.value!=null &&SearchTextExcept.value.replace(' ','')!==''){
+        SearchQuery.push((sch)=>{
+            if(sch.Name.replace(' ','').includes(SearchTextExcept.value.replace(' ','')))
+                return false;
+            return true;
+        })
+    }
+    if(SearchText.value!=null &&SearchText.value.replace(' ','')!==''){
+        SearchQuery.push((sch)=>{
+            if(sch.Name.replace(' ','').includes(SearchText.value.replace(' ','')))
+                return true;
+            return false;
+        })
+    }
+
     while (subjects.length > 0)
         subjects.pop();
     while (TableBody.children.length > 0)
         TableBody.children[0].remove();
 
     for (_subject of datas) {
-        subjects.push(_subject)
-        AddTableRow(_subject);
+        let pass = false;
+        for(test of SearchQuery){
+            if(!test(_subject)) {
+                pass = true;
+            }
+        }
+        if(!pass){
+            subjects.push(_subject)
+            AddTableRow(_subject);
+        }
     }
     DeselectSchedule();
 }
