@@ -10,16 +10,15 @@ const IdCollege = document.getElementById("College");
 const IdMajor = document.getElementById("Major");
 const IdCore = document.getElementById("Core");
 
-window.onload = function() {
-    if(IdCollege.value !== "첨성인핵심"){
-        IdCore.style.visibility = 'hidden';
-    }
+function coreReset() {
+    IdCore.value = '';
+    IdCore.style.visibility = 'hidden';
 }
 function init(target)
 {
     //초기값 insert
     let opt = document.createElement("option");
-    opt.value = "NULL";
+    opt.value = "";
     opt.innerHTML = "선택";
     target.appendChild(opt);
 }
@@ -39,8 +38,9 @@ IdUniv.onchange = function (){
     removeAll(IdMajor);
     init(IdCollege);
     init(IdMajor);
+    coreReset();
     //insert options
-    if(IdUniv.value!=="NULL")   {
+    if(IdUniv.value!=="")   {
         collegeList = Object.keys(Gubun[IdUniv.value]);
         categoryChange(IdCollege, collegeList);
     }
@@ -55,24 +55,22 @@ IdCollege.onchange = function(){
     //초기화
     removeAll(IdMajor);
     init(IdMajor);
+    coreReset();
     //insert options
-    if(IdCollege.value !== "NULL")  {
+    if(IdCollege.value !== "")  {
         categoryChange(IdMajor, course);
     }
 }
 
 IdMajor.onchange = function(){
+    coreReset();
     if(IdCollege.value === "첨성인핵심")   {
         const course = GEList[IdCollege.value][IdMajor.value];
         removeAll(IdCore);
-        if(IdMajor.value !== "NULL")
+        if(IdMajor.value !== "")
         {
             IdCore.style.visibility = 'visible';
             categoryChange(IdCore, course);
-        }
-        else
-        {
-            IdCore.style.visibility = 'hidden';
         }
     }
 }

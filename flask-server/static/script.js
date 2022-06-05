@@ -185,11 +185,10 @@ function ReloadTable(data) {
 
 SearchButton.onclick = function(){
     const searchFilter = {
-    'semester': IdSeme.value,
-    'university': IdUniv.value,
-    'college': IdCollege.value,
-    'major': IdMajor.value,
-    'Core': IdCore.value,
+    'Season': IdSeme.value,
+    'Gubun': IdUniv.value,
+    'SearchUniversity': IdCollege.value,
+    'SearchDepartment': IdCore.value === '' ? IdMajor.value : IdCore.value,
     };
 
     //XMLHttpRequest 객체 생성
