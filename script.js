@@ -1,8 +1,7 @@
-let colorIndex = 0;
-const colorlist = ['#034C8C', '#70735D', '#F2B705', '#F29F05', '#F28705', '#959DE8', '#E687D2'];
 
 class Subject {
-    constructor(dict) {
+    constructor(dict, alt) {
+        this.rates = [];
         this.Grade = 1;
         this.Gubun = dict['Gubun']
         this.University = dict['EstablishedUniversity']
@@ -11,37 +10,25 @@ class Subject {
         this.Name = dict['SubjectName']
         this.Credit = dict['Credit']
         this.Professor = dict['ProfessorNames'].split(',');
-        this.Schedule = scheduleFromString(dict['Schedule']);
+        this.Schedule = scheduleFromString(dict['Schedule'],alt);
         this.TotalStudent = dict['ApplicantsMax'];
         this.CurrentStudent = dict['ApplicantsCurrent'];
-        this.IsTact = (dict['IsUntact']=='Y')?"비대면":"대면";
+        this.IsTact = (dict['IsUntact']==='Y')?"비대면":"대면";
+        this.rates.push(parseInt(dict['Rate1']));
+        this.rates.push(parseInt(dict['Rate2']));
+        this.rates.push(parseInt(dict['Rate3']));
+        this.rates.push(parseInt(dict['Rate4']));
+        this.rates.push(parseInt(dict['Rate5']));
+        this.rates.push(parseInt(dict['Rate6']));
+        this.rates.push(parseInt(dict['Rate7']));
+        this.rates.push(parseInt(dict['Rate8']));
+        this.rates.push(parseInt(dict['Rate9']));
+        this.PriorSubject = dict['PriorSubject'];
+        this.SubsequentSubject = dict['SubsequentSubject'];
         this.Color = colorlist[colorIndex]
         colorIndex = (colorIndex + 1) % colorlist.length;
     }
-
 }
-
-let isHidden = false;
-let subjects = []
-
-var selectedSubject = null;
-var selectedRow = null;
-
-var savedSchedules = []
-var addable = false;
-
-const overlapColor = 'rgb(255, 0, 0)';
-const backColor = 'rgb(204, 204, 204)';
-
-const TableBody = document.getElementById("tb")
-const ScheduleTable = document.getElementById("schedule")
-const defColor = schedule.children[0].children[0].style.background;
-const Selects = document.getElementById('selects')
-const SearchButton = document.getElementById('search')
-const HideButton = document.getElementById('hide')
-const HeaderPanel = document.getElementById('header')
-const SearchOption = document.getElementById('searchOption')
-const OptionPanel = document.getElementById('optionPanel')
 
 function SchedulesToString(sches) {
     let _s = '';
@@ -53,7 +40,7 @@ function SchedulesToString(sches) {
 }
 
 function AddToSchedule() {
-    if (addable == true) {
+    if (addable === true) {
         savedSchedules.push(selectedSubject);
         addable = false;
         selectedSubject = null;
@@ -78,10 +65,18 @@ function ProfessorsToString(professors) {
     return _s;
 }
 
-function AddTableD(_tr, _s) {
-    var _Td = document.createElement('td')
-    _Td.innerHTML = _s;
-    _tr.appendChild(_Td);
+function AddRatio(ratio, tooltip, color){
+    let _span = document.createElement('span');
+    _span.classList.add('ratioBar');
+    _span.style.background = color;
+    _span.style.width = ratio+'%';
+        _span.innerHTML = ratio;
+    let _tooltip = document.createElement('span');
+    _tooltip.innerHTML = tooltip;
+    _tooltip.classList.add('tooltiptext');
+
+    EvaluationRatioPanel.appendChild(_span);
+    _span.appendChild(_tooltip);
 }
 
 function SubjectDetail(sb) {
@@ -94,7 +89,7 @@ function SubjectDetail(sb) {
     selectedSubject = sb;
     addable = true;
     for (_t of sb.Schedule) {
-        if (_t.checkOverrideWithSchedule(savedSchedules) == true) {
+        if (_t.checkOverrideWithSchedule(savedSchedules) === true) {
             _t.fillColor(overlapColor, sb.Name);
             addable = false;
         } else {
@@ -105,7 +100,7 @@ function SubjectDetail(sb) {
 
 function ColorTable(day, time, color, text='') {
     let k = ScheduleTable.children[time]
-    if (time % 2 == 0) {
+    if (time % 2 === 0) {
         k.children[day + 1].style.background = color;
         k.children[day + 1].innerHTML = text;
     } else {
@@ -116,13 +111,19 @@ function ColorTable(day, time, color, text='') {
 
 function ClearTable(day, time) {
     let k = ScheduleTable.children[time]
-    if (time % 2 == 0) {
+    if (time % 2 === 0) {
         k.children[day + 1].style.background = backColor
         k.children[day + 1].innerHTML = '';
     } else {
         k.children[day].style.background = backColor;
         k.children[day].innerHTML = '';
     }
+}
+
+function AddTableD(_tr, _s) {
+    let _Td = document.createElement('td')
+    _Td.innerHTML = _s;
+    _tr.appendChild(_Td);
 }
 
 function AddTableRow(subject) {
@@ -135,6 +136,7 @@ function AddTableRow(subject) {
         newTr.style.background = '#888888';
         selectedRow = newTr;
         SubjectDetail(subject);
+        SetDetails(subject);
     }
     newTr.ondblclick = AddToSchedule
     TableBody.appendChild(newTr)
@@ -151,11 +153,10 @@ function AddTableRow(subject) {
     AddTableD(newTr, subject.IsTact)
 }
 
-function ReloadTable() {
-    while (subjects.length > 0)
-        subjects.pop();
+function TestLoad(){
+    _result = []
     for (d of glsos) {
-        sb = new Subject(d)
+        sb = new Subject(d,false)
         override = false;
         for (t of sb.Schedule) {
             if (t.checkOverrideWithSchedule(savedSchedules)) {
@@ -164,26 +165,24 @@ function ReloadTable() {
             }
         }
         if (!override)
-            subjects.push(sb)
+            _result.push(sb)
     }
+    return _result
+}
+
+function ReloadTable(datas) {
+    while (subjects.length > 0)
+        subjects.pop();
     while (TableBody.children.length > 0)
         TableBody.children[0].remove();
-    for (_subject of subjects)
+
+    for (_subject of datas) {
+        subjects.push(_subject)
         AddTableRow(_subject);
+    }
 
     DrawAll();
 }
-
-SearchButton.onclick = ReloadTable;
-ReloadTable();
-SearchOption.onclick = function(){   
-    if(OptionPanel.style.display=='none')
-        OptionPanel.style.display='block'
-    else
-        OptionPanel.style.display='none'
-        
-}
-document.getElementById("addSchedule").onclick = AddToSchedule
 
 function addSelect(s1, json) {
     var newselect = document.createElement('select')
@@ -198,21 +197,20 @@ function addSelect(s1, json) {
     }
     selects.appendChild(newselect)
 }
-HideButton.onclick = function(){
-    if(isHidden){
-        HideButton.innerHTML = '숨기기'
-        HeaderPanel.style.marginTop = '5px';
-        isHidden = false;
-    }
-    else{
-        HideButton.innerHTML = '보이기'
-        HeaderPanel.style.marginTop = '-125px';
-        isHidden = true;        
-    }
-}
-addSelect('-대학-', univs);
-addSelect('-대학-', ituniv);
 
-function hidAndShowOption(){
+function SetDetails(sbject){
+    while (EvaluationRatioPanel.children.length > 0)
+        EvaluationRatioPanel.children[0].remove();
+    for(let i = 0;i<9;i++){
+        if(sbject.rates[i]!==0){
+            AddRatio(sbject.rates[i],evalTypes[i],evalColors[i]);
+        }
+    }
+
+    details.children[3].innerHTML = '권장 선수 과목 : ' + sbject.PriorSubject;
+    details.children[4].innerHTML = '권장 후수 과목 : ' + sbject.SubsequentSubject;
+}
+
+function hideAndShowOption(){
     
 }
