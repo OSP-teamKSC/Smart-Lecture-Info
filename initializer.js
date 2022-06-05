@@ -12,7 +12,6 @@ const selectScheduleColor = 'rgba(30,169,133,0.6)'
 const TableBody = document.getElementById("tb")
 const ScheduleTable = document.getElementById("schedule")
 const defColor = schedule.children[0].children[0].style.background;
-const Selects = document.getElementById('selects')
 const SearchButton = document.getElementById('search')
 const HideButton = document.getElementById('hide')
 const HeaderPanel = document.getElementById('header')
@@ -80,8 +79,11 @@ SearchOption.onclick = ()=> {
 RemoveSubjectButton.onclick = ()=>{
     let index= savedSchedules.indexOf(activatedSubject);
     if(index>-1) {
-        for (time of activatedSubject.Schedule) {
-            time.clearColor();
+        for(_time of activatedSubject.Schedule){
+            _time.clearScheduleCallback();
+        }
+        for (_time of activatedSubject.Schedule) {
+            _time.clearColor();
         }
         savedSchedules.splice(index, 1);
     }
@@ -103,10 +105,6 @@ document.getElementById("codeCopy").onclick = ()=>{
     }
     navigator.clipboard.writeText(ClassCodeLabel.innerHTML.replace('-',''))
 }
-
-addSelect('-대학-', univs);
-
-addSelect('-대학-', ituniv);
 
 for(r of ScheduleTable.children){
     for(c of r.children){

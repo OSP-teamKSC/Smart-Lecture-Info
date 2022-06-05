@@ -1,4 +1,5 @@
 const days = ['월', '화', '수', '목', '금', '토'];
+
 class Time {
     constructor(day, starttime, endtime) {
         this.Day = day;
@@ -27,20 +28,28 @@ class Time {
         return false;
     }
 
-    fillColor(color,text='') {
+    fillColor(color, text = '') {
         for (var i = this.StartTime; i < this.EndTime; i++) {
-            if(i===this.StartTime)
-                ColorTable(this.Day, i, color,text)
+            if (i === this.StartTime)
+                ColorTable(this.Day, i, color, text)
             else
-                ColorTable(this.Day, i, color,'')
+                ColorTable(this.Day, i, color, '')
         }
     }
 
-    setScheduleCallback(schedule){
+    setScheduleCallback(schedule) {
         for (var i = this.StartTime; i < this.EndTime; i++) {
-            SetTableOnclick(this.Day, i,(_sc)=>{SelectFromSchedule(_sc)},schedule)
+            SetTableOnclick(this.Day, i, (_sc) => {
+                SelectFromSchedule(_sc)
+            }, schedule)
         }
 
+    }
+
+    clearScheduleCallback(){
+        for (var i = this.StartTime; i < this.EndTime; i++) {
+            SetTableOnclick(this.Day, i)
+        }
     }
 
     clearColor() {
@@ -61,43 +70,42 @@ class Time {
 
 }
 
-function scheduleFromString(s,alt) {
+function scheduleFromString(s, alt) {
     times = []
     var day = -1
     var tStart = -1;
     var tEnd = -1;
     var last = 0;
     var str;
-    for (var i = 0; i < s.length; i++) {
-        if(alt){
-            strs = s.split('|');
-            for(str of strs){
-                _day = days.indexOf(str.split(' ')[0]);
-                spl = str.split(' ')[1].split(',')
+    if (alt) {
+        strs = s.split('|');
+        for (str of strs) {
+            _day = days.indexOf(str.split(' ')[0]);
+            spl = str.split(' ')[1].split(',')
 
-                let splsize = spl.length - 1
-                let t1 = parseInt(spl[0].substring(0, spl[0].length - 1) * 2 - 2)
-                if (spl[0][spl[0].length - 1] === 'B')
-                    t1 += 1;
-                let t2 = parseInt(spl[splsize].substring(0, spl[splsize].length - 1) * 2 - 2)
-                if (spl[splsize][spl[splsize].length - 1] === 'B')
-                    t2 += 1;
+            let splsize = spl.length - 1
+            let t1 = parseInt(spl[0].substring(0, spl[0].length - 1) * 2 - 2)
+            if (spl[0][spl[0].length - 1] === 'B')
+                t1 += 1;
+            let t2 = parseInt(spl[splsize].substring(0, spl[splsize].length - 1) * 2 - 2)
+            if (spl[splsize][spl[splsize].length - 1] === 'B')
+                t2 += 1;
 
-                if (day === _day && t1 === tEnd + 1) {
-                    tEnd = t2;
-                } else {
-                    if (day !== -1) {
-                        times.push(new Time(day, tStart, tEnd))
-                    }
-                    day = _day;
-                    tStart = t1;
-                    tEnd = t2;
+            if (day === _day && t1 === tEnd + 1) {
+                tEnd = t2;
+            }
+            else {
+                if (day !== -1) {
+                    times.push(new Time(day, tStart, tEnd))
                 }
-
-                last = i + 1;
+                day = _day;
+                tStart = t1;
+                tEnd = t2;
             }
         }
-        else {
+    }
+    else {
+        for (var i = 0; i < s.length; i++) {
             if (s[i] === ',' && s[i + 2] === ' ') {
                 str = s.substring(last, i)
                 _day = days.indexOf(str.split(' ')[0]);
@@ -126,8 +134,7 @@ function scheduleFromString(s,alt) {
             }
         }
     }
-
-    if(!alt) {
+    if (!alt) {
         str = s.substring(last)
         day = days.indexOf(str.split(' ')[0]);
         spl = str.split(' ')[1].split(',')
@@ -151,6 +158,9 @@ function scheduleFromString(s,alt) {
             tEnd = t2;
             times.push(new Time(day, tStart, tEnd))
         }
+    }
+    else{
+        times.push(new Time(day, tStart, tEnd))
     }
 
 

@@ -116,11 +116,15 @@ function ColorTable(day, time, color, text='') {
     k.innerHTML = text;
 }
 
-function SetTableOnclick(day, time, func=()=>{DrawAll();},schedule) {
+function SetTableOnclick(day, time, func=()=>{DeselectSchedule();},schedule=null) {
     let k = GetScheduleCell(time,day)
-    k.onclick = ()=>{func(schedule)}
-    if(!func==null){
-        //console.log("added cell ("+time+","+day+") a onclick event.")
+    if(schedule==null){
+        k.onclick = () =>{ DeselectSchedule();};
+    }
+    else {
+        k.onclick = () => {
+            func(schedule);
+        }
     }
 }
 
@@ -179,7 +183,7 @@ function AddTableRow(subject) {
 function TestLoad(){
     let _result = []
     for (d of glsos) {
-        let sb = new Subject(d,false)
+        let sb = new Subject(d,true)
         _result.push(sb)
     }
     return _result
@@ -212,15 +216,17 @@ function ReloadTable(datas) {
         })
     }
     if(SearchTextExcept.value!=null &&SearchTextExcept.value.replace(' ','')!==''){
+        let _replaced =SearchTextExcept.value.replace(' ','');
         SearchQuery.push((sch)=>{
-            if(sch.Name.replace(' ','').includes(SearchTextExcept.value.replace(' ','')))
+            if(sch.Name.replace(' ','').includes(_replaced))
                 return false;
             return true;
         })
     }
-    if(SearchText.value!=null &&SearchText.value.replace(' ','')!==''){
+    if(SearchText.value!=null&&SearchText.value.replace(' ','')!==''){
+        let _replaced =SearchText.value.replace(' ','');
         SearchQuery.push((sch)=>{
-            if(sch.Name.replace(' ','').includes(SearchText.value.replace(' ','')))
+            if(sch.Name.replace(' ','').includes(_replaced))
                 return true;
             return false;
         })
@@ -279,6 +285,7 @@ function DeselectSchedule(){
         }
     }
     selectedSubject = null;
+    ClearDetails();
     DrawAll();
 }
 
@@ -294,6 +301,16 @@ function SetDetails(sbject){
     SubjNameLabel.innerHTML = sbject.Name;
     PriorSubjLabel.innerHTML = sbject.PriorSubject;
     SubsequentSubjLabel.innerHTML = sbject.SubsequentSubject;
+}
+
+function ClearDetails(){
+    while (EvaluationRatioPanel.children.length > 0)
+        EvaluationRatioPanel.children[0].remove();
+    ClassCodeLabel.innerText = '';
+    SubjNameLabel.innerHTML = '';
+    PriorSubjLabel.innerHTML = '';
+    SubsequentSubjLabel.innerHTML = '';
+
 }
 
 function hideAndShowOption(){
