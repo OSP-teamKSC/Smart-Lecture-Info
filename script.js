@@ -30,6 +30,7 @@ class Subject {
     }
 }
 
+
 function SchedulesToString(sches) {
     let _s = '';
     for (_schedule of sches) {
@@ -39,14 +40,6 @@ function SchedulesToString(sches) {
     return _s;
 }
 
-function AddToSchedule() {
-    if (addable === true) {
-        savedSchedules.push(selectedSubject);
-        addable = false;
-        selectedSubject = null;
-        DrawAll();
-    }
-}
 
 function DrawAll() {
     for (_schedule of savedSchedules) {
@@ -70,7 +63,7 @@ function AddRatio(ratio, tooltip, color){
     _span.classList.add('ratioBar');
     _span.style.background = color;
     _span.style.width = ratio+'%';
-        _span.innerHTML = ratio;
+    _span.innerHTML = ratio;
     let _tooltip = document.createElement('span');
     _tooltip.innerHTML = tooltip;
     _tooltip.classList.add('tooltiptext');
@@ -93,19 +86,41 @@ function SubjectDetail(sb) {
             _t.fillColor(overlapColor, sb.Name);
             addable = false;
         } else {
-            _t.fillColor('#DD5555', sb.Name);
+            _t.fillColor(selectNewColor, sb.Name);
         }
     }
 }
 
-function ColorTable(day, time, color, text='') {
-    let k = ScheduleTable.children[time]
-    if (time % 2 === 0) {
-        k.children[day + 1].style.background = color;
-        k.children[day + 1].innerHTML = text;
+function AddToSchedule() {
+    if (addable === true) {
+        savedSchedules.push(selectedSubject);
+        for (_t of selectedSubject.Schedule) {
+            _t.setScheduleCallback(selectedSubject)
+        }
+        addable = false;
+        SelectFromSchedule(selectedSubject);
+    }
+}
+
+function GetScheduleCell(row,col){
+    if (row % 2 === 0) {
+        return ScheduleTable.children[row].children[col + 1]
     } else {
-        k.children[day].style.background = color;
-        k.children[day].innerHTML = text;
+        return ScheduleTable.children[row].children[col]
+    }
+}
+
+function ColorTable(day, time, color, text='') {
+    let k = GetScheduleCell(time,day)
+    k.style.background = color;
+    k.innerHTML = text;
+}
+
+function SetTableOnclick(day, time, func=()=>{DrawAll();},schedule) {
+    let k = GetScheduleCell(time,day)
+    k.onclick = ()=>{func(schedule)}
+    if(!func==null){
+        //console.log("added cell ("+time+","+day+") a onclick event.")
     }
 }
 
@@ -120,14 +135,17 @@ function ClearTable(day, time) {
     }
 }
 
-function AddTableD(_tr, _s) {
+function AddTableD(_tr, _s,color = '#000000',isbold=false) {
     let _Td = document.createElement('td')
+    _Td.style.color = color;
+    if(isbold)
+        _Td.style.fontWeight = 'bold';
     _Td.innerHTML = _s;
     _tr.appendChild(_Td);
 }
 
 function AddTableRow(subject) {
-    var newTr = document.createElement('tr')
+    let newTr = document.createElement('tr')
     newTr.classList.add('row')
     newTr.onclick = function() {
         if (selectedRow != null) {
@@ -149,15 +167,20 @@ function AddTableRow(subject) {
     AddTableD(newTr, subject.Credit)
     AddTableD(newTr, ProfessorsToString(subject.Professor))
     AddTableD(newTr, SchedulesToString(subject.Schedule))
-    AddTableD(newTr, subject.TotalStudent+'/'+subject.CurrentStudent)
+    if(parseInt(subject.CurrentStudent)<=parseInt(subject.TotalStudent)) {
+        AddTableD(newTr, subject.TotalStudent + '/' + subject.CurrentStudent,'#FF0000',true)
+    }
+    else{
+        AddTableD(newTr, subject.TotalStudent + '/' + subject.CurrentStudent)
+    }
     AddTableD(newTr, subject.IsTact)
 }
 
 function TestLoad(){
-    _result = []
+    let _result = []
     for (d of glsos) {
-        sb = new Subject(d,false)
-        override = false;
+        let sb = new Subject(d,false)
+        let override = false;
         for (t of sb.Schedule) {
             if (t.checkOverrideWithSchedule(savedSchedules)) {
                 override = true;
@@ -180,13 +203,12 @@ function ReloadTable(datas) {
         subjects.push(_subject)
         AddTableRow(_subject);
     }
-
-    DrawAll();
+    DeselectSchedule();
 }
 
 function addSelect(s1, json) {
-    var newselect = document.createElement('select')
-    var _top = document.createElement('option')
+    let newselect = document.createElement('select')
+    let _top = document.createElement('option')
     _top.selected = true;
     _top.innerHTML = s1;
     newselect.appendChild(_top)
@@ -198,6 +220,28 @@ function addSelect(s1, json) {
     selects.appendChild(newselect)
 }
 
+function SelectFromSchedule(sbject){
+    DeselectSchedule()
+    for(sc of sbject.Schedule){
+        sc.fillColor(selectScheduleColor,sbject.Name)
+    }
+    SetDetails(sbject)
+    activatedSubject = sbject;
+    RemoveSubjectButton.style.visibility = 'visible'
+}
+
+function DeselectSchedule(){
+    activatedSubject = null;
+    RemoveSubjectButton.style.visibility = 'hidden'
+    if(selectedSubject!=null) {
+        for (sc of selectedSubject.Schedule) {
+            sc.clearColor();
+        }
+    }
+    selectedSubject = null;
+    DrawAll();
+}
+
 function SetDetails(sbject){
     while (EvaluationRatioPanel.children.length > 0)
         EvaluationRatioPanel.children[0].remove();
@@ -206,11 +250,12 @@ function SetDetails(sbject){
             AddRatio(sbject.rates[i],evalTypes[i],evalColors[i]);
         }
     }
-
-    details.children[3].innerHTML = '권장 선수 과목 : ' + sbject.PriorSubject;
-    details.children[4].innerHTML = '권장 후수 과목 : ' + sbject.SubsequentSubject;
+    ClassCodeLabel.innerText = sbject.ClassID;
+    SubjNameLabel.innerHTML = sbject.Name;
+    PriorSubjLabel.innerHTML = sbject.PriorSubject;
+    SubsequentSubjLabel.innerHTML = sbject.SubsequentSubject;
 }
 
 function hideAndShowOption(){
-    
+
 }

@@ -36,6 +36,13 @@ class Time {
         }
     }
 
+    setScheduleCallback(schedule){
+        for (var i = this.StartTime; i < this.EndTime; i++) {
+            SetTableOnclick(this.Day, i,(_sc)=>{SelectFromSchedule(_sc)},schedule)
+        }
+
+    }
+
     clearColor() {
         for (var i = this.StartTime; i < this.EndTime; i++) {
             ClearTable(this.Day, i)
@@ -53,6 +60,7 @@ class Time {
     }
 
 }
+
 function scheduleFromString(s,alt) {
     times = []
     var day = -1
