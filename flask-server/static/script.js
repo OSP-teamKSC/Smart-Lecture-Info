@@ -187,8 +187,8 @@ SearchButton.onclick = function(){
     const searchFilter = {
     'Season': IdSeme.value,
     'Gubun': IdUniv.value,
-    'SearchUniversity': IdCollege.value,
-    'SearchDepartment': IdCore.value === '' ? IdMajor.value : IdCore.value,
+    'SearchUniversity': IdCollege.value === '첨성인핵심' && IdMajor.value !== '' ? IdCollege.value + '_' + IdMajor.value : IdCollege.value,
+    'SearchDepartment': IdCollege.value === '첨성인핵심' ? IdCore.value : IdMajor.value,
     };
 
     //XMLHttpRequest 객체 생성

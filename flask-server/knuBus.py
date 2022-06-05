@@ -37,34 +37,6 @@ myData = {
     'SubsequentSubject': '',  # 권장후수과
 }
 
-temp = {
-    "구분": "",
-    "과목명": "",
-    "과목코드": "",
-    "과목코드_분반포함": "",
-    "분반": "",
-    "개설대학": "",
-    "개설학과": "",
-    "교수명": "",
-    "개설학기": "",
-    "수강총원": "",
-    "수강인원": "",
-    "비대면여부": "",
-    "시간표": "",
-    "학점": "",
-    "출석비중": "",
-    "중간고사": "",
-    "기말고사": "",
-    "과제": "",
-    "발표": "",
-    "토론": "",
-    "안전교육": "",
-    "기타": "",
-    "etc": "",
-    "권장선수과목": "",
-    "권장후수과목": "",
-}
-# myColumns = ['Gubun', 'SubjectName', 'SubjectCode', 'ClassCode', 'ClassDivideNumber', 'EstablishedUniversity', 'EstablishedDepartment', 'ProfessorNames', 'Season', 'ApplicantsMax', 'ApplicantsCurrent', 'IsUntact', 'Schedule', 'Credit', 'Rate1', 'Rate2', 'Rate3', 'Rate4', 'Rate5', 'Rate6', 'Rate7', 'Rate8', 'Rate9', 'PriorSubject', 'SubsequentSubject']
 myColumns = ['Grade', 'Gubun', 'SubjectName', 'SubjectCode', 'ClassCode', 'ClassDivideNumber', 'EstablishedUniversity', 'EstablishedDepartment', 'SearchUniversity', 'SearchDepartment', 'ProfessorNames', 'Season', 'ApplicantsMax', 'ApplicantsCurrent', 'IsUntact', 'Schedule', 'Credit', 'Rate1', 'Rate2', 'Rate3', 'Rate4', 'Rate5', 'Rate6', 'Rate7', 'Rate8', 'Rate9', 'PriorSubject', 'SubsequentSubject']
 
 def transForm(data):
@@ -72,13 +44,12 @@ def transForm(data):
     #tempData['Season'] = data['Season']
     #tempData['SearchDepartment'] = data['SearchDepartment']
     for i in data:
-        if data[i] != '':
             tempData[i] = data[i]
     if data['Gubun'] == 'GE':
-        tempData['Gubun'] = '교양'
+        tempData['Gubun'] = data['SearchUniversity']
 
     elif data['Gubun'] == 'UN':
-        tempData['Gubun'] = '전공'
+        tempData['Gubun'] = ''
         tempData['SearchUniversity'] = data['SearchUniversity']
     return tempData
 
@@ -108,14 +79,17 @@ def accessDataBase(data):
     i = 0
     for rows in cursor:
         print(rows)
-        dataDict_Value = {}
+        isavailable = True
+        datadict_value = {}
         for word, col in zip(rows, myColumns):
             if col == 'SearchDepartment':       # 전공 분류
                 word = word.split(', ')
                 if data[col] not in word:
+                    isavailable = False
                     continue
                 word = data[col]
-            dataDict_Value[col] = word
-        dataDict[i] = dataDict_Value
-        i += 1
+            datadict_value[col] = word
+        if isavailable:
+            dataDict[i] = datadict_value
+            i += 1
     return dataDict
