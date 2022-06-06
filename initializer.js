@@ -1,13 +1,14 @@
 let colorIndex = 0;
-const colorlist = ['#034C8C', '#70735D', '#F2B705', '#F29F05', '#F28705', '#959DE8', '#E687D2'];
+let colorUsage = [false,false,false,false,false,false,false,false,false]
+const colorlist = ['#8a8a8a','#EC5f67', '#AB7967', '#FAC863', '#C594C5', '#99C794', '#F99157', '#5FB3B3', '#6699CC'];
 
 const evalTypes = ['출석','중간 시험','기말 시험','과제','발표','토론','안전 교육','안전 교육','기타'];
 const evalColors = ['#d74949','#D6D6CE','#FFB547','#ADB17D','#5B8FA8','#D49464','#B1746F','#8A8B79','#725663'];
 
-const overlapColor = 'rgb(255, 0, 0)';
+const overlapColor = 'rgb(199,0,0)';
 const backColor = 'rgb(204, 204, 204)';
 const selectNewColor = '#DD5555';
-const selectScheduleColor = 'rgba(30,169,133,0.6)'
+const selectScheduleColor = 'rgba(63,63,63,0.6)'
 
 const TableBody = document.getElementById("tb")
 const ScheduleTable = document.getElementById("schedule")
@@ -79,6 +80,7 @@ SearchOption.onclick = ()=> {
 RemoveSubjectButton.onclick = ()=>{
     let index= savedSchedules.indexOf(activatedSubject);
     if(index>-1) {
+        colorUsage[colorlist.indexOf(activatedSubject.Color)]= false;
         for(_time of activatedSubject.Schedule){
             _time.clearScheduleCallback();
         }

@@ -93,6 +93,15 @@ function SubjectDetail(sb) {
 
 function AddToSchedule() {
     if (addable === true) {
+        let _color;
+        for(let i =8;i>=0;i--){
+            if(colorUsage[i]===false){
+                _color = i;
+                break;
+            }
+        }
+        selectedSubject.Color = colorlist[_color];
+        colorUsage[_color] = true;
         savedSchedules.push(selectedSubject);
         for (_t of selectedSubject.Schedule) {
             _t.setScheduleCallback(selectedSubject)
