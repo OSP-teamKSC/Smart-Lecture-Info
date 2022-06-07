@@ -1,4 +1,5 @@
 create table 강의 (
+<<<<<<< HEAD
 	구분 varchar(100),
 	과목명 varchar(100),
 	과목코드 char(20),
@@ -25,4 +26,35 @@ create table 강의 (
 	권장선수과목 varchar(800),
 	권장후수과목 varchar(800),
 	primary key(과목코드_분반포함)
+=======
+	Grade int,
+	Gubun varchar(100),
+	SubjectName varchar(100),
+	SubjectCode char(20),
+	ClassCode char(20) NOT NULL,
+	ClassDivideNumber char(20),
+	EstablishedUniversity char(20),
+	EstablishedDepartment varchar(800),
+	SearchUniversity varchar(800),
+	SearchDepartment varchar(800),
+	ProfessorNames varchar(800),
+	Season char(20),
+	ApplicantsMax int,
+	ApplicantsCurrent int,
+	IsUntact char(20),
+	Schedule varchar(800),
+	Credit int,
+	Rate1 int,
+	Rate2 int,
+	Rate3 int,
+	Rate4 int,
+	Rate5 int,
+	Rate6 int,
+	Rate7 int,
+	Rate8 int,
+	Rate9 int,
+	PriorSubject varchar(800),
+	SubsequentSubject varchar(800),
+	primary key(ClassCode)
+>>>>>>> feb74603e21e3a0f2b3e2108c651668a5b094316
 );
