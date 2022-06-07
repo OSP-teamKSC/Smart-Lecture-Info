@@ -2,7 +2,7 @@
 class Subject {
     constructor(dict, alt) {
         this.rates = [];
-        this.Grade = 1;
+        this.Grade = dict['Grade'];
         this.Gubun = dict['Gubun']
         this.University = dict['EstablishedUniversity']
         this.Department = dict['EstablishedDepartment']
@@ -64,12 +64,16 @@ function AddRatio(ratio, tooltip, color){
     _span.style.background = color;
     _span.style.width = ratio+'%';
     _span.innerHTML = ratio;
+    let _cont = document.createElement('div');
+    _cont.classList.add('tooltipcont')
     let _tooltip = document.createElement('span');
-    _tooltip.innerHTML = tooltip;
+    _tooltip.textContent = tooltip;
     _tooltip.classList.add('tooltiptext');
+    //_tooltip.style.width = tooltip.length*15+'px';
 
     EvaluationRatioPanel.appendChild(_span);
-    _span.appendChild(_tooltip);
+    _span.appendChild(_cont);
+    _cont.appendChild(_tooltip)
 }
 
 function SubjectDetail(sb) {
@@ -94,7 +98,7 @@ function SubjectDetail(sb) {
 function AddToSchedule() {
     if (addable === true) {
         let _color;
-        for(let i =8;i>=0;i--){
+        for(let i =8;i>=1;i--){
             if(colorUsage[i]===false){
                 _color = i;
                 break;
@@ -164,6 +168,8 @@ function AddTableRow(subject) {
         if (selectedRow != null) {
             selectedRow.style.background = ''
         }
+        activatedSubject = null;
+        RemoveSubjectButton.style.visibility = 'hidden'
         newTr.style.background = '#888888';
         selectedRow = newTr;
         SubjectDetail(subject);

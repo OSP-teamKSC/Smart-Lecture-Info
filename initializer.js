@@ -62,11 +62,13 @@ let addable = false;
 
 HideButton.onclick = ()=>{
     if (isHidden) {
+        HideButton.style.transform = 'translate(-50%,0)'
         HideButton.innerHTML = '▲'
         HeaderPanel.style.marginTop = '5px';
         isHidden = false;
     }
     else {
+        HideButton.style.transform = 'translate(-50%,-175px)'
         HideButton.innerHTML = '▼'
         HeaderPanel.style.marginTop = '-170px';
         isHidden = true;
@@ -103,6 +105,29 @@ document.getElementById("addSchedule").onclick = AddToSchedule
 document.getElementById("codeCopy").onclick = ()=>{
     if (!navigator.clipboard) {
         // Clipboard API not available
+        let _t = ClassCodeLabel.innerHTML.replace('-','');
+
+        let textArea = document.createElement("textarea");
+        textArea.value = text;
+
+        // Avoid scrolling to bottom
+        textArea.style.top = "0";
+        textArea.style.left = "0";
+        textArea.style.position = "fixed";
+
+        document.body.appendChild(_t);
+        textArea.focus();
+        textArea.select();
+
+        try {
+            let successful = document.execCommand('copy');
+            let msg = successful ? 'successful' : 'unsuccessful';
+            console.log('Fallback: Copying text command was ' + msg);
+        } catch (err) {
+            console.error('Fallback: Oops, unable to copy', err);
+        }
+
+        document.body.removeChild(textArea);
         return
     }
     navigator.clipboard.writeText(ClassCodeLabel.innerHTML.replace('-',''))
