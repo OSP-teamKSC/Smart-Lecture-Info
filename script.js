@@ -2,7 +2,7 @@
 class Subject {
     constructor(dict, alt) {
         this.rates = [];
-        this.Grade = dict['Grade'];
+        this.Grade = (parseInt(dict['Grade'])===-1)?'*':dict['Grade'];
         this.Gubun = dict['Gubun']
         this.University = dict['EstablishedUniversity']
         this.Department = dict['EstablishedDepartment']
@@ -111,6 +111,8 @@ function AddToSchedule() {
             _t.setScheduleCallback(selectedSubject)
         }
         addable = false;
+        totalCredit += parseInt(selectedSubject.Credit);
+        TotalCreditLabel.innerHTML = "총 학점 : "+totalCredit;
         SelectFromSchedule(selectedSubject);
     }
 }
@@ -235,6 +237,10 @@ function ReloadTable(datas) {
         SearchQuery.push((sch)=>{
             if(sch.Name.replace(' ','').includes(_replaced))
                 return false;
+            for(let pf of sch.Professor){
+                if(pf===_replaced)
+                    return false;
+            }
             return true;
         })
     }
@@ -243,6 +249,26 @@ function ReloadTable(datas) {
         SearchQuery.push((sch)=>{
             if(sch.Name.replace(' ','').includes(_replaced))
                 return true;
+            for(let pf of sch.Professor){
+                if(pf===_replaced)
+                    return true;
+            }
+            return false;
+        })
+    }
+
+    if(NoFirstGrade.checked){
+        SearchQuery.push((sch)=>{
+            return(parseInt(sch.Grade)!==1);
+        })
+    }
+
+    if(ClassCodeText.value!=null&&ClassCodeText.value.replace(' ','')!==''){
+        let replaced = ClassCodeText.value.replace(' ','').replace('-','').toLowerCase();
+        SearchQuery.push((sch)=>{
+            if(sch.ClassID.replace('-','').toLowerCase().includes(replaced)){
+                return true;
+            }
             return false;
         })
     }
@@ -316,6 +342,14 @@ function SetDetails(sbject){
     SubjNameLabel.innerHTML = sbject.Name;
     PriorSubjLabel.innerHTML = sbject.PriorSubject;
     SubsequentSubjLabel.innerHTML = sbject.SubsequentSubject;
+    UnivAndDepartsLabel.innerHTML = sbject.University + ' ' + sbject.Department;
+    IsUntactLabel.innerHTML = sbject.IsTact;
+    ApplicantsLabel.innerHTML = sbject.TotalStudent + ' / ' +sbject.CurrentStudent;
+    s = '';
+    for(p of sbject.Professor){
+        s+= p+' ';
+    }
+    ProfessorsLabel.innerHTML =s;
 }
 
 function ClearDetails(){
@@ -325,6 +359,10 @@ function ClearDetails(){
     SubjNameLabel.innerHTML = '';
     PriorSubjLabel.innerHTML = '';
     SubsequentSubjLabel.innerHTML = '';
+    UnivAndDepartsLabel.innerHTML = '';
+    IsUntactLabel.innerHTML = '';
+    ApplicantsLabel.innerHTML = '';
+    ProfessorsLabel.innerHTML = '';
 
 }
 

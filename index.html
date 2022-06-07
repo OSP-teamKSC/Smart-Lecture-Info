@@ -12,10 +12,10 @@
             <h1 id="headerTitle" align = 'center' >KNUBUS</h1>
             <div class='lists' id = 'selects'>
                 <select id="semester">
-                    <option>1학기</option>
-                    <option>계절학기(하계)</option>
-                    <option>2학기</option>
-                    <option>계절학기(동계)</option>
+                    <option value = '0'>1학기</option>
+                    <option value = '1'>계절학기(하계)</option>
+                    <option value = '2'>2학기</option>
+                    <option value = '3'>계절학기(동계)</option>
                 </select>
                 <!--과목-->
                 <select name="Univ" id="Univ">
@@ -57,8 +57,9 @@
         비대면<input type = 'radio' name='a' value = 'T' disabled="true" id="radio2"><br><br>
         정원 초과된 과목 제외 <input type='checkbox' id='exceptOverwhelmed'><br><br>
         시간표와 겹치는 과목 제외 <input type='checkbox' id='noConflictWithSchedule'><br><br>
-        검색어 제외 : <input type="text" width="300px" id="exceptText">
-        <input type="range">
+        검색어 제외 : <input type="text" width="300px" id="exceptText"><br><br>
+        강좌번호로 검색 : <input type="text" width="300px" id="classCodefilter"><br><br>
+        1학년 강좌 제외 <input type='checkbox' id='except1st'>
         <button id = 'optionClose'> 적용 </button>
     </div>
     <div id="mainwrapper">
@@ -220,6 +221,7 @@
                     </tr>
                     </tbody>
                 </table>
+                <h4 style="text-align: center; margin-top: 2px;" id="totalCredit" >총 학점 : </h4>
                 <div>
                     <br>
                     <button id='addSchedule'>교과목 추가</button>
@@ -227,9 +229,16 @@
                 </div>
                 <div id='details'>
                     <h1 style="margin-bottom: 0.4em" id ='subjName'></h1>
+                    <div style = 'font-size: 11px' id="univAndDeparts"></div>
                     <span id="classCode"></span><button style="margin-left: 10px;" id="codeCopy"> 복사</button><br><br>
                     <div style="font-weight: bold">평가 항목</div>
                     <div id="evalRatio"></div><br>
+                    <div style="font-weight: bold">-담당 교수-</div>
+                    <div id="professors"></div>
+                    <div style="font-weight: bold">-강의 방식-</div>
+                    <div id="isUntactLabel"></div>
+                    <div style="font-weight: bold">-수강 인원-</div>
+                    <div id="applicantsLabel"></div>
                     <div style="font-weight: bold">-권장 선수 과목-</div>
                     <div id="priorSubj"></div>
                     <div style="font-weight: bold">-권장 후수 과목-</div>

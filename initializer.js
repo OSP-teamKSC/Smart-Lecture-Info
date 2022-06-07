@@ -22,6 +22,11 @@ const EvaluationRatioPanel = document.getElementById('evalRatio')
 const RemoveSubjectButton = document.getElementById('removeSchedule')
 const DetailPanel = document.getElementById('details')
 
+const TotalCreditLabel = document.getElementById('totalCredit')
+const UnivAndDepartsLabel = document.getElementById('univAndDeparts')
+const IsUntactLabel = document.getElementById('isUntactLabel')
+const ApplicantsLabel = document.getElementById('applicantsLabel')
+const ProfessorsLabel = document.getElementById('professors')
 const PriorSubjLabel = document.getElementById('priorSubj')
 const SubsequentSubjLabel = document.getElementById('subSubj')
 const SubjNameLabel = document.getElementById('subjName')
@@ -34,6 +39,8 @@ const RadioEnable = document.getElementById('onlyUntact');
 const NoOverwhelmed = document.getElementById('exceptOverwhelmed');
 const NoConflictWithSchedule = document.getElementById('noConflictWithSchedule');
 const SearchTextExcept = document.getElementById('exceptText');
+const ClassCodeText = document.getElementById('classCodefilter');
+const NoFirstGrade = document.getElementById('except1st');
 const SearchText = document.getElementById('searchText');
 
 
@@ -59,6 +66,7 @@ let activatedSubject = null;
 let selectedRow = null;
 let savedSchedules = []
 let addable = false;
+let totalCredit = 0;
 
 HideButton.onclick = ()=>{
     if (isHidden) {
@@ -89,7 +97,11 @@ RemoveSubjectButton.onclick = ()=>{
         for (_time of activatedSubject.Schedule) {
             _time.clearColor();
         }
+
+        totalCredit -= parseInt(savedSchedules[index].Credit);
+        TotalCreditLabel.innerHTML = "총 학점 : "+totalCredit;
         savedSchedules.splice(index, 1);
+
     }
     DeselectSchedule();
 }
@@ -108,14 +120,14 @@ document.getElementById("codeCopy").onclick = ()=>{
         let _t = ClassCodeLabel.innerHTML.replace('-','');
 
         let textArea = document.createElement("textarea");
-        textArea.value = text;
+        textArea.value = _t;
 
         // Avoid scrolling to bottom
         textArea.style.top = "0";
         textArea.style.left = "0";
         textArea.style.position = "fixed";
 
-        document.body.appendChild(_t);
+        document.body.appendChild(textArea);
         textArea.focus();
         textArea.select();
 

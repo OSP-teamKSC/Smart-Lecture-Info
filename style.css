@@ -108,6 +108,7 @@ body {
     overflow: visible;
     display: inline-block;
     height: 40px;
+    white-space: nowrap;
 }
 
 .ratioBar .tooltipcont{
