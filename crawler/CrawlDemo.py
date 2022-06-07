@@ -29,6 +29,7 @@ def ReadSchedule(path):
         if c['sche'] != '':
             print('시간표 : {0}'.format(c['sche']), end='\n\n')
 
+
 global temp
 temp = 0
 
@@ -37,9 +38,9 @@ def t(arg):
     global temp
     temp += arg
 
+
 if __name__ == '__main__':
     print('?')
-
 
     # --JSON 파일 저장 장소--
     # ./UnivMajor/(Year)/(Season)
@@ -52,6 +53,6 @@ if __name__ == '__main__':
     # 교양과목 조회시 함수 실행 순서
     # getGEList() -> getAllGEClasses()
 
-    GetClassList.getAllMajorClasses(2022, 0, True, t)
-    GetClassList.getAllGEClasses(2022, 0, True, t)
+    GetClassList.getAllGEClasses(2022, 0, False, t)
+    GetClassList.getAllMajorClasses(2022, 0, False, t)
     print('Total transferred data : ' + str(round(temp)) + 'KB')
