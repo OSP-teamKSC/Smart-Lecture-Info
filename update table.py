@@ -29,7 +29,7 @@ cursor = mydb.cursor()
 # In[3]:
 
 
-folder = 'jsons/2022/0/simple'
+folder = './jsons/2022/0/simple'
 files = os.listdir(folder)
 for file in files:
     with open(folder+file, 'r') as json_file:    
