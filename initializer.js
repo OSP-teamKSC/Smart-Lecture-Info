@@ -16,8 +16,10 @@ const defColor = schedule.children[0].children[0].style.background;
 const SearchButton = document.getElementById('search')
 const HideButton = document.getElementById('hide')
 const HeaderPanel = document.getElementById('header')
+const MainPanel = document.getElementById('mainwrapper')
 const SearchOption = document.getElementById('searchOption')
-const OptionPanel = document.getElementById('optionPanel')
+const OptionPanel = document.getElementById('optionOverlay')
+const OptionPanel2 = document.getElementById('optionPanel')
 const EvaluationRatioPanel = document.getElementById('evalRatio')
 const RemoveSubjectButton = document.getElementById('removeSchedule')
 const DetailPanel = document.getElementById('details')
@@ -96,8 +98,19 @@ HideButton.onclick = ()=>{
 }
 
 SearchOption.onclick = ()=> {
-    if (OptionPanel.style.display === 'none')
-        OptionPanel.style.display = 'block'}
+    if (OptionPanel.style.visibility === 'hidden'){
+        OptionPanel.style.visibility = 'visible'
+        OptionPanel.style.background = '#000000AA'
+        OptionPanel.style.transition='background 0.2s ease-out'
+        OptionPanel2.style.transition='transform 0.3s'
+
+
+        OptionPanel2.style.transform = 'translate(-50%, -50%)'
+        HeaderPanel.style.zIndex=-1;
+        MainPanel.style.zIndex=-3;
+        HideButton.style.zIndex=-2;
+    }
+}
 
 RemoveSubjectButton.onclick = ()=>{
     let index= savedSchedules.indexOf(activatedSubject);
@@ -121,8 +134,16 @@ RemoveSubjectButton.onclick = ()=>{
 SearchButton.onclick = Search;
 
 document.getElementById('optionClose').onclick = ()=>{
-    if (OptionPanel.style.display !== 'none')
-        OptionPanel.style.display = 'none'}
+    if (OptionPanel.style.visibility !== 'hidden') {
+        OptionPanel.style.transition=''
+        OptionPanel2.style.transition=''
+        OptionPanel.style.background = '#00000000'
+        OptionPanel2.style.transform = 'translate(-50%, -45%)'
+        OptionPanel.style.visibility = 'hidden'
+        HeaderPanel.style.zIndex=3;
+        MainPanel.style.zIndex=1;
+        HideButton.style.zIndex=2;
+    }}
 
 document.getElementById("addSchedule").onclick = AddToSchedule
 

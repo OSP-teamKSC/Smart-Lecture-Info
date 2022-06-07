@@ -50,26 +50,29 @@
     </header>
 
     <div id = 'hide'>▲</div>
-    <div id="optionPanel" style='display: none; z-index: 4; padding: 10px;' >
-        <h1 align = 'center' style = 'font-size: 42px; font-weight: bolder;'>검색 옵션</h1>
-        <div class="left">
-            강의방식<input type='checkbox' id='onlyUntact' style='margin-right: 15px;'>
-            대면<input type = 'radio' name='a' value ='F' disabled="true" id="radio1">
-            비대면<input type = 'radio' name='a' value = 'T' disabled="true" id="radio2"><br><br>
-            정원 초과된 과목 제외 <input type='checkbox' id='exceptOverwhelmed'><br><br>
-            시간표와 겹치는 과목 제외 <input type='checkbox' id='noConflictWithSchedule'><br><br>
-            검색어 제외 : <input type="text" width="300px" id="exceptText"><br><br>
-            강좌번호로 검색 : <input type="text" width="300px" id="classCodefilter"><br><br>
-            1학년 강좌 제외 <input type='checkbox' id='except1st'>
-            <button id = 'optionClose'> 적용 </button>
-        </div>
-        <div class="right">
-            <div>출석 비중<input type="checkbox" id="0check"><input style="margin-left: 10px" id="0num" type="number" min = '0' max="100">%<select id="0sel" style="margin-left: 15px"><option selected value = '0'>이상</option><option value = '1'>이하</option></select></div><br>
-            <div>중간 비중<input type="checkbox" id="1check"><input style="margin-left: 10px" id="1num" type="number" min = '0' max="100">%<select id="1sel" style="margin-left: 15px"><option selected value = '0'>이상</option><option value = '1'>이하</option></select></div><br>
-            <div>기말 비중<input type="checkbox" id="2check"><input style="margin-left: 10px" id="2num" type="number" min = '0' max="100">%<select id="2sel" style="margin-left: 15px"><option selected value = '0'>이상</option><option value = '1'>이하</option></select></div><br>
-            <div>과제 비중<input type="checkbox" id="3check"><input style="margin-left: 10px" id="3num" type="number" min = '0' max="100">%<select id="3sel" style="margin-left: 15px"><option selected value = '0'>이상</option><option value = '1'>이하</option></select></div><br>
-            <div>발표 비중<input type="checkbox" id="4check"><input style="margin-left: 10px" id="4num" type="number" min = '0' max="100">%<select id="4sel" style="margin-left: 15px"><option selected value = '0'>이상</option><option value = '1'>이하</option></select></div><br>
-            <div>토론 비중<input type="checkbox" id="5check"><input style="margin-left: 10px" id="5num" type="number" min = '0' max="100">%<select id="5sel" style="margin-left: 15px"><option selected value = '0'>이상</option><option value = '1'>이하</option></select></div><br>
+    <div id='optionOverlay' style="visibility: hidden;">
+        <div id="optionPanel" style='z-index: 4; padding: 10px;
+    transform: translate(-50%, -45%);' >
+            <h1 align = 'center' style = 'font-size: 42px; font-weight: bolder;'>검색 옵션</h1>
+            <div class="left">
+                강의방식<input type='checkbox' id='onlyUntact' style='margin-right: 15px;'>
+                대면<input type = 'radio' name='a' value ='F' disabled="true" id="radio1">
+                비대면<input type = 'radio' name='a' value = 'T' disabled="true" id="radio2"><br><br>
+                정원 초과된 과목 제외 <input type='checkbox' id='exceptOverwhelmed'><br><br>
+                시간표와 겹치는 과목 제외 <input type='checkbox' id='noConflictWithSchedule'><br><br>
+                검색어 제외 : <input type="text" width="300px" id="exceptText"><br><br>
+                강좌번호로 검색 : <input type="text" width="300px" id="classCodefilter"><br><br>
+                1학년 강좌 제외 <input type='checkbox' id='except1st'>
+                <button id = 'optionClose'> 적용 </button>
+            </div>
+            <div class="right">
+                <div>출석 비중<input type="checkbox" id="0check"><input style="margin-left: 10px" id="0num" type="number" min = '0' max="100">%<select id="0sel" style="margin-left: 15px"><option selected value = '0'>이상</option><option value = '1'>이하</option></select></div><br>
+                <div>중간 비중<input type="checkbox" id="1check"><input style="margin-left: 10px" id="1num" type="number" min = '0' max="100">%<select id="1sel" style="margin-left: 15px"><option selected value = '0'>이상</option><option value = '1'>이하</option></select></div><br>
+                <div>기말 비중<input type="checkbox" id="2check"><input style="margin-left: 10px" id="2num" type="number" min = '0' max="100">%<select id="2sel" style="margin-left: 15px"><option selected value = '0'>이상</option><option value = '1'>이하</option></select></div><br>
+                <div>과제 비중<input type="checkbox" id="3check"><input style="margin-left: 10px" id="3num" type="number" min = '0' max="100">%<select id="3sel" style="margin-left: 15px"><option selected value = '0'>이상</option><option value = '1'>이하</option></select></div><br>
+                <div>발표 비중<input type="checkbox" id="4check"><input style="margin-left: 10px" id="4num" type="number" min = '0' max="100">%<select id="4sel" style="margin-left: 15px"><option selected value = '0'>이상</option><option value = '1'>이하</option></select></div><br>
+                <div>토론 비중<input type="checkbox" id="5check"><input style="margin-left: 10px" id="5num" type="number" min = '0' max="100">%<select id="5sel" style="margin-left: 15px"><option selected value = '0'>이상</option><option value = '1'>이하</option></select></div><br>
+            </div>
         </div>
     </div>
     <div id="mainwrapper">
