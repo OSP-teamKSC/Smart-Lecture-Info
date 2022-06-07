@@ -93,16 +93,34 @@ body {
     transform: translate(-50%, -50%);
 }
 
+#evalRatio{
+    border-radius: 5px;
+    overflow: visible;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    width: 500px;
+    height: 40px;
+    background: white;
+}
+
 .ratioBar{
     font-size: 12px;
     font-weight: bold;
-    overflow: hidden;
+    overflow: visible;
     display: inline-block;
     height: 40px;
+    white-space: nowrap;
 }
 
-.ratioBar .tooltiptext {
+.ratioBar .tooltipcont{
+    overflow: visible;
+    display: inline-block;
+    position: relative;
+    background: transparent;
+    z-index: 20;
 
+}
+
+.ratioBar .tooltipcont .tooltiptext {
     visibility: hidden;
     background-color: black;
     color: #fff;
@@ -110,23 +128,27 @@ body {
     border-radius: 6px;
     padding: 5px 10px;
     position: absolute;
-    z-index: 1;
-    transform: translate(-30%, -120%);
+    z-index: 20;
+    max-height: 20px;
+    white-space: nowrap;
+    width: auto;
+    transform: translate(-40%, -180%);
 }
 
 
-.ratioBar .tooltiptext::after {
+.ratioBar .tooltipcont .tooltiptext::after {
     content: "";
     position: absolute;
     top: 100%;
     left: 50%;
+    z-index: 20;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
     border-color: black transparent transparent transparent;
 }
 
-.ratioBar:hover .tooltiptext {
+.ratioBar:hover .tooltipcont .tooltiptext {
     visibility: visible;
 }
 
@@ -134,28 +156,21 @@ body {
     position: absolute;
     left:400px;
     top:400px;
-    transform: translate(-50%, -100%);
+    transform: translate(-40%, -100%);
 }
 
 #header {
     margin: 10px;
     border-radius: 30px;
     background: #B8C395;
-    height: 190px;
+    height: 170px;
     transition-property: margin-top;
     transition-duration: 0.5s;
     margin-top:5px;
+    z-index: 3;
     top: 0px;
 }
 
-#evalRatio{
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
-    width: 500px;
-    height: 40px;
-    background: white;
-}
 
 #headerTitle{
     padding-bottom : 15px;
@@ -170,21 +185,28 @@ body {
     margin: 0;
     padding-top: 15px;
 }
+
 #hide{
-    position: relative;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    position: absolute;
+    text-align: center;
     color: white;
     cursor:default;
     font-size: 23px;
     padding-top: 20px;
-    width: 80px;
     background: #B8C395;
-    transform: translate(0,0);
     border-radius: 15px;
-    z-index: 0;
-
+    z-index: 2;
+    width: 80px;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%,0);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 #mainwrapper {
+    z-index: 1;
     overflow: hidden;
 }
 

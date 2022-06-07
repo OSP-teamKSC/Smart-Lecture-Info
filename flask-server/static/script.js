@@ -2,7 +2,7 @@
 class Subject {
     constructor(dict, alt) {
         this.rates = [];
-        this.Grade = 1;
+        this.Grade = (parseInt(dict['Grade'])===-1)?'*':dict['Grade'];
         this.Gubun = dict['Gubun']
         this.University = dict['EstablishedUniversity']
         this.Department = dict['EstablishedDepartment']
@@ -64,12 +64,16 @@ function AddRatio(ratio, tooltip, color){
     _span.style.background = color;
     _span.style.width = ratio+'%';
     _span.innerHTML = ratio;
+    let _cont = document.createElement('div');
+    _cont.classList.add('tooltipcont')
     let _tooltip = document.createElement('span');
-    _tooltip.innerHTML = tooltip;
+    _tooltip.textContent = tooltip;
     _tooltip.classList.add('tooltiptext');
+    //_tooltip.style.width = tooltip.length*15+'px';
 
     EvaluationRatioPanel.appendChild(_span);
-    _span.appendChild(_tooltip);
+    _span.appendChild(_cont);
+    _cont.appendChild(_tooltip)
 }
 
 function SubjectDetail(sb) {
@@ -94,7 +98,7 @@ function SubjectDetail(sb) {
 function AddToSchedule() {
     if (addable === true) {
         let _color;
-        for(let i =8;i>=0;i--){
+        for(let i =8;i>=1;i--){
             if(colorUsage[i]===false){
                 _color = i;
                 break;
@@ -107,6 +111,8 @@ function AddToSchedule() {
             _t.setScheduleCallback(selectedSubject)
         }
         addable = false;
+        totalCredit += parseInt(selectedSubject.Credit);
+        TotalCreditLabel.innerHTML = "총 학점 : "+totalCredit;
         SelectFromSchedule(selectedSubject);
     }
 }
@@ -164,6 +170,8 @@ function AddTableRow(subject) {
         if (selectedRow != null) {
             selectedRow.style.background = ''
         }
+        activatedSubject = null;
+        RemoveSubjectButton.style.visibility = 'hidden'
         newTr.style.background = '#888888';
         selectedRow = newTr;
         SubjectDetail(subject);
@@ -187,6 +195,15 @@ function AddTableRow(subject) {
         AddTableD(newTr, subject.TotalStudent + '/' + subject.CurrentStudent)
     }
     AddTableD(newTr, subject.IsTact)
+}
+
+function TestLoad(){
+    let _result = []
+    for (d of glsos) {
+        let sb = new Subject(d,true)
+        _result.push(sb)
+    }
+    return _result
 }
 
 function ReloadTable(datas) {
@@ -220,6 +237,10 @@ function ReloadTable(datas) {
         SearchQuery.push((sch)=>{
             if(sch.Name.replace(' ','').includes(_replaced))
                 return false;
+            for(let pf of sch.Professor){
+                if(pf===_replaced)
+                    return false;
+            }
             return true;
         })
     }
@@ -228,6 +249,26 @@ function ReloadTable(datas) {
         SearchQuery.push((sch)=>{
             if(sch.Name.replace(' ','').includes(_replaced))
                 return true;
+            for(let pf of sch.Professor){
+                if(pf===_replaced)
+                    return true;
+            }
+            return false;
+        })
+    }
+
+    if(NoFirstGrade.checked){
+        SearchQuery.push((sch)=>{
+            return(parseInt(sch.Grade)!==1);
+        })
+    }
+
+    if(ClassCodeText.value!=null&&ClassCodeText.value.replace(' ','')!==''){
+        let replaced = ClassCodeText.value.replace(' ','').replace('-','').toLowerCase();
+        SearchQuery.push((sch)=>{
+            if(sch.ClassID.replace('-','').toLowerCase().includes(replaced)){
+                return true;
+            }
             return false;
         })
     }
@@ -301,6 +342,14 @@ function SetDetails(sbject){
     SubjNameLabel.innerHTML = sbject.Name;
     PriorSubjLabel.innerHTML = sbject.PriorSubject;
     SubsequentSubjLabel.innerHTML = sbject.SubsequentSubject;
+    UnivAndDepartsLabel.innerHTML = sbject.University + ' ' + sbject.Department;
+    IsUntactLabel.innerHTML = sbject.IsTact;
+    ApplicantsLabel.innerHTML = sbject.TotalStudent + ' / ' +sbject.CurrentStudent;
+    s = '';
+    for(p of sbject.Professor){
+        s+= p+' ';
+    }
+    ProfessorsLabel.innerHTML =s;
 }
 
 function ClearDetails(){
@@ -310,6 +359,10 @@ function ClearDetails(){
     SubjNameLabel.innerHTML = '';
     PriorSubjLabel.innerHTML = '';
     SubsequentSubjLabel.innerHTML = '';
+    UnivAndDepartsLabel.innerHTML = '';
+    IsUntactLabel.innerHTML = '';
+    ApplicantsLabel.innerHTML = '';
+    ProfessorsLabel.innerHTML = '';
 
 }
 

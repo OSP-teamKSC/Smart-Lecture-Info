@@ -22,6 +22,11 @@ const EvaluationRatioPanel = document.getElementById('evalRatio')
 const RemoveSubjectButton = document.getElementById('removeSchedule')
 const DetailPanel = document.getElementById('details')
 
+const TotalCreditLabel = document.getElementById('totalCredit')
+const UnivAndDepartsLabel = document.getElementById('univAndDeparts')
+const IsUntactLabel = document.getElementById('isUntactLabel')
+const ApplicantsLabel = document.getElementById('applicantsLabel')
+const ProfessorsLabel = document.getElementById('professors')
 const PriorSubjLabel = document.getElementById('priorSubj')
 const SubsequentSubjLabel = document.getElementById('subSubj')
 const SubjNameLabel = document.getElementById('subjName')
@@ -34,6 +39,8 @@ const RadioEnable = document.getElementById('onlyUntact');
 const NoOverwhelmed = document.getElementById('exceptOverwhelmed');
 const NoConflictWithSchedule = document.getElementById('noConflictWithSchedule');
 const SearchTextExcept = document.getElementById('exceptText');
+const ClassCodeText = document.getElementById('classCodefilter');
+const NoFirstGrade = document.getElementById('except1st');
 const SearchText = document.getElementById('searchText');
 
 
@@ -59,14 +66,17 @@ let activatedSubject = null;
 let selectedRow = null;
 let savedSchedules = []
 let addable = false;
+let totalCredit = 0;
 
 HideButton.onclick = ()=>{
     if (isHidden) {
+        HideButton.style.transform = 'translate(-50%,0)'
         HideButton.innerHTML = '▲'
         HeaderPanel.style.marginTop = '5px';
         isHidden = false;
     }
     else {
+        HideButton.style.transform = 'translate(-50%,-175px)'
         HideButton.innerHTML = '▼'
         HeaderPanel.style.marginTop = '-170px';
         isHidden = true;
@@ -87,7 +97,11 @@ RemoveSubjectButton.onclick = ()=>{
         for (_time of activatedSubject.Schedule) {
             _time.clearColor();
         }
+
+        totalCredit -= parseInt(savedSchedules[index].Credit);
+        TotalCreditLabel.innerHTML = "총 학점 : "+totalCredit;
         savedSchedules.splice(index, 1);
+
     }
     DeselectSchedule();
 }
@@ -103,6 +117,29 @@ document.getElementById("addSchedule").onclick = AddToSchedule
 document.getElementById("codeCopy").onclick = ()=>{
     if (!navigator.clipboard) {
         // Clipboard API not available
+        let _t = ClassCodeLabel.innerHTML.replace('-','');
+
+        let textArea = document.createElement("textarea");
+        textArea.value = _t;
+
+        // Avoid scrolling to bottom
+        textArea.style.top = "0";
+        textArea.style.left = "0";
+        textArea.style.position = "fixed";
+
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+
+        try {
+            let successful = document.execCommand('copy');
+            let msg = successful ? 'successful' : 'unsuccessful';
+            console.log('Fallback: Copying text command was ' + msg);
+        } catch (err) {
+            console.error('Fallback: Oops, unable to copy', err);
+        }
+
+        document.body.removeChild(textArea);
         return
     }
     navigator.clipboard.writeText(ClassCodeLabel.innerHTML.replace('-',''))
