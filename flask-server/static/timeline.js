@@ -72,15 +72,17 @@ class Time {
 
 function scheduleFromString(s, alt) {
     times = []
+    if(s===null)
+        return times
     var day = -1
     var tStart = -1;
     var tEnd = -1;
     var last = 0;
     var str;
-
-    if (alt && s !== null) {
+    if (alt) {
         strs = s.split('|');
         for (str of strs) {
+            let _b = false;
             _day = days.indexOf(str.split(' ')[0]);
             spl = str.split(' ')[1].split(',')
 
@@ -92,10 +94,15 @@ function scheduleFromString(s, alt) {
             if (spl[splsize][spl[splsize].length - 1] === 'B')
                 t2 += 1;
 
+            if (day === _day && t2 === tStart - 1) {
+                tStart = t1;
+                _b = true;
+            }
             if (day === _day && t1 === tEnd + 1) {
                 tEnd = t2;
+                _b = true;
             }
-            else {
+            if(!_b) {
                 if (day !== -1) {
                     times.push(new Time(day, tStart, tEnd))
                 }
@@ -105,7 +112,7 @@ function scheduleFromString(s, alt) {
             }
         }
     }
-
+    
     if (!alt) {
         str = s.substring(last)
         day = days.indexOf(str.split(' ')[0]);
