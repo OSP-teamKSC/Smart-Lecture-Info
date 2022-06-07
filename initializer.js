@@ -43,6 +43,18 @@ const ClassCodeText = document.getElementById('classCodefilter');
 const NoFirstGrade = document.getElementById('except1st');
 const SearchText = document.getElementById('searchText');
 
+let checks = []
+let nums = []
+let opts = []
+for (_i in [0,1,2,3,4,5]){
+    checks.push(document.getElementById(_i+'check'))
+    nums.push(document.getElementById(_i+'num'))
+    nums[_i].disabled=true;
+    opts.push(document.getElementById(_i+'sel'))
+    opts[_i].disabled=true;
+    const _t = _i;
+    checks[_t].onchange = ()=>{nums[_t].disabled=!checks[_t].checked; opts[_t].disabled=!checks[_t].checked;}
+}
 
 
 RadioEnable.onchange= ()=>{
@@ -152,3 +164,4 @@ for(r of ScheduleTable.children){
 }
 
 RemoveSubjectButton.style.visibility = 'hidden'
+

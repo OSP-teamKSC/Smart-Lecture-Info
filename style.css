@@ -1,3 +1,7 @@
+input[type='number']{
+    width: 60px;
+}
+
 table, th,td {
     outline: none;
     border-color: black;
@@ -93,6 +97,23 @@ body {
     transform: translate(-50%, -50%);
 }
 
+#optionPanel .left{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+#optionPanel .right{
+    width: 50%;
+    float: right;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
 #evalRatio{
     border-radius: 5px;
     overflow: visible;
@@ -178,7 +199,6 @@ body {
     font-size: 42px;
     font-family: Gadugi, sans-serif;
     color: #E60000;
-
 }
 
 #header h1 {

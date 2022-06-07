@@ -20,9 +20,9 @@ class Subject {
         this.rates.push(parseInt(dict['Rate4']));
         this.rates.push(parseInt(dict['Rate5']));
         this.rates.push(parseInt(dict['Rate6']));
-        this.rates.push(parseInt(dict['Rate7']));
-        this.rates.push(parseInt(dict['Rate8']));
-        this.rates.push(parseInt(dict['Rate9']));
+        this.rates.push(0);
+        this.rates.push(0);
+        this.rates.push(parseInt(dict['Rate9'])+parseInt(dict['Rate8'])+parseInt(dict['Rate7']));
         this.PriorSubject = dict['PriorSubject'];
         this.SubsequentSubject = dict['SubsequentSubject'];
         this.Color = colorlist[colorIndex]
@@ -73,7 +73,7 @@ function AddRatio(ratio, tooltip, color){
 
     EvaluationRatioPanel.appendChild(_span);
     _span.appendChild(_cont);
-    _cont.appendChild(_tooltip)
+    _cont.appendChild(_tooltip);
 }
 
 function SubjectDetail(sb) {
@@ -266,12 +266,23 @@ function ReloadTable(datas) {
     if(ClassCodeText.value!=null&&ClassCodeText.value.replace(' ','')!==''){
         let replaced = ClassCodeText.value.replace(' ','').replace('-','').toLowerCase();
         SearchQuery.push((sch)=>{
-            if(sch.ClassID.replace('-','').toLowerCase().includes(replaced)){
-                return true;
-            }
-            return false;
+            return sch.ClassID.replace('-', '').toLowerCase().includes(replaced);
+
         })
+
     }
+
+    for(let i = 0;i<=5;i++){
+        if(checks[i].checked){
+            const _th = nums[i].value;
+            const _b = opts[i].value==='0'
+            const _index = i;
+            if(_b)
+                SearchQuery.push((sch) => {return sch.rates[_index] >= _th;})
+            else
+                SearchQuery.push((sch) => {return sch.rates[_index] <= _th;})
+            }
+        }
 
     while (subjects.length > 0)
         subjects.pop();
