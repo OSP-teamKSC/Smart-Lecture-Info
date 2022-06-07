@@ -1,0 +1,229 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title >KNUBUS</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<div id="wrapper">
+
+    <header id="header">
+        <div class="innertube">
+            <h1 id="headerTitle" align = 'center' >KNUBUS</h1>
+            <div class='lists' id = 'selects'>
+                <select id="semester">
+                    <option>1학기</option>
+                    <option>계절학기(하계)</option>
+                    <option>2학기</option>
+                    <option>계절학기(동계)</option>
+                </select>
+                <!--과목-->
+                <select name="Univ" id="Univ">
+                    <option value="">선택</option>
+                    <option value="UN">대학</option>
+                    <option value="GE">교양</option>
+                </select>
+                <!--단과대학-->
+                <select name="Univ-college" id="College" >
+                    <option value="">선택</option>
+                </select>
+                <!--전공-->
+                <select name="Univ-major" id="Major">
+                    <option value="">선택</option>
+                </select>
+                <!--첨성인 핵심일때-->
+                <select name="GE-core" id="Core">
+                    <option value="">선택</option>
+                </select>
+            </div>
+            <div style = 'color: black; font-family: Arial' class='lists'>
+                검색어 (과목명 및 교수명) : <input type='text' id="searchText">
+                <button style="margin-left: 10px;" id='searchOption'>검색 옵션</button>
+                오프라인 모드 : <input type="checkbox" width="300px" id="isDemo">
+            </div>
+            <div class='lists' align="center">
+                <button id='search'>검색</button>
+            </div>
+            <div style='z-index: -10;' align="center">
+                <div id='hide'>▲</div>
+            </div>
+        </div>
+    </header>
+
+    <div id="optionPanel" style='display: none; padding: 10px;' >
+        <h1 align = 'center' style = 'font-size: 42px; font-weight: bolder;'>검색 옵션</h1>
+        강의방식<input type='checkbox' id='onlyUntact' style='margin-right: 15px;'>
+        대면<input type = 'radio' name='a' value ='F' disabled="true" id="radio1">
+        비대면<input type = 'radio' name='a' value = 'T' disabled="true" id="radio2"><br><br>
+        정원 초과된 과목 제외 <input type='checkbox' id='exceptOverwhelmed'><br><br>
+        시간표와 겹치는 과목 제외 <input type='checkbox' id='noConflictWithSchedule'><br><br>
+        검색어 제외 : <input type="text" width="300px" id="exceptText">
+        <input type="range">
+        <button id = 'optionClose'> 적용 </button>
+    </div>
+    <div id="mainwrapper">
+        <div id="contentwrapper">
+            <div id="content">
+                <div class="innertube">
+                    <h1>교과목 목록</h1>
+                    <table border='1' id="grid01_body_table" class="gridHeaderTableDefault" role="grid" style="width : 100%;">
+                        <thead id="grid01_head_table" class="gridHeaderTableDefault">
+                        <th>
+                            <nobr>학년</nobr>
+                        </th>
+                        <th>
+                            <nobr>교과구분</nobr>
+                        </th>
+                        <th>
+                            <nobr>개설대학</nobr>
+                        </th>
+                        <th>
+                            <nobr>개설학과</nobr>
+                        </th>
+                        <th>
+                            <nobr>강좌번호</nobr>
+                        </th>
+                        <th>
+                            <nobr>교과목명</nobr>
+                        </th>
+                        <th>
+                            <nobr>학점</nobr>
+                        </th>
+                        <th>
+                            <nobr>담당교수</nobr>
+                        </th>
+                        <th>
+                            <nobr>강의시간</nobr>
+                        </th>
+                        <th>
+                            <nobr>수강인원</nobr>
+                        </th>
+                        <th>
+                            <nobr>강의방식</nobr>
+                        </th>
+                        </thead>
+                        <tbody id='tb'></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <nav id="rightmenu">
+            <div class="innertube">
+                <table border='1' style='background: #9F9F9F; color: white; margin-top: 10px'>
+                    <thead>
+                    <th>
+                    </th>
+                    <th>
+                        월
+                    </th>
+                    <th>
+                        화
+                    </th>
+                    <th>
+                        수
+                    </th>
+                    <th>
+                        목
+                    </th>
+                    <th>
+                        금
+                    </th>
+                    <th>
+                        토
+                    </th>
+                    </thead>
+
+                    <tbody id='schedule'>
+                    <tr>
+                        <td class='scleft' rowspan="2">09:00</td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td>
+                    </tr>
+                    <tr>
+                        <td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td>
+                    </tr>
+                    <tr>
+                        <td class='scleft' rowspan="2">10:00</td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td>
+                    </tr>
+                    <tr>
+                        <td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td>
+                    </tr>
+                    <tr>
+                        <td class='scleft' rowspan="2">11:00</td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td>
+                    </tr>
+                    <tr>
+                        <td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td>
+                    </tr>
+                    <tr>
+                        <td class='scleft' rowspan="2">12:00</td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td>
+                    </tr>
+                    <tr>
+                        <td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td>
+                    </tr>
+                    <tr>
+                        <td class='scleft' rowspan="2">13:00</td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td>
+                    </tr>
+                    <tr>
+                        <td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td>
+                    </tr>
+                    <tr>
+                        <td class='scleft' rowspan="2">14:00</td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td>
+                    </tr>
+                    <tr>
+                        <td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td>
+                    </tr>
+                    <tr>
+                        <td class='scleft' rowspan="2">15:00</td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td>
+                    </tr>
+                    <tr>
+                        <td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td>
+                    </tr>
+                    <tr>
+                        <td class='scleft' rowspan="2">16:00</td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td>
+                    </tr>
+                    <tr>
+                        <td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td>
+                    </tr>
+                    <tr>
+                        <td class='scleft' rowspan="2">17:00</td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td>
+                    </tr>
+                    <tr>
+                        <td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td>
+                    </tr>
+                    <tr>
+                        <td class='scleft' rowspan="2">18:00</td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td>
+                    </tr>
+                    <tr>
+                        <td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td>
+                    </tr>
+                    <tr>
+                        <td class='scleft' rowspan="2">19:00</td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td>
+                    </tr>
+                    <tr>
+                        <td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td><td class='scitem'></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <br>
+                    <button id='addSchedule'>교과목 추가</button>
+                    <button id='removeSchedule' style="background: #ff4343;">교과목 삭제</button>
+                </div>
+                <div id='details'>
+                    <h1 style="margin-bottom: 0.4em" id ='subjName'></h1>
+                    <span id="classCode"></span><button style="margin-left: 10px;" id="codeCopy"> 복사</button><br><br>
+                    <div style="font-weight: bold">평가 항목</div>
+                    <div id="evalRatio"></div><br>
+                    <div style="font-weight: bold">-권장 선수 과목-</div>
+                    <div id="priorSubj"></div>
+                    <div style="font-weight: bold">-권장 후수 과목-</div>
+                    <div id="subSubj"></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<script src='../static/timeline.js'></script>
+<script src='../static/script.js'></script>
+<script src='../static/search.js'></script>
+<script src="../static/initializer.js"></script>
+</body>
+</html>

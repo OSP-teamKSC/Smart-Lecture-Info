@@ -4,8 +4,30 @@ table, th,td {
     border-spacing: 0;
     font-size: 13px;
 }
+#search {
+    width: 70px;
+    height: 30px;
+    padding: 0;
+    font: inherit;
+    background-color: #f44336;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    color: white;
+    border: 0px;
+    border-radius: 25px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+#search:hover{
+    background-color: #b64136;
 
-.scleft {    
+}
+#search:active{
+    transform: translateY(1px);
+}
+
+.scleft {
     font-size: 15px;
     border-right: 1px solid #9F9F9F;
     border-top: 0;
@@ -42,6 +64,7 @@ table, th,td {
 body {
     overflow: hidden;
     margin: 15px;
+    margin-top: 0px;
     border-radius: 15px;
     font-family: Sans-Serif;
     line-height: 1.5em;
@@ -52,21 +75,113 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    /* top: 0; */
+    margin-top: 0;
+    padding-top: 0px;
+    border-spacing: 0;
+}
+
+#optionPanel {
+    position: absolute;
+    height: 400px;
+    width: 800px;
+    background: #e1ead0;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius:20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ratioBar{
+    font-size: 12px;
+    font-weight: bold;
+    overflow: hidden;
+    display: inline-block;
+    height: 40px;
+}
+
+.ratioBar .tooltiptext {
+
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    transform: translate(-30%, -120%);
+}
+
+
+.ratioBar .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.ratioBar:hover .tooltiptext {
+    visibility: visible;
+}
+
+#optionClose{
+    position: absolute;
+    left:400px;
+    top:400px;
+    transform: translate(-50%, -100%);
 }
 
 #header {
     margin: 10px;
     border-radius: 30px;
-    background: #BCCE98;
-    height: 200px;
+    background: #B8C395;
+    height: 190px;
     transition-property: margin-top;
-    margin-top:5px;
     transition-duration: 0.5s;
+    margin-top:5px;
+    top: 0px;
+}
+
+#evalRatio{
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    width: 500px;
+    height: 40px;
+    background: white;
+}
+
+#headerTitle{
+    padding-bottom : 15px;
+    font-weight: bolder;
+    font-size: 42px;
+    font-family: Gadugi, sans-serif;
+    color: #E60000;
+
 }
 
 #header h1 {
     margin: 0;
     padding-top: 15px;
+}
+#hide{
+    position: relative;
+    color: white;
+    cursor:default;
+    font-size: 23px;
+    padding-top: 20px;
+    width: 80px;
+    background: #B8C395;
+    transform: translate(0,0);
+    border-radius: 15px;
+    z-index: 0;
+
 }
 
 #mainwrapper {
@@ -97,8 +212,9 @@ body {
 }
 
 .lists {
+    z-index: 1;
+    position: relative;
     margin-top: 10px;
-    height: 15%;
     text-align: center;
 }
 

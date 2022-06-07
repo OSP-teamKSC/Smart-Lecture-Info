@@ -46,7 +46,8 @@ def transForm(data):
     for i in data:
             tempData[i] = data[i]
     if data['Gubun'] == 'GE':
-        tempData['Gubun'] = data['SearchUniversity']
+        if data['SearchUniversity'] == '':      tempData['Gubun'] = '첨'
+        else:                                   tempData['Gubun'] = data['SearchUniversity']
 
     elif data['Gubun'] == 'UN':
         tempData['Gubun'] = ''
@@ -78,11 +79,10 @@ def accessDataBase(data):
 
     i = 0
     for rows in cursor:
-        print(rows)
         isavailable = True
         datadict_value = {}
         for word, col in zip(rows, myColumns):
-            if col == 'SearchDepartment':       # 전공 분류
+            if col == 'SearchDepartment' and data['SearchDepartment']:       # 전공 분류
                 word = word.split(', ')
                 if data[col] not in word:
                     isavailable = False
