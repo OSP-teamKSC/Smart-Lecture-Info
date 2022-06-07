@@ -16,7 +16,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "Y",
         "Schedule": "\uc6d4 8B,9A,9B,\uc218 7A,7B,8A",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "40",
+        "Rate3": "40",
+        "Rate4": "10",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "N/A",
+        "SubsequentSubject": "N/A"
     },
     {
         "Grade": -1,
@@ -35,7 +46,18 @@
         "ApplicantsCurrent": "80",
         "IsUntact": "Y",
         "Schedule": "\ud654 2B,3A,3B,\ubaa9 1A,1B,2A",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "30",
+        "Rate3": "40",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\ub300\uae30\ud658\uacbd\uacfc\ud559, \uae30\ucd08\ub300\uae30\uacfc\ud559",
+        "SubsequentSubject": "\ub300\uae30\ud658\uacbd\uacfc\ud559, \ud658\uacbd\ud589\uc815\ud559"
     },
     {
         "Grade": -1,
@@ -54,7 +76,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\ud654 5B,6A,6B,\ubaa9 5B,6A,6B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "0",
+        "Rate3": "50",
+        "Rate4": "30",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "10",
+        "PriorSubject": "\uc5c6\uc74c",
+        "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
         "Grade": -1,
@@ -73,6 +106,17 @@
         "ApplicantsCurrent": "40",
         "IsUntact": "N",
         "Schedule": "\uc218 1A,1B,\uc218 2A,2B,\uc218 3A,3B,\uc218 4A,4B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "20",
+        "Rate3": "20",
+        "Rate4": "0",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "50",
+        "PriorSubject": "\uc804\uc0b0\ud559\uac1c\ub860",
+        "SubsequentSubject": "\uc804\uacf5\uad00\ub828 \ubaa8\ub4e0\uacfc\ubaa9"
     }
 ]

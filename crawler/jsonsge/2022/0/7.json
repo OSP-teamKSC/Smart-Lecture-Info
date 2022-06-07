@@ -16,7 +16,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\uc218 8B,9A,9B,\uae08 8B,9A,9B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "20",
+        "Rate2": "30",
+        "Rate3": "30",
+        "Rate4": "10",
+        "Rate5": "10",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\uc5c6\uc74c",
+        "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
         "Grade": "1",
@@ -35,7 +46,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\uc6d4 8B,9A,9B,\uc218 7A,7B,8A",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "30",
+        "Rate3": "30",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "10",
+        "PriorSubject": "\uc5c6\uc74c",
+        "SubsequentSubject": "\uc911\uad6d\uc0ac\uac1c\uc124,  \uc911\uad6d\uc0ac \uad00\ub828 \uc2dc\ub300\uc0ac"
     },
     {
         "Grade": "1",
@@ -54,7 +76,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\ud654 7A,7B,8A,\ubaa9 7A,7B,8A",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "0",
+        "Rate3": "0",
+        "Rate4": "50",
+        "Rate5": "20",
+        "Rate6": "20",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\uc5c6\uc74c",
+        "SubsequentSubject": "\uc11c\uc591\uc0ac\uac1c\ub860/\uc11c\uc591\uadfc\ub300\uc0ac1,2/\uc11c\uc591\ud604\ub300\uc0ac"
     },
     {
         "Grade": -1,
@@ -73,7 +106,18 @@
         "ApplicantsCurrent": "80",
         "IsUntact": "Y",
         "Schedule": "\uc6d4 1A,1B,2A,\uc218 2B,3A,3B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "30",
+        "Rate3": "30",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "10",
+        "PriorSubject": "\ud55c\uad6d\uc0ac",
+        "SubsequentSubject": "\ub3d9\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654"
     },
     {
         "Grade": "1",
@@ -92,7 +136,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\uc6d4 5B,6A,6B,\uae08 5B,6A,6B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "30",
+        "Rate3": "40",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\uc5c6\uc74c",
+        "SubsequentSubject": "\uc870\uc120\uc2dc\ub300\uc0ac, \uc5ed\uc0ac\uc640 \ud53d\uc158, \ub3d9\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654"
     },
     {
         "Grade": "1",
@@ -111,7 +166,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\uc6d4 5B,6A,6B,\uae08 5B,6A,6B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "20",
+        "Rate2": "35",
+        "Rate3": "35",
+        "Rate4": "10",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\ucca0\ud559\uc758 \uc774\ud574",
+        "SubsequentSubject": "\ubb38\ud654\uc778\ub958\ud559\uc758 \uc804\uacf5\uacfc\ubaa9"
     },
     {
         "Grade": -1,
@@ -130,7 +196,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\ud654 1A,1B,2A,\ubaa9 2B,3A,3B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "30",
+        "Rate3": "30",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "10",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\uc5c6\uc74c",
+        "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
         "Grade": -1,
@@ -149,7 +226,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\uc6d4 2B,3A,3B,\uae08 1A,1B,2A",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "40",
+        "Rate3": "40",
+        "Rate4": "10",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\uc5c6\uc74c.",
+        "SubsequentSubject": "\uc601\ud654\ub85c \ub9cc\ub098\ub294 \ub7ec\uc2dc\uc544\uc640 \ub3d9\uc720\ub7fd \ubb38\ud654, \ub7ec\uc2dc\uc544\uc5b4 1 \ub4f1."
     },
     {
         "Grade": "1",
@@ -168,7 +256,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\ud654 5B,6A,6B,\ubaa9 5B,6A,6B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "20",
+        "Rate2": "30",
+        "Rate3": "30",
+        "Rate4": "10",
+        "Rate5": "10",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\uc5c6\uc74c",
+        "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
         "Grade": "1",
@@ -187,7 +286,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\uc6d4 2B,3A,3B,\uae08 1A,1B,2A",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "40",
+        "Rate3": "40",
+        "Rate4": "10",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\uc5c6\uc74c",
+        "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
         "Grade": "1",
@@ -206,7 +316,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\ud654 2B,3A,3B,\ubaa9 1A,1B,2A",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "15",
+        "Rate2": "30",
+        "Rate3": "30",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "5",
+        "PriorSubject": "\uc5c6\uc74c",
+        "SubsequentSubject": "\ud55c\uad6d\uc0ac \uc804\uacf5\uacfc\ubaa9"
     },
     {
         "Grade": "1",
@@ -225,7 +346,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\ud654 2B,3A,3B,\ubaa9 1A,1B,2A",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "30",
+        "Rate3": "40",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\uc11c\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654, \ub3d9\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654",
+        "SubsequentSubject": "\ub300\ud55c\ubbfc\uad6d\uc0ac"
     },
     {
         "Grade": "1",
@@ -244,7 +376,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\ud654 7A,7B,8A,\ubaa9 7A,7B,8A",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "30",
+        "Rate3": "40",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\uc5c6\uc74c",
+        "SubsequentSubject": "\ub3d9\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654, \uc11c\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654"
     },
     {
         "Grade": "1",
@@ -263,7 +406,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\ud654 7A,7B,8A,\ubaa9 7A,7B,8A",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "20",
+        "Rate2": "30",
+        "Rate3": "30",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\ud2b9\ubcc4\ud788 \uad8c\uc7a5\ud558\ub294 \uc120\uc218 \uacfc\ubaa9\uc740 \uc5c6\uc74c",
+        "SubsequentSubject": "\uc0ac\ud559\uacfc \uac1c\uc124\uc758 \uc2dc\ub300\uc0ac \uacfc\ubaa9"
     },
     {
         "Grade": "1",
@@ -282,7 +436,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\ud654 1A,1B,2A,\ubaa9 2B,3A,3B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "30",
+        "Rate3": "40",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\uc5c6\uc74c",
+        "SubsequentSubject": "\ub3d9\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654, \uc11c\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654"
     },
     {
         "Grade": "1",
@@ -301,7 +466,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "Y",
         "Schedule": "\uc6d4 1A,1B,2A,\uc218 2B,3A,3B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "30",
+        "Rate3": "30",
+        "Rate4": "15",
+        "Rate5": "15",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "-",
+        "SubsequentSubject": "-"
     },
     {
         "Grade": -1,
@@ -320,7 +496,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "Y",
         "Schedule": "\ud654 1A,1B,2A,\ubaa9 2B,3A,3B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "20",
+        "Rate2": "30",
+        "Rate3": "30",
+        "Rate4": "15",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "5",
+        "PriorSubject": "\uc5c6\uc74c",
+        "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
         "Grade": "1",
@@ -339,7 +526,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\uc218 8B,9A,9B,\uae08 8B,9A,9B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "30",
+        "Rate3": "30",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "10",
+        "PriorSubject": "\ud55c\uad6d\uc0ac",
+        "SubsequentSubject": "\ub3d9\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654"
     },
     {
         "Grade": "1",
@@ -358,7 +556,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\ud654 1A,1B,2A,\ubaa9 2B,3A,3B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "20",
+        "Rate2": "30",
+        "Rate3": "30",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\ud2b9\ubcc4\ud788 \uad8c\uc7a5\ud558\ub294 \uc120\uc218 \uacfc\ubaa9\uc740 \uc5c6\uc74c",
+        "SubsequentSubject": "\uc0ac\ud559\uacfc \uac1c\uc124\uc758 \uc2dc\ub300\uc0ac \uacfc\ubaa9"
     },
     {
         "Grade": "1",
@@ -377,7 +586,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\ud654 1A,1B,2A,\ubaa9 2B,3A,3B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "35",
+        "Rate3": "35",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\ub3d9\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654, \uc11c\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654",
+        "SubsequentSubject": "\ub300\ud55c\ubbfc\uad6d\uc0ac, \ub3d9\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654, \uc11c\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654"
     },
     {
         "Grade": "1",
@@ -396,7 +616,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\uc6d4 7A,7B,8A,\uae08 7A,7B,8A",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "30",
+        "Rate3": "40",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\uc5c6\uc74c",
+        "SubsequentSubject": "\uc870\uc120\uc2dc\ub300\uc0ac, \uc5ed\uc0ac\uc640 \ud53d\uc158, \ub3d9\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654"
     },
     {
         "Grade": "1",
@@ -415,7 +646,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\uc6d4 7A,7B,8A,\uae08 7A,7B,8A",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "0",
+        "Rate2": "35",
+        "Rate3": "35",
+        "Rate4": "10",
+        "Rate5": "10",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "10",
+        "PriorSubject": "\uc5ed\uc0ac\uc640 \ubb38\ud654",
+        "SubsequentSubject": "\ud55c\uad6d\uc0ac\uc5f0\uad6c\uc785\ubb38"
     },
     {
         "Grade": "1",
@@ -434,7 +676,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\uc6d4 5B,6A,6B,\uae08 5B,6A,6B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "0",
+        "Rate2": "35",
+        "Rate3": "35",
+        "Rate4": "10",
+        "Rate5": "10",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "10",
+        "PriorSubject": "\uc5ed\uc0ac\uc640 \ubb38\ud654",
+        "SubsequentSubject": "\ud55c\uad6d\uc0ac\uc5f0\uad6c\uc785\ubb38"
     },
     {
         "Grade": "1",
@@ -453,7 +706,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\uc6d4 7A,7B,8A,\uae08 7A,7B,8A",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "40",
+        "Rate3": "40",
+        "Rate4": "10",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\uc5c6\uc74c",
+        "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
         "Grade": "1",
@@ -472,7 +736,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\ud654 5B,6A,6B,\ubaa9 5B,6A,6B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "15",
+        "Rate2": "30",
+        "Rate3": "30",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "5",
+        "PriorSubject": "\uc5c6\uc74c",
+        "SubsequentSubject": "\ud55c\uad6d\uc0ac \uc804\uacf5\uacfc\ubaa9"
     },
     {
         "Grade": "3",
@@ -491,7 +766,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\ud654 5B,6A,6B,\ubaa9 5B,6A,6B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "30",
+        "Rate3": "40",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\uc11c\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654, \ub3d9\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654",
+        "SubsequentSubject": "\ub300\ud55c\ubbfc\uad6d\uc0ac"
     },
     {
         "Grade": "1",
@@ -510,7 +796,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\ud654 7A,7B,8A,\ubaa9 7A,7B,8A",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "15",
+        "Rate2": "25",
+        "Rate3": "25",
+        "Rate4": "30",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "5",
+        "PriorSubject": "\ub3d9\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654",
+        "SubsequentSubject": "\uc11c\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654"
     },
     {
         "Grade": "1",
@@ -529,7 +826,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\uc218 1A,1B,2A,\uae08 2B,3A,3B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "35",
+        "Rate3": "35",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\ub3d9\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654, \uc11c\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654",
+        "SubsequentSubject": "\ub300\ud55c\ubbfc\uad6d\uc0ac, \ub3d9\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654, \uc11c\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654"
     },
     {
         "Grade": "1",
@@ -548,7 +856,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\uc6d4 8B,9A,9B,\uc218 7A,7B,8A",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "20",
+        "Rate2": "30",
+        "Rate3": "30",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\uae30\ub3c5\uad50\uc640 \uc778\ub958\ubb38\uba85, \uc138\uacc4\ubb38\ud654\uc758 \uc774\ud574, \uc778\ubb3c\ub85c \ubcf4\ub294 \uc11c\uc591\uc758 \uc5ed\uc0ac",
+        "SubsequentSubject": "\uc5ed\uc0ac\ud559 \uac1c\ub860, \uc0ac\uc591\uace0\ub300\uc0ac, \uc11c\uc591\uc911\uc138\uc0ac, \uc11c\uc591\uadfc\ub300\uc0ac, \uc11c\uc591\ud604\ub300\uc0ac"
     },
     {
         "Grade": -1,
@@ -567,7 +886,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\uc6d4 8B,9A,9B,\uc218 7A,7B,8A",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "20",
+        "Rate2": "30",
+        "Rate3": "30",
+        "Rate4": "10",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "10",
+        "PriorSubject": "\ub3d9\uc591\uace0\ub300\uc0ac, \ub3d9\uc591\uc911\uc138\uc0ac",
+        "SubsequentSubject": "\ub3d9\uc591\uadfc\ub300\uc0ac, \ub3d9\uc591\ud604\ub300\uc0ac"
     },
     {
         "Grade": "2",
@@ -586,7 +916,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\uc6d4 2B,3A,3B,\uae08 1A,1B,2A",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "0",
+        "Rate2": "30",
+        "Rate3": "30",
+        "Rate4": "10",
+        "Rate5": "10",
+        "Rate6": "20",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\ud55c\uad6d\uace0\ub300\uc0ac",
+        "SubsequentSubject": "\ub300\ud55c\ubbfc\uad6d\uc0ac"
     },
     {
         "Grade": "1",
@@ -605,7 +946,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\ud654 8B,9A,9B,\ubaa9 8B,9A,9B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "30",
+        "Rate3": "40",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\uc11c\uc591\uc758\uc5ed\uc0ac\uc640\ubb38\ud654",
+        "SubsequentSubject": "\uc11c\uc591\uc758\uc5ed\uc0ac\uc640\ubb38\ud654"
     },
     {
         "Grade": "1",
@@ -624,7 +976,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\ud654 5B,6A,6B,\ubaa9 5B,6A,6B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "30",
+        "Rate3": "40",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\uc11c\uc591\uc758\uc5ed\uc0ac\uc640\ubb38\ud654",
+        "SubsequentSubject": "\uc11c\uc591\uc758\uc5ed\uc0ac\uc640\ubb38\ud654"
     },
     {
         "Grade": "1",
@@ -643,7 +1006,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\uc6d4 7A,7B,8A,\uae08 7A,7B,8A",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "30",
+        "Rate3": "30",
+        "Rate4": "30",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\ud55c\uad6d\uc0ac",
+        "SubsequentSubject": "\ub3d9\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654"
     },
     {
         "Grade": "1",
@@ -662,7 +1036,18 @@
         "ApplicantsCurrent": "60",
         "IsUntact": "N",
         "Schedule": "\uc6d4 8B,9A,9B,\uc218 7A,7B,8A",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "30",
+        "Rate3": "40",
+        "Rate4": "10",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "10",
+        "PriorSubject": "\ud55c\uad6d \uace0\ub300\uc0ac. \ud55c\uad6d \uadfc\ub300\uc0ac.",
+        "SubsequentSubject": "\ud55c\uad6d \ud604\ub300\uc0ac"
     },
     {
         "Grade": "1",
@@ -681,7 +1066,18 @@
         "ApplicantsCurrent": "60",
         "IsUntact": "N",
         "Schedule": "\uc6d4 8B,9A,9B,\uc218 7A,7B,8A",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "20",
+        "Rate3": "40",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "10",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\uc5c6\uc74c. \ud55c\uad6d\uc0ac \uad00\ub828 \uad50\uc591 \uc11c\uc801 \uad8c\uc7a5",
+        "SubsequentSubject": "\ub3d9\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654, \uc11c\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654, \ub300\ud55c\ubbfc\uad6d\uc0ac"
     },
     {
         "Grade": "1",
@@ -700,7 +1096,18 @@
         "ApplicantsCurrent": "1",
         "IsUntact": "N",
         "Schedule": "\ubaa9 11A,11B,\ubaa9 12A,12B,\ubaa9 13A,13B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "15",
+        "Rate2": "25",
+        "Rate3": "25",
+        "Rate4": "30",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "5",
+        "PriorSubject": "\ub3d9\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654",
+        "SubsequentSubject": "\uc11c\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654"
     },
     {
         "Grade": "3",
@@ -719,7 +1126,18 @@
         "ApplicantsCurrent": "60",
         "IsUntact": "N",
         "Schedule": "\ud654 7A,7B,8A,\ubaa9 7A,7B,8A",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "30",
+        "Rate3": "50",
+        "Rate4": "10",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\uc5c6\uc74c",
+        "SubsequentSubject": "\uc11c\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654"
     },
     {
         "Grade": "4",
@@ -738,7 +1156,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\ud654 8B,9A,9B,\ubaa9 8B,9A,9B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "30",
+        "Rate3": "40",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\ub3d9\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654, \uc778\ubb3c\ub85c \ubcf8 \uc11c\uc591\uc0ac",
+        "SubsequentSubject": "\uc138\uacc4\ubb38\ud654\uc774\ud574"
     },
     {
         "Grade": "4",
@@ -757,7 +1186,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\uc218 8B,9A,9B,\uae08 8B,9A,9B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "30",
+        "Rate3": "30",
+        "Rate4": "30",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\ud55c\uad6d\uc0ac",
+        "SubsequentSubject": "\ub3d9\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654"
     },
     {
         "Grade": "1",
@@ -776,7 +1216,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\uc6d4 1A,1B,2A,\uc218 2B,3A,3B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "0",
+        "Rate2": "30",
+        "Rate3": "30",
+        "Rate4": "10",
+        "Rate5": "10",
+        "Rate6": "20",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\ud55c\uad6d\uace0\ub300\uc0ac",
+        "SubsequentSubject": "\ub300\ud55c\ubbfc\uad6d\uc0ac"
     },
     {
         "Grade": "1",
@@ -795,7 +1246,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\uc6d4 1A,1B,2A,\uc218 2B,3A,3B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "35",
+        "Rate3": "35",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\uc5c6\uc74c. \ud55c\uad6d\uc0ac \uad00\ub828 \uad50\uc591\uc11c\ub97c \uc77d\uae38 \uad8c\ud568.",
+        "SubsequentSubject": "\ub3d9\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654, \uc11c\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654."
     },
     {
         "Grade": "1",
@@ -814,7 +1276,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\uc6d4 1A,1B,2A,\uc218 2B,3A,3B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "30",
+        "Rate3": "40",
+        "Rate4": "10",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "10",
+        "PriorSubject": "\ud55c\uad6d \uace0\ub300\uc0ac. \ud55c\uad6d \uadfc\ub300\uc0ac.",
+        "SubsequentSubject": "\ud55c\uad6d \ud604\ub300\uc0ac"
     },
     {
         "Grade": "1",
@@ -833,7 +1306,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\uc6d4 1A,1B,2A,\uc218 2B,3A,3B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "20",
+        "Rate3": "40",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "10",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\uc5c6\uc74c. \ud55c\uad6d\uc0ac \uad00\ub828 \uad50\uc591 \uc11c\uc801 \uad8c\uc7a5",
+        "SubsequentSubject": "\ub3d9\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654, \uc11c\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654, \ub300\ud55c\ubbfc\uad6d\uc0ac"
     },
     {
         "Grade": "4",
@@ -852,7 +1336,18 @@
         "ApplicantsCurrent": "70",
         "IsUntact": "N",
         "Schedule": "\uc6d4 5B,6A,6B,\uae08 5B,6A,6B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "35",
+        "Rate3": "35",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\uc5c6\uc74c. \ud55c\uad6d\uc0ac \uad00\ub828 \uad50\uc591\uc11c\ub97c \uc77d\uae38 \uad8c\ud568.",
+        "SubsequentSubject": "\ub3d9\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654, \uc11c\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654."
     },
     {
         "Grade": "1",
@@ -871,7 +1366,18 @@
         "ApplicantsCurrent": "60",
         "IsUntact": "N",
         "Schedule": "\uc218 1A,1B,2A,\uae08 2B,3A,3B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "20",
+        "Rate2": "30",
+        "Rate3": "30",
+        "Rate4": "10",
+        "Rate5": "10",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\uc5c6\uc74c",
+        "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
         "Grade": "1",
@@ -890,7 +1396,18 @@
         "ApplicantsCurrent": "60",
         "IsUntact": "N",
         "Schedule": "\ud654 8B,9A,9B,\ubaa9 8B,9A,9B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "30",
+        "Rate3": "50",
+        "Rate4": "10",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\uc5c6\uc74c",
+        "SubsequentSubject": "\uc11c\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654"
     },
     {
         "Grade": "1",
@@ -909,7 +1426,18 @@
         "ApplicantsCurrent": "60",
         "IsUntact": "N",
         "Schedule": "\uc6d4 1A,1B,2A,\uc218 2B,3A,3B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "20",
+        "Rate3": "20",
+        "Rate4": "25",
+        "Rate5": "20",
+        "Rate6": "5",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "0",
+        "PriorSubject": "\uc0ac\ud68c\ud559\uc758 \uc774\ud574",
+        "SubsequentSubject": "\ubb38\ud654\uc758 \uc774\ud574"
     },
     {
         "Grade": -1,
@@ -928,7 +1456,18 @@
         "ApplicantsCurrent": "60",
         "IsUntact": "N",
         "Schedule": "\ud654 5B,6A,6B,\ubaa9 5B,6A,6B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "10",
+        "Rate2": "30",
+        "Rate3": "30",
+        "Rate4": "20",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "10",
+        "PriorSubject": "\ud55c\uad6d\uc0ac",
+        "SubsequentSubject": "\ub3d9\uc591\uc758 \uc5ed\uc0ac\uc640 \ubb38\ud654"
     },
     {
         "Grade": "3",
@@ -947,7 +1486,18 @@
         "ApplicantsCurrent": "60",
         "IsUntact": "N",
         "Schedule": "\uc218 1A,1B,2A,\uae08 2B,3A,3B",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "20",
+        "Rate2": "30",
+        "Rate3": "30",
+        "Rate4": "15",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "5",
+        "PriorSubject": "\uc5c6\uc74c",
+        "SubsequentSubject": "\uc5c6\uc74c"
     },
     {
         "Grade": "2",
@@ -966,6 +1516,17 @@
         "ApplicantsCurrent": "60",
         "IsUntact": "N",
         "Schedule": "\uc6d4 2B,3A,3B,\uae08 1A,1B,2A",
-        "Credit": "3"
+        "Credit": "3",
+        "Rate1": "20",
+        "Rate2": "30",
+        "Rate3": "30",
+        "Rate4": "15",
+        "Rate5": "0",
+        "Rate6": "0",
+        "Rate7": "0",
+        "Rate8": "0",
+        "Rate9": "5",
+        "PriorSubject": "\uc5c6\uc74c",
+        "SubsequentSubject": "\uc5c6\uc74c"
     }
 ]
