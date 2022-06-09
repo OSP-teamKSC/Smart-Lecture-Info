@@ -3,7 +3,10 @@
 # 1q2w3e4r@@
 sudo apt-get -y update
 
-sudo apt-get install -y python3
+if which python3 > /dev/null;then
+        echo "python3 already installed"
+    else
+        sudo apt install -y python3
 sudo apt-get install -y python3-pip
 sudo apt-get install -y python3-venv
 
