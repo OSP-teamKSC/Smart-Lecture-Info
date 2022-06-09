@@ -15,7 +15,7 @@ $ pip install -r requirements.txt
 ```
 ## run(Linux)
 ```
-$ chmode +x ./run.sh
+$ chmod +x ./run.sh
 $ ./run.sh
 ```
 ## 기능
