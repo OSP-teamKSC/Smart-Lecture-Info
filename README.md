@@ -14,7 +14,10 @@ $ source [your_virtual_environment]/bin/activate
 $ pip install -r requirements.txt
 ```
 ## run(Linux)
-
+```
+$ chmode +x ./run.sh
+$ ./run.sh
+```
 ## 기능
 ![강의선택](https://user-images.githubusercontent.com/101383098/172840533-c950950c-f0a8-440a-8cd9-4c1af32aa0ed.png)
 #### 시간표의 시각화
