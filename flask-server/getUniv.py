@@ -4,13 +4,13 @@ UnivList = ['인문대학', '사회과학대학', '자연과학대학', '경상�
 
 def getMajor(year, season):
     Dict = {}
-    if not os.path.isdir('../DB/crawler/UnivMajor/{}/{}'.format(year, season)):
+    if not os.path.isdir('./DB/crawler/UnivMajor/{}/{}'.format(year, season)):
         return Dict
 
     for univ in UnivList:
-        if not os.path.isfile('../DB/crawler/UnivMajor/{}/{}/univ_{}.json'.format(year, season, univ)):
+        if not os.path.isfile('./DB/crawler/UnivMajor/{}/{}/univ_{}.json'.format(year, season, univ)):
             continue
-        with open('../DB/crawler/UnivMajor/{}/{}/univ_{}.json'.format(year, season, univ), 'r') as openfile:
+        with open('./DB/crawler/UnivMajor/{}/{}/univ_{}.json'.format(year, season, univ), 'r') as openfile:
             json_data = json.load(openfile)
             depas = json_data['data']
             depalist = []

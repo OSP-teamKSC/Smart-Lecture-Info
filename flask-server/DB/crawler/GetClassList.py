@@ -1,7 +1,7 @@
 import json
 import requests
 import os
-import crawler.ClassJsonConverter as ClassJsonConverter
+import DB.crawler.ClassJsonConverter as ClassJsonConverter
 import time
 from pathlib import Path
 

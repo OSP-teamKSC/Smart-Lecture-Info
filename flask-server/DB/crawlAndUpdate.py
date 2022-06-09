@@ -1,6 +1,6 @@
 import os
 import json
-import crawler.GetClassList
+import DB.crawler.GetClassList as GetClassList
 import pymysql as sql
 
 
@@ -56,16 +56,16 @@ def crawlAndUpdate(year, season, isGE=False, passwd=''):
     try:
         if not isGE:
             # 대학 목록 불러오기
-            crawler.GetClassList.getUnivList(year, season)
+            GetClassList.getUnivList(year, season)
             # 학과 목록 불러오기
-            crawler.GetClassList.getAllDepartments(year, season)
+            GetClassList.getAllDepartments(year, season)
             # 강의 목록 불러오기
-            crawler.GetClassList.getAllMajorClasses(year, season, False)
+            GetClassList.getAllMajorClasses(year, season, False)
         else:
             # 교양 세부 목록 불러오기
-            crawler.GetClassList.getGEList()
+            GetClassList.getGEList()
             # 교양 강의 목록 불러오기
-            crawler.GetClassList.getAllGEClasses(year, season, False)
+            GetClassList.getAllGEClasses(year, season, False)
     except:
         # 예외 발생시 바로 작동 중단
         print('failed to crawl...')

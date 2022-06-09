@@ -6,7 +6,6 @@ from flask_cors import CORS
 import getUniv
 import knuBus
 import Init
-# from crawler import crawlAndInsert
 
 DBPW = sys.argv[1]
 
@@ -36,7 +35,6 @@ def test():
     if request.json:
         search = request.json
         # search = json.dump(search)
-        isGE = True if search['Gubun'] == 'GE' else False
         print(search)
         data = knuBus.accessDataBase(search, DBPW)
         json_data = json.dumps(data)
@@ -45,8 +43,5 @@ def test():
 
 
 if __name__ == "__main__":
-    Init.init()
-    # for season in range(0,4):
-        # crawlAndInsert(2022, search['Season'], True, DBPW)
-        # crawlAndInsert(2022, search['Season'], False, DBPW)
-    app.run(host="0.0.0.0", port="8080", debug=True)
+    # Init.init(DBPW)
+    app.run(host="0.0.0.0", port="8080")

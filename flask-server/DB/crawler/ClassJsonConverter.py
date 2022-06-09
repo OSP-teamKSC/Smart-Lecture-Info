@@ -1,7 +1,7 @@
 import json
 import requests
 import os
-import crawler.GetClassSyllabus as GetClassSyllabus
+import DB.crawler.GetClassSyllabus as GetClassSyllabus
 from pathlib import Path
 
 def ConvertJSON(j, withSyllabus=False,forTest = None, UnivName = '', DepartName = '', GubunName = ''):
