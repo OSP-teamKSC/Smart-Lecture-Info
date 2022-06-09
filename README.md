@@ -10,6 +10,7 @@
 # 기능
 <img src='https://user-images.githubusercontent.com/101383098/172840533-c950950c-f0a8-440a-8cd9-4c1af32aa0ed.png' width = '1280'>
 <img src='https://user-images.githubusercontent.com/54511614/172935281-4b6c105f-a8d3-4fe0-b5bc-5a0295c26cb5.png' width = '720'>
+
 #### 시간표의 시각화
 - 간편하게 스케줄을 추가하여 시간표를 눈으로 확인 가능
 #### 필터링 기능
