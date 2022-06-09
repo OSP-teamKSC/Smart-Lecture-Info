@@ -4,11 +4,8 @@ import threading
 import DB.crawlAndInsert as crawlAndInsert
 import DB.crawlAndUpdate as crawlAndUpdate
 def updateDB(DBPW):
-    while True:
-        for season in range(0, 4):
-            crawlAndUpdate.crawlAndUpdate(2022, season, True, DBPW)
-            crawlAndUpdate.crawlAndUpdate(2022, season, False, DBPW)
-        time.sleep(5)
+    crawlAndUpdate.crawlAndUpdate(2022, 0, False, DBPW)
+    crawlAndUpdate.crawlAndUpdate(2022, 0, True, DBPW)
 
 
 def init(DBPW):

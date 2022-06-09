@@ -1,0 +1,21 @@
+[
+    {
+        "Grade": -1,
+        "Gubun": "\ucca8\uc131\uc778\uc18c\uc591",
+        "SubjectName": "\ucc3d\uc5c5\uc124\uacc4\uc640 \uae30\uc5c5\uac00 \uc815\uc2e0",
+        "SubjectCode": "CLTR0792",
+        "ClassCode": "CLTR0792-001",
+        "ClassDivideNumber": "001",
+        "EstablishedUniversity": "\uc5f0\uad6c\uc0b0\ud559\ucc98",
+        "EstablishedDepartment": "\uc5f0\uad6c\uc0b0\ud559\ucc98",
+        "SearchUniversity": "\ucca8\uc131\uc778\uc18c\uc591",
+        "SearchDepartment": "\uc9c4\ub85c\uc640\ucde8\uc5c5",
+        "ProfessorNames": "\uc815\uacbd\ucca0",
+        "Season": "\uacc4\uc808\ud559\uae30(\ud558\uacc4)",
+        "ApplicantsMax": "100",
+        "ApplicantsCurrent": "100",
+        "IsUntact": "Y",
+        "Schedule": "\uc6d4 5A,5B,\uc6d4 6A,6B,\ud654 5A,5B,\ud654 6A,6B,\uc218 5A,5B,\uc218 6A,6B,\ubaa9 5A,5B,\ubaa9 6A,6B,\uae08 5A,5B,\uae08 6A,6B",
+        "Credit": "2"
+    }
+]
