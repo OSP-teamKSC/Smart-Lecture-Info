@@ -1,4 +1,5 @@
 # 크누버스(knubus)
+- 크누버스(knubus)는 knu + syllabus의 합성어로 기존의 경북대 강의 계획서의 불편한 점 개선
 ## 개발환경
 - python @3.8.10
 - mysql @8.0.29
