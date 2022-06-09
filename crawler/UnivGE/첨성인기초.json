@@ -1,0 +1,101 @@
+{
+    "timestamp": "2022-05-18T00:50:05.336",
+    "success": true,
+    "code": null,
+    "msg": null,
+    "data": {
+        "option": {
+            "reqId": null,
+            "serviceId": null,
+            "key": "STCU0011",
+            "upperKey": "STCU001000005",
+            "searchParam": null,
+            "listCode": false,
+            "attrs": [],
+            "codes": [
+                {
+                    "codeId": "STCU001100022",
+                    "codeNm": "\ub3c5\uc11c\uc640\ud1a0\ub860",
+                    "upperCodeId": "STCU001000005",
+                    "upperCodeNm": "\ucca8\uc131\uc778\uae30\ucd08",
+                    "codeAbbnm": null,
+                    "upperCodeAbbnm": null,
+                    "useYn": "Y",
+                    "orderIndex": 15010000,
+                    "lvl": 0,
+                    "opt1": null,
+                    "opt2": null,
+                    "opt3": null,
+                    "opt4": null,
+                    "opt5": null
+                },
+                {
+                    "codeId": "STCU001100023",
+                    "codeNm": "\uc0ac\uace0\uad50\uc721",
+                    "upperCodeId": "STCU001000005",
+                    "upperCodeNm": "\ucca8\uc131\uc778\uae30\ucd08",
+                    "codeAbbnm": null,
+                    "upperCodeAbbnm": null,
+                    "useYn": "Y",
+                    "orderIndex": 15020000,
+                    "lvl": 0,
+                    "opt1": null,
+                    "opt2": null,
+                    "opt3": null,
+                    "opt4": null,
+                    "opt5": null
+                },
+                {
+                    "codeId": "STCU001100024",
+                    "codeNm": "\uae00\uc4f0\uae30",
+                    "upperCodeId": "STCU001000005",
+                    "upperCodeNm": "\ucca8\uc131\uc778\uae30\ucd08",
+                    "codeAbbnm": null,
+                    "upperCodeAbbnm": null,
+                    "useYn": "Y",
+                    "orderIndex": 15030000,
+                    "lvl": 0,
+                    "opt1": null,
+                    "opt2": null,
+                    "opt3": null,
+                    "opt4": null,
+                    "opt5": null
+                },
+                {
+                    "codeId": "STCU001100025",
+                    "codeNm": "\uc2e4\uc6a9\uc601\uc5b4",
+                    "upperCodeId": "STCU001000005",
+                    "upperCodeNm": "\ucca8\uc131\uc778\uae30\ucd08",
+                    "codeAbbnm": null,
+                    "upperCodeAbbnm": null,
+                    "useYn": "Y",
+                    "orderIndex": 15040000,
+                    "lvl": 0,
+                    "opt1": null,
+                    "opt2": null,
+                    "opt3": null,
+                    "opt4": null,
+                    "opt5": null
+                },
+                {
+                    "codeId": "STCU001100026",
+                    "codeNm": "\uc18c\ud504\ud2b8\uc6e8\uc5b4",
+                    "upperCodeId": "STCU001000005",
+                    "upperCodeNm": "\ucca8\uc131\uc778\uae30\ucd08",
+                    "codeAbbnm": null,
+                    "upperCodeAbbnm": null,
+                    "useYn": "Y",
+                    "orderIndex": 15050000,
+                    "lvl": 0,
+                    "opt1": null,
+                    "opt2": null,
+                    "opt3": null,
+                    "opt4": null,
+                    "opt5": null
+                }
+            ]
+        },
+        "popup": null
+    },
+    "statusCode": 200
+}

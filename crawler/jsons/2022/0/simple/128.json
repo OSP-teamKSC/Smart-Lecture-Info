@@ -1,0 +1,21 @@
+[
+    {
+        "Grade": "4",
+        "Gubun": "\uc804\uacf5",
+        "SubjectName": "\ubcf5\uc9c0\uad6d\uac00\ub860",
+        "SubjectCode": "WELF0242",
+        "ClassCode": "WELF0242-001",
+        "ClassDivideNumber": "001",
+        "EstablishedUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
+        "EstablishedDepartment": "\uc0ac\ud68c\ubcf5\uc9c0\ud559\ubd80 \uc0ac\ud68c\ubcf5\uc9c0\uac70\uc2dc\uc804\uacf5",
+        "SearchUniversity": "\uc0ac\ud68c\uacfc\ud559\ub300\ud559",
+        "SearchDepartment": "\uc0ac\ud68c\ubcf5\uc9c0\uac70\uc2dc\uc804\uacf5",
+        "ProfessorNames": "\uc774\uba85\ud604",
+        "Season": "1\ud559\uae30",
+        "ApplicantsMax": "21",
+        "ApplicantsCurrent": "30",
+        "IsUntact": "N",
+        "Schedule": "\uc6d4 6A,6B,\uc218 5A,5B,\uc218 6A,6B",
+        "Credit": "3"
+    }
+]
