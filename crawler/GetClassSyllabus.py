@@ -38,8 +38,10 @@ def LoadClassSyllabus(year,season,sbjetCd,sbjetDvnno,lctreLnggeSctcd,estblDprtnC
     if response.status_code >= 400:
         print('failed to get file : no response')
         return
-    if len(response.json()['data']) == 0:
-        print('failed to get file : no data')
-        return
+    if response.json()['data'] == None or len(response.json()['data']) == 0:
+        if lctreLnggeSctcd == 'STCU001400001':
+            print('failed to get file : no data')
+            return None
+        return LoadClassSyllabus(year, season, sbjetCd, sbjetDvnno, 'STCU001400001', estblDprtnCd, doPlan="Kor", forTest=None)
     return response.json()['data']
 
