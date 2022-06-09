@@ -17,6 +17,5 @@ pip install -r requirements.txt
 
 sudo apt-get install mysql-server
 
-read -p "Enter the DataBase Password: " DBPW
 #run flask
-python3 flask-server/main.py $DBPW
+python3 flask-server/main.py

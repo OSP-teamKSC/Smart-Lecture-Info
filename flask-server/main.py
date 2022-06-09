@@ -7,7 +7,7 @@ import getUniv
 import knuBus
 import Init
 
-DBPW = sys.argv[1]
+DBPW = "1q2w3e4r@@"
 
 app = Flask("__main__")
 CORS(app)
@@ -44,4 +44,4 @@ def test():
 
 if __name__ == "__main__":
     Init.init(DBPW)
-    app.run(host="0.0.0.0", port="8080",  debug=True)
+    app.run(host="0.0.0.0")

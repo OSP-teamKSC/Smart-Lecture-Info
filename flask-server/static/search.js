@@ -27,7 +27,7 @@ function Search(){
     const xhr = new XMLHttpRequest();
     //요청을 보낼 방식, url, 비동기여부 설정
     //서버 주소
-    xhr.open('post', 'http://218.233.216.244/request', true);
+    xhr.open('post', 'http://localhost:5000/request', true);
     //HTTP 요청 헤더 설정
     xhr.setRequestHeader('Content-type', 'application/json');
     //요청 전송
@@ -95,7 +95,7 @@ IdSeme.onchange = function (){
         const xhr = new XMLHttpRequest();
         //요청을 보낼 방식, url, 비동기여부 설정
         //서버 주소
-        xhr.open('post', 'http://218.233.216.244/UnivList', true);
+        xhr.open('post', 'http://localhost:5000/UnivList', true);
         //HTTP 요청 헤더 설정
         xhr.setRequestHeader('Content-type', 'application/json');
         //요청 전송
