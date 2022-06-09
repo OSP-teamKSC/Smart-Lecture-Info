@@ -217,7 +217,7 @@ def getMajorClass2(depart_code, index, year=2022, season=0, withSyllabus=False, 
         file = './jsons/{0}/{1}/simple/{2}.json'.format(year, season, index + t)
     else:
         file = './jsons/{0}/{1}/{2}.json'.format(year, season, index + t)
-    if os.path.exists(file):
+    if os.path.exists(file and withSyllabus):
         print('file exist. passing..')
         t += 1
         return t
@@ -263,7 +263,7 @@ def getGEClass2(index, openfile, savedir, year=2022, season=0, withSyllable=Fals
             name = sub['codeNm']
             code = sub['codeId']
 
-            if (os.path.exists('{0}/{1}.json'.format(savedir, index + t))):
+            if os.path.exists('{0}/{1}.json'.format(savedir, index + t)) and withSyllable:
                 print('file exist. passing..')
                 t += 1
                 continue
