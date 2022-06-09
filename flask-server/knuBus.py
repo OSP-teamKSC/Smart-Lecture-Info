@@ -99,6 +99,8 @@ def selectTable(tableName, data, str):
             datadict_value[col] = word
         if isavailable:
             dataList.append(datadict_value)
+    mydb.commit()
+    cursor.close()
     return dataList
 
 

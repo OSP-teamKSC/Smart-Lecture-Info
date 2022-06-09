@@ -140,11 +140,11 @@ IdUniv.onchange = function (){
     }
 }
 
-
 IdCollege.onchange = function(){
+    console.log(IdUniv.value);
     let course = IdUniv.value === 'UN' ? UnivList[IdCollege.value] : GEList[IdCollege.value];
     if(IdCollege.value === "첨성인핵심")   {
-        course = GEList[IdUniv.value][IdCollege.value];
+        course = Object.keys(GEList[IdCollege.value]);
     }
     //초기화
     removeAll(IdMajor);

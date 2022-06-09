@@ -1,8 +1,12 @@
+import json
+
 from flask import (Flask, render_template, request)
 from flask_cors import CORS
-import json
-import knuBus
+
 import getUniv
+import knuBus
+# from crawler import crawlAndInsert
+
 
 app = Flask("__main__")
 CORS(app)
@@ -30,7 +34,9 @@ def test():
     if request.json:
         search = request.json
         # search = json.dump(search)
+        isGE = True if search['Gubun'] == 'GE' else False
         print(search)
+        # crawlAndInsert(search['Year'], search['Season'], isGE)
         data = knuBus.accessDataBase(search)
         json_data = json.dumps(data)
     # return
