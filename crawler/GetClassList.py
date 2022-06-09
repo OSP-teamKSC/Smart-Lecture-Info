@@ -1,7 +1,7 @@
 import json
 import requests
 import os
-import ClassJsonConverter
+import crawler.ClassJsonConverter as ClassJsonConverter
 import time
 from pathlib import Path
 
@@ -217,7 +217,7 @@ def getMajorClass2(depart_code, index, year=2022, season=0, withSyllabus=False, 
         file = './jsons/{0}/{1}/simple/{2}.json'.format(year, season, index + t)
     else:
         file = './jsons/{0}/{1}/{2}.json'.format(year, season, index + t)
-    if os.path.exists(file):
+    if os.path.exists(file and withSyllabus):
         print('file exist. passing..')
         t += 1
         return t
@@ -232,17 +232,17 @@ def getMajorClass2(depart_code, index, year=2022, season=0, withSyllabus=False, 
         except requests.exceptions.ConnectionError:
             if i == 4:
                 print('Connection Failed')
-                return None
+                return 0
             print('Connection Error, Retrying... {}/{}'.format(i + 1, 5))
             continue
         break
 
     if response.status_code >= 400:
         print('failed to get file : no response')
-        return
+        return 0
     if len(response.json()['data']) == 0:
         print('failed to get file : no data')
-        return
+        return 0
     if (forTest):
         forTest(len(response.content) / 1024)
     with open(file, 'w') as savefile:
@@ -263,7 +263,7 @@ def getGEClass2(index, openfile, savedir, year=2022, season=0, withSyllable=Fals
             name = sub['codeNm']
             code = sub['codeId']
 
-            if (os.path.exists('{0}/{1}.json'.format(savedir, index + t))):
+            if os.path.exists('{0}/{1}.json'.format(savedir, index + t)) and withSyllable:
                 print('file exist. passing..')
                 t += 1
                 continue
@@ -288,10 +288,12 @@ def getGEClass2(index, openfile, savedir, year=2022, season=0, withSyllable=Fals
 
             if response.status_code >= 400:
                 print('failed to get file : no response')
-                return
+                t -= 1
+                continue
             if len(response.json()['data']) == 0:
                 print('failed to get file : no data')
-                return
+                t -= 1
+                continue
             if forTest:
                 forTest(len(response.content) / 1024)
             with open('{0}.json'.format(path), 'w') as savefile:
@@ -348,15 +350,19 @@ def getAllGEClasses(year=2022, season=0, withSyllabus=False, forTest=None):
         path = './jsonsge/{}/{}/simple'.format(year, season)
     else:
         path = './jsonsge/{}/{}/'.format(year, season)
-    index += getGEClass2(index, './UnivGE/첨성인기초.json', path, year, season, withSyllabus, forTest, '첨성인기초')
+    _t = getGEClass2(index, './UnivGE/첨성인기초.json', path, year, season, withSyllabus, forTest, '첨성인기초')
+    index += _t if _t != None else 0
 
     print('첨성인핵심인문.json')
-    index += getGEClass2(index, './UnivGE/첨성인핵심인문.json', path, year, season, withSyllabus, forTest, '첨성인핵심_인문사회')
+    _t = getGEClass2(index, './UnivGE/첨성인핵심인문.json', path, year, season, withSyllabus, forTest, '첨성인핵심_인문사회')
+    index += _t if _t != None else 0
 
     print('첨성인핵심자연.json')
-    index += getGEClass2(index, './UnivGE/첨성인핵심자연.json', path, year, season, withSyllabus, forTest, '첨성인핵심_자연과학')
+    _t = getGEClass2(index, './UnivGE/첨성인핵심자연.json', path, year, season, withSyllabus, forTest, '첨성인핵심_자연과학')
+    index += _t if _t != None else 0
 
     print('첨성인소양.json')
-    index += getGEClass2(index, './UnivGE/첨성인소양.json', path, year, season, withSyllabus, forTest, '첨성인소양')
+    _t = getGEClass2(index, './UnivGE/첨성인소양.json', path, year, season, withSyllabus, forTest, '첨성인소양')
+    index += _t if _t != None else 0
 
     print('done!')
