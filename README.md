@@ -3,7 +3,7 @@
 - python @3.8.10
 - mysql @8.0.29
 - flask server
-## 환경설정(Linux)
+## 환경설정
 ```
 # 가상환경 생성
 $ python -m venv [your_virtual_environment]
