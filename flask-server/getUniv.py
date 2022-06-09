@@ -5,7 +5,6 @@ UnivList = ['인문대학', '사회과학대학', '자연과학대학', '경상�
 def getMajor(year, season):
     Dict = {}
     if not os.path.isdir('./UnivMajor/{}/{}'.format(year, season)):
-        print("none")
         return Dict
 
     for univ in UnivList:

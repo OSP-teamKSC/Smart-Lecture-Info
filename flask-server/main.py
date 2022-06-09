@@ -7,7 +7,7 @@ import getUniv
 import knuBus
 import Init
 
-DBPW = "1q2w3e4r@@"
+DBPW = sys.argv[1]
 
 app = Flask("__main__")
 CORS(app)
