@@ -16,8 +16,10 @@ const defColor = schedule.children[0].children[0].style.background;
 const SearchButton = document.getElementById('search')
 const HideButton = document.getElementById('hide')
 const HeaderPanel = document.getElementById('header')
+const MainPanel = document.getElementById('mainwrapper')
 const SearchOption = document.getElementById('searchOption')
-const OptionPanel = document.getElementById('optionPanel')
+const OptionPanel = document.getElementById('optionOverlay')
+const OptionPanel2 = document.getElementById('optionPanel')
 const EvaluationRatioPanel = document.getElementById('evalRatio')
 const RemoveSubjectButton = document.getElementById('removeSchedule')
 const DetailPanel = document.getElementById('details')
@@ -43,6 +45,18 @@ const ClassCodeText = document.getElementById('classCodefilter');
 const NoFirstGrade = document.getElementById('except1st');
 const SearchText = document.getElementById('searchText');
 
+let checks = []
+let nums = []
+let opts = []
+for (_i in [0,1,2,3,4,5]){
+    checks.push(document.getElementById(_i+'check'))
+    nums.push(document.getElementById(_i+'num'))
+    nums[_i].disabled=true;
+    opts.push(document.getElementById(_i+'sel'))
+    opts[_i].disabled=true;
+    const _t = _i;
+    checks[_t].onchange = ()=>{nums[_t].disabled=!checks[_t].checked; opts[_t].disabled=!checks[_t].checked;}
+}
 
 
 RadioEnable.onchange= ()=>{
@@ -84,8 +98,19 @@ HideButton.onclick = ()=>{
 }
 
 SearchOption.onclick = ()=> {
-    if (OptionPanel.style.display === 'none')
-        OptionPanel.style.display = 'block'}
+    if (OptionPanel.style.visibility === 'hidden'){
+        OptionPanel.style.visibility = 'visible'
+        OptionPanel.style.background = '#000000AA'
+        OptionPanel.style.transition='background 0.2s ease-out'
+        OptionPanel2.style.transition='transform 0.3s'
+
+
+        OptionPanel2.style.transform = 'translate(-50%, -50%)'
+        HeaderPanel.style.zIndex=-1;
+        MainPanel.style.zIndex=-3;
+        HideButton.style.zIndex=-2;
+    }
+}
 
 RemoveSubjectButton.onclick = ()=>{
     let index= savedSchedules.indexOf(activatedSubject);
@@ -109,8 +134,16 @@ RemoveSubjectButton.onclick = ()=>{
 SearchButton.onclick = Search;
 
 document.getElementById('optionClose').onclick = ()=>{
-    if (OptionPanel.style.display !== 'none')
-        OptionPanel.style.display = 'none'}
+    if (OptionPanel.style.visibility !== 'hidden') {
+        OptionPanel.style.transition=''
+        OptionPanel2.style.transition=''
+        OptionPanel.style.background = '#00000000'
+        OptionPanel2.style.transform = 'translate(-50%, -45%)'
+        OptionPanel.style.visibility = 'hidden'
+        HeaderPanel.style.zIndex=3;
+        MainPanel.style.zIndex=1;
+        HideButton.style.zIndex=2;
+    }}
 
 document.getElementById("addSchedule").onclick = AddToSchedule
 
@@ -152,3 +185,4 @@ for(r of ScheduleTable.children){
 }
 
 RemoveSubjectButton.style.visibility = 'hidden'
+
