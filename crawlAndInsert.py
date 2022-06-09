@@ -4,18 +4,21 @@ import crawler.GetClassList
 import pymysql as sql
 
 
+# 연도, 학기를 입력하면 대학 목록에서 json 불러와서 db로 insert.
 def unInsert(year, season, passwd=''):
     if passwd == '':
         passwd = input("password : ")
     insertDB('./jsons/{}/{}/'.format(year, season), 'un' + str(year) + str(season), passwd)
 
 
+# 연도, 학기를 입력하면 교양 목록에서 json 불러와서 db로 insert.
 def geInsert(year, season, passwd=''):
     if passwd == '':
         passwd = input("password : ")
     insertDB('./jsonsge/{}/{}/'.format(year, season), 'ge' + str(year) + str(season), passwd)
 
 
+# 경로, 테이블명, db 비밀번호를 입력하면 선택한 경로의 json 파일들을 불러와서 테이블로 insert.
 def insertDB(path, name, passwd):
     mydb = sql.connect(host='osp-db-server.mysql.database.azure.com', user='KSC', passwd=passwd, db='knubus')
     dir = path
@@ -58,37 +61,46 @@ def insertDB(path, name, passwd):
                         i["IsUntact"], i["Schedule"], i["Credit"], i["Rate1"], i["Rate2"], i["Rate3"], i["Rate4"],
                         i["Rate5"], i["Rate6"], i["Rate7"], i["Rate8"], i["Rate9"], i["PriorSubject"],
                         i["SubsequentSubject"]))
-                    print("Inserting [%s, %s] to 교양" % (i["SubjectName"], i["ClassCode"]))  # 삽입 성공
+                    print("Inserting [%s, %s] to tabel" % (i["SubjectName"], i["ClassCode"]))  # 삽입 성공
 
                 except sql.IntegrityError:
                     cursor.execute(sql_duplicate, (", ", i["ClassCode"]))  # 쉼표추가
                     cursor.execute(sql_duplicate,
                                    (i["EstablishedDepartment"], i["ClassCode"]))  # 중복된 상황에서 예외 않고 한 칼럼에 추가
-                    print("%s %s %s already in 교양" % (
+                    print("%s %s %s already in tabel" % (
                         i["ClassCode"], i["EstablishedUniversity"], i["EstablishedDepartment"]))  # 이미 삽입한 값
 
     mydb.commit()
     cursor.close()
     print("done.")
 
-
+# 연도, 학기, 교양 유무를 입력하면 크롤러를 실행하여 자동으로 크롤링하고 db로 insert.
 def crawlAndInsert(year, season, isGE=False):
+
+    # 잘못된 학기명을 입력시 return
     if (season < 0 or season > 3):
         print('invalid season value.')
         return
     passwd = input('mysql passwd : ')
     try:
         if not isGE:
+            # 대학 목록 불러오기
             crawler.GetClassList.getUnivList(year, season)
+            # 학과 목록 불러오기
             crawler.GetClassList.getAllDepartments(year, season)
+            # 강의 목록 불러오기
             crawler.GetClassList.getAllMajorClasses(year, season,True)
         else:
+            # 교양 세부 목록 불러오기
             crawler.GetClassList.getGEList()
+            # 교양 강의 목록 불러오기
             crawler.GetClassList.getAllGEClasses(year, season,True)
     except:
+        # 예외 발생시 바로 작동 중단
         print('failed to crawl...')
         return
 
+        # json 파일 로드 완료시 즉시 db로 insert 진행
     if not isGE:
         unInsert(year,season,passwd)
     else:
@@ -96,5 +108,20 @@ def crawlAndInsert(year, season, isGE=False):
 
 
 if __name__ == '__main__':
-    # crawler.GetClassList.getAllGEClasses(2022,1,True)
-    crawlAndInsert(2022,1,False)
+    print('asdf')
+
+
+'''
+    -강의 계획서 없는 수강목록 불러오는 법-
+    
+    1) 교양
+        1. crawler.GetClassList.getGEList() 실행
+        2. crawler.GetClassList.getAllGEClasses(년도, 학기, False) 실행
+        3. './jsonsge/년도/학기/simple/' 폴더에 jsons 생성
+        
+    2) 학부    
+        1. crawler.GetClassList.getUnivList(년도, 학기) 실행
+        2. crawler.GetClassList.getAllDepartments(년도, 학기) 실행
+        3. crawler.GetClassList.getAllMajorClasses(년도, 학기, False) 실행
+        4. './jsons/년도/학기/simple/' 폴더에 jsons 생성        
+'''
