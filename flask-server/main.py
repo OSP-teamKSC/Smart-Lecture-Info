@@ -1,3 +1,4 @@
+import sys
 import json
 
 from flask import (Flask, render_template, request)
@@ -7,12 +8,14 @@ import getUniv
 import knuBus
 # from crawler import crawlAndInsert
 
+DBPW = sys.argv[1]
 
 app = Flask("__main__")
 CORS(app)
 
 @app.route("/", methods = ['GET', 'POST'])
 def index():
+    print(DBPW)
     return render_template("index.html")
 
 @app.route('/UnivList', methods=['GET', 'POST'])
@@ -36,12 +39,14 @@ def test():
         # search = json.dump(search)
         isGE = True if search['Gubun'] == 'GE' else False
         print(search)
-        # crawlAndInsert(search['Year'], search['Season'], isGE)
-        data = knuBus.accessDataBase(search)
+        data = knuBus.accessDataBase(search, DBPW)
         json_data = json.dumps(data)
     # return
     return json_data
 
 
 if __name__ == "__main__":
+    # for season in range(0,4):
+        # crawlAndInsert(2022, search['Season'], True, DBPW)
+        # crawlAndInsert(2022, search['Season'], False, DBPW)
     app.run(host="0.0.0.0", port="8080", debug=True)

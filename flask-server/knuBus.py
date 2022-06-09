@@ -1,11 +1,5 @@
 import mysql.connector
 import json
-mydb = mysql.connector.connect(
-    host="osp-db-server.mysql.database.azure.com",
-    user="KSC",
-    passwd="1q2w3e4r@@",
-    database="knubus"
-)
 
 myData = {
     'Grade': '', #학년
@@ -77,7 +71,13 @@ def searchWord(data):
         str += " {0} like '%{1}%'".format(word, tempData[word])
     return str
 
-def selectTable(tableName, data, str):
+def selectTable(tableName, data, str, pwd):
+    mydb = mysql.connector.connect(
+        host="osp-db-server.mysql.database.azure.com",
+        user="KSC",
+        passwd=pwd,
+        database="knubus"
+    )
     dataList = []
     cursor = mydb.cursor()
 
@@ -97,23 +97,22 @@ def selectTable(tableName, data, str):
                     continue
                 word = data[col]
             datadict_value[col] = word
-        if isavailable:
-            dataList.append(datadict_value)
+        dataList.append(datadict_value)
     mydb.commit()
     cursor.close()
     return dataList
 
 
-def accessDataBase(data):
+def accessDataBase(data, pwd):
 
     str = searchWord(data)
     dataDict = {}
     dataList = []
     i = 0
     if data['Gubun'] != 'UN':
-        dataList += selectTable('ge2022{}'.format(data['Season']), data, str)
+        dataList += selectTable('ge2022{}'.format(data['Season']), data, str, pwd)
     if data['Gubun'] != 'GE':
-        dataList += selectTable('un2022{}'.format(data['Season']), data, str)
+        dataList += selectTable('un2022{}'.format(data['Season']), data, str, pwd)
     for data in dataList:
         dataDict[i] = data
         i+=1
