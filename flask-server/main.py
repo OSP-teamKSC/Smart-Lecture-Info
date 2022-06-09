@@ -6,6 +6,7 @@ from flask_cors import CORS
 
 import getUniv
 import knuBus
+import Init
 # from crawler import crawlAndInsert
 
 DBPW = sys.argv[1]
@@ -15,7 +16,6 @@ CORS(app)
 
 @app.route("/", methods = ['GET', 'POST'])
 def index():
-    print(DBPW)
     return render_template("index.html")
 
 @app.route('/UnivList', methods=['GET', 'POST'])
@@ -46,6 +46,7 @@ def test():
 
 
 if __name__ == "__main__":
+    Init.init()
     # for season in range(0,4):
         # crawlAndInsert(2022, search['Season'], True, DBPW)
         # crawlAndInsert(2022, search['Season'], False, DBPW)
